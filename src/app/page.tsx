@@ -3,6 +3,7 @@
 'use client'
 import Image from 'next/image'
 import { useState } from 'react';
+import { Tooltip, Button } from 'antd';
 
 export default function Home() {
   const [visibleCount, setVisibleCount] = useState(8);
@@ -42,17 +43,17 @@ export default function Home() {
 
   // 数据数组
   const speakers = [
-    { id: 1, name: "Greg Osuri", company: "Akash Network", img: "/speakers/1.png" },
-    { id: 2, name: "Naveen Durvasula", company: "Ritual", img: "/speakers/2.png" },
-    { id: 3, name: "Anna Bertha", company: "DCG", img: "/speakers/3.png" },
-    { id: 4, name: "Ben Fielding", company: "Gensyn", img: "/speakers/4.png" },
-    { id: 5, name: "Christian Ondaatje", company: "Founding Platform Engineer", img: "/speakers/5.png" },
-    { id: 6, name: "Guy Wuollet(a16z)", company: "akash founder", img: "/speakers/6.png" },
-    { id: 7, name: "Tom Schmidt(dragonfly)", company: "akash founder", img: "/speakers/7.png" },
-    { id: 8, name: "jiahao(Flock)", company: "akash founder", img: "/speakers/8.png" },
-    { id: 9, name: "Chris(Mirror World)", company: "akash founder", img: "/speakers/9.png" },
-    { id: 10, name: "Tim Draper(Draper)", company: "-", img: "/speakers/10.png" },
-    { id: 11, name: "Lily Liu (Solana)", company: "-", img: "/speakers/11.png" },
+    { id: 1, name: "Greg Osuri", company: "Founder of Akash", img: "/speakers/1.png" },
+    { id: 2, name: "Naveen Durvasula", company: "Core Member of Ritual", img: "/speakers/2.png" },
+    { id: 3, name: "Anna Bertha", company: "Investor of DCG", img: "/speakers/3.png" },
+    { id: 4, name: "Ben Fielding", company: "Co-founder Gensyn", img: "/speakers/4.png" },
+    { id: 5, name: "Christian Ondaatje", company: "Platform Engineer of Hyperbolic", img: "/speakers/5.png" },
+    { id: 6, name: "Guy Wuollet", company: "Investment Partner of a16z crypto", img: "/speakers/6.png" },
+    { id: 7, name: "Tom Schmidt", company: "Partner of Dragonfly", img: "/speakers/7.png" },
+    { id: 8, name: "jiahao", company: "Founder and CEO of FLock.io", img: "/speakers/8.png" },
+    { id: 9, name: "Chris", company: "Co-founder of Sonic / Mirror World", img: "/speakers/9.png" },
+    { id: 10, name: "Tim Draper", company: "Founder of Draper", img: "/speakers/10.png" },
+    { id: 11, name: "Lily Liu", company: "President of Solana Foundation", img: "/speakers/11.png" },
   ];
 
   // 点击按钮后展示更多数据
@@ -113,9 +114,13 @@ export default function Home() {
                 </li>
               </ul>
             </nav>
-            <div className="flex px-[64px] py-[16px] text-base font-medium bg-[#272727] text-white cursor-pointer" >
-              Apply for CUBES
-            </div>
+            <Tooltip title="coming soon">
+              <div className="flex px-[64px] py-[16px] text-base font-medium bg-[#272727] text-white cursor-pointer" >
+                Apply for  CUBE Summit
+              </div>
+            </Tooltip>
+
+
           </header>
           <div className="flex justify-center relative text-[68px] font-semibold mt-[60px]">
             <span className="z-[1]" style={{ fontFamily: 'ClashDisplay, sans-serif' }}> CUBE Summit</span>
@@ -135,59 +140,85 @@ export default function Home() {
             projects, shaping the future stars of the crypto world.
           </p>
           <div className="flex gap-[80px] mt-[25px]">
-            <div className="flex cursor-pointer items-center justify-center w-[280px] h-[56px] text-[16px] font-medium text-[#272727] border-2 border-black rounded-[4px]">
-              Register for Summit
-            </div>
-            <div className="flex items-center cursor-pointer justify-center gap-[8px] w-[280px] h-[56px] text-[16px] font-medium text-white bg-[#272727] rounded-[4px]">
-              <svg
-                width="19"
-                height="22"
-                viewBox="0 0 19 22"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fillRule="evenodd"
-                  clipRule="evenodd"
-                  d="M15.018 6.86939C15.2192 6.83628 15.4248 6.901 15.5713 7.0434C17.275 8.70002 18.2133 10.9172 18.2133 13.2865C18.2133 18.0911 14.3047 22 9.50025 22C5.52607 22 2.05916 19.3094 1.06937 15.4569C0.881813 14.726 0.786724 13.9958 0.786724 13.2865C0.786724 11.8941 1.112 10.5556 1.75351 9.30824C2.38488 8.08195 3.31321 7.00815 4.43831 6.20263C4.44484 6.19796 4.45149 6.1934 4.45821 6.18892C4.49947 6.1617 4.54354 6.12947 4.5902 6.09533L4.59566 6.09134C4.59979 6.08832 4.60392 6.0853 4.60805 6.08227C4.62743 6.06808 4.64683 6.05388 4.66635 6.03982C6.45528 4.75969 7.57882 2.77521 7.75061 0.593942C7.76754 0.378668 7.89116 0.18621 8.07991 0.0812377C8.26869 -0.0236924 8.49729 -0.0271727 8.68913 0.0719563C10.8928 1.21093 12.5106 3.24082 13.1275 5.64111C13.3152 6.37187 13.4103 7.10205 13.4103 7.8116C13.4103 8.18138 13.3861 8.55019 13.3382 8.9168C13.8188 8.4093 14.2273 7.83518 14.5488 7.21047C14.6423 7.02888 14.8164 6.90234 15.018 6.86939ZM11.8333 13.3335C11.8333 14.8062 10.6394 16.0001 9.16664 16.0001C7.69388 16.0001 6.49997 14.8062 6.49997 13.3335C6.49997 11.8607 7.69388 10.6668 9.16664 10.6668C10.6394 10.6668 11.8333 11.8607 11.8333 13.3335Z"
-                  fill="#CFF285"
-                />
-              </svg>
-              <span>Apply to Pitch by August 31</span>
-            </div>
+
+
+            <Tooltip title="coming soon">
+              <div className="flex cursor-pointer items-center justify-center w-[280px] h-[56px] text-[16px] font-medium text-[#272727] border-2 border-black rounded-[4px]">
+                Register for Summit
+              </div>
+            </Tooltip>
+
+
+            <Tooltip title="coming soon">
+              <div className="flex items-center cursor-pointer justify-center gap-[8px] w-[280px] h-[56px] text-[16px] font-medium text-white bg-[#272727] rounded-[4px]">
+                <svg
+                  width="19"
+                  height="22"
+                  viewBox="0 0 19 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M15.018 6.86939C15.2192 6.83628 15.4248 6.901 15.5713 7.0434C17.275 8.70002 18.2133 10.9172 18.2133 13.2865C18.2133 18.0911 14.3047 22 9.50025 22C5.52607 22 2.05916 19.3094 1.06937 15.4569C0.881813 14.726 0.786724 13.9958 0.786724 13.2865C0.786724 11.8941 1.112 10.5556 1.75351 9.30824C2.38488 8.08195 3.31321 7.00815 4.43831 6.20263C4.44484 6.19796 4.45149 6.1934 4.45821 6.18892C4.49947 6.1617 4.54354 6.12947 4.5902 6.09533L4.59566 6.09134C4.59979 6.08832 4.60392 6.0853 4.60805 6.08227C4.62743 6.06808 4.64683 6.05388 4.66635 6.03982C6.45528 4.75969 7.57882 2.77521 7.75061 0.593942C7.76754 0.378668 7.89116 0.18621 8.07991 0.0812377C8.26869 -0.0236924 8.49729 -0.0271727 8.68913 0.0719563C10.8928 1.21093 12.5106 3.24082 13.1275 5.64111C13.3152 6.37187 13.4103 7.10205 13.4103 7.8116C13.4103 8.18138 13.3861 8.55019 13.3382 8.9168C13.8188 8.4093 14.2273 7.83518 14.5488 7.21047C14.6423 7.02888 14.8164 6.90234 15.018 6.86939ZM11.8333 13.3335C11.8333 14.8062 10.6394 16.0001 9.16664 16.0001C7.69388 16.0001 6.49997 14.8062 6.49997 13.3335C6.49997 11.8607 7.69388 10.6668 9.16664 10.6668C10.6394 10.6668 11.8333 11.8607 11.8333 13.3335Z"
+                    fill="#CFF285"
+                  />
+                </svg>
+                <span>Apply to Pitch by August 31</span>
+
+              </div>
+            </Tooltip>
           </div>
           <p className="text-[#383F4E] text-[24px] font-semibold mt-[80px] text-left w-full">
             Initiators
           </p>
           <div className="flex flex-wrap gap-x-[34px] gap-y-[24px] mt-[24px]">
             <Image
-              className="w-[136px] h-[54px]"
+              className="w-[136px] h-[48px]"
               src="/banner/initiators/image1.png"
               width={136}
               height={48}
               alt="icon"
             />
-            <Image
+            {/* <Image
               className="w-[136px] h-[54px]"
               src="/banner/initiators/image2.png"
               width={136}
               height={48}
               alt="icon"
+            /> */}
+
+            <Image
+              className="w-[136px] h-[48px]"
+              src="/banner/initiators/image4.png"
+              width={136}
+              height={48}
+              alt="icon"
             />
             <Image
-              className="w-[136px] h-[54px]"
+              className="w-[136px] h-[48px]"
               src="/banner/initiators/image3.png"
               width={136}
               height={48}
               alt="icon"
             />
             <Image
-              className="w-[136px] h-[54px]"
-              src="/banner/initiators/image4.png"
+              className="w-[136px] h-[48px]"
+              src="/banner/initiators/image10.png"
               width={136}
               height={48}
               alt="icon"
             />
+            <Image
+              className="w-[136px] h-[48px]"
+              src="/banner/initiators/image11.png"
+              width={136}
+              height={48}
+              alt="icon"
+            />
+
+
             <Image
               className="w-[136px] h-[54px]"
               src="/banner/initiators/image5.png"
@@ -203,45 +234,26 @@ export default function Home() {
               alt="icon"
             />
             <Image
-              className="w-[136px] h-[54px]"
+              className="w-[148px] h-[68px]"
               src="/banner/initiators/image7.png"
               width={136}
               height={48}
               alt="icon"
             />
-            <Image
-              className="w-[136px] h-[54px]"
-              src="/banner/initiators/image8.png"
-              width={136}
-              height={48}
-              alt="icon"
-            />
-            <Image
-              className="w-[136px] h-[54px]"
-              src="/banner/initiators/image9.png"
-              width={136}
-              height={48}
-              alt="icon"
-            />
-            <Image
-              className="w-[136px] h-[54px]"
-              src="/banner/initiators/image10.png"
-              width={136}
-              height={48}
-              alt="icon"
-            />
-            <Image
-              className="w-[136px] h-[54px]"
-              src="/banner/initiators/image11.png"
-              width={136}
-              height={48}
-              alt="icon"
-            />
+
+
           </div>
           <p className="text-[#383F4E] text-[24px] font-semibold mt-[48px] text-left w-full">
             Sponsors
           </p>
           <div className="flex flex-wrap w-full gap-x-[34px] gap-y-[24px] mt-[24px]">
+            <Image
+              className="w-[136px] h-[54px]"
+              src="/banner/sponsors/image3.png"
+              width={136}
+              height={48}
+              alt="icon"
+            />
             <Image
               className="w-[136px] h-[54px]"
               src="/banner/sponsors/image1.png"
@@ -292,9 +304,14 @@ export default function Home() {
               leverage powerful alumni networks to shape the future stars of the
               crypto world.
             </p>
-            <div className="cursor-pointer w-[146px] h-[56px] mt-[45px] flex items-center justify-center font-medium text-base border-2 border-[#272727]">
-              Read more
-            </div>
+
+
+            <Tooltip title="coming soon">
+              <div className="cursor-pointer w-[146px] h-[56px] mt-[45px] flex items-center justify-center font-medium text-base border-2 border-[#272727]">
+                Read more
+              </div>
+            </Tooltip>
+
           </div>
         </div>
         <div>
@@ -328,9 +345,13 @@ export default function Home() {
               become a vital part of our community. Join us on October 3rd and
               be a part of CUBES.
             </p>
-            <div className="w-[216px] cursor-pointer h-[56px] mt-[45px] flex items-center justify-center font-medium text-base border-2 border-[#272727]">
-              Register for Summit
-            </div>
+
+
+            <Tooltip title="coming soon">
+              <div className="w-[216px] cursor-pointer h-[56px] mt-[45px] flex items-center justify-center font-medium text-base border-2 border-[#272727]">
+                Register for Summit
+              </div>
+            </Tooltip>
           </div>
         </div>
       </section>
@@ -350,7 +371,7 @@ export default function Home() {
           <div className="w-full flex flex-wrap justify-start gap-y-[30px] mt-[55px]">
             {speakers.slice(0, visibleCount).map(speaker => (
               <div key={speaker.id} className={
-                `flex flex-col items-start p-[18px] rounded-md border-2 border-[#E8E7EE] ${(speaker.id)% 4 == 0 ? "" : "mr-[25px]"} `
+                `flex flex-col items-start p-[18px] rounded-md border-2 border-[#E8E7EE] ${(speaker.id) % 4 == 0 ? "" : "mr-[25px]"} `
               }>
                 <div className="relative">
                   <img src={speaker.img} alt={speaker.name} className="w-[238px] h-[238px] bg-[#E7D6FF]" />
@@ -450,9 +471,14 @@ export default function Home() {
                 team that inspires you, unlocking limitless possibilities
                 together!
               </p>
-              <div className="w-[282px] cursor-pointer h-[56px] mt-[32px] flex items-center justify-center font-medium text-base border-2 border-[#272727]">
-                Apply to Pitch Now
-              </div>
+
+
+              <Tooltip title="coming soon">
+                <div className="w-[282px] cursor-pointer h-[56px] mt-[32px] flex items-center justify-center font-medium text-base border-2 border-[#272727]">
+                  Apply to Pitch Now
+                </div>
+              </Tooltip>
+
             </div>
           </div>
           <div className="w-[469px] h-[616px]">
@@ -530,9 +556,49 @@ export default function Home() {
       </section>
       <section className="flex flex-col items-center w-full bg-[#272727] py-[40px]">
         <div className="text-[#DDF472] text-[48px] font-semibold">Partners</div>
-        <div className="flex flex-col">
-          <div className="flex py-[16px] gap-[120px]">
-            <div
+        <div className="flex flex-col mt-[36px]">
+          <div className="flex w-full justify-center items-center gap-[120px] pl-[140px] pr-[140px]">
+            {/* <div
+              className="w-[132px] h-[32px]"
+              style={{ background: 'url("/s7/image1.png")' }}
+            /> */}
+            {/* <Image className="w-[136px] h-[32px]"  src="/s7/image1.png" width={132} height={32} alt="" /> */}
+            <Image
+              className="w-[136px] h-[48px]"
+              src="/s7/image1.png"
+              width={136}
+              height={48}
+              alt="icon"
+            />
+            <Image
+              className="w-[128px] h-[26px]"
+              src="/s7/image2.png"
+              width={136}
+              height={48}
+              alt="icon"
+            />
+            <Image
+              className="w-[123px] h-[35px]"
+              src="/s7/image3.png"
+              width={136}
+              height={48}
+              alt="icon"
+            />
+            <Image
+              className="w-[136px] h-[32px]"
+              src="/s7/image4.png"
+              width={136}
+              height={48}
+              alt="icon"
+            />
+            <Image
+              className="w-[110px] h-[32px]"
+              src="/s7/image5.png"
+              width={136}
+              height={48}
+              alt="icon"
+            />
+            {/* <div
               className="w-[136px] h-[32px]"
               style={{ background: 'url("/s7/image1.png")' }}
             />
@@ -559,47 +625,71 @@ export default function Home() {
             <div
               className="w-[136px] h-[32px]"
               style={{ background: 'url("/s7/image1.png")' }}
-            />
-            <div
-              className="w-[136px] h-[32px]"
-              style={{ background: 'url("/s7/image1.png")' }}
-            />
+            /> */}
           </div>
-          <div className="flex gap-[120px] py-[16px]">
+          <div className="flex py-[16px] justify-center items-center gap-[110px] pl-[120px] pr-[120px] mt-[36px] ">
             <div
               className="w-[136px] h-[32px]"
-              style={{ background: 'url("/s7/image1.png")' }}
+            >
+
+              <Image
+                className="w-[92px] h-[32px]"
+                src="/s7/image6.png"
+                width={136}
+                height={48}
+                alt="icon"
+              />
+            </div>
+
+
+            <Image
+              className="w-[98px] h-[32px] "
+              src="/s7/image7.png"
+              width={136}
+              height={48}
+              alt="icon"
             />
-            <div
-              className="w-[136px] h-[32px]"
-              style={{ background: 'url("/s7/image1.png")' }}
+            <Image
+              className="w-[136px] h-[33px]"
+              src="/s7/image8.png"
+              width={136}
+              height={48}
+              alt="icon"
             />
-            <div
-              className="w-[136px] h-[32px]"
-              style={{ background: 'url("/s7/image1.png")' }}
+            <Image
+              className="w-[136px] h-[33px]"
+              src="/s7/image9.png"
+              width={136}
+              height={48}
+              alt="icon"
             />
-            <div
-              className="w-[136px] h-[32px]"
-              style={{ background: 'url("/s7/image1.png")' }}
-            />
-            <div
-              className="w-[136px] h-[32px]"
-              style={{ background: 'url("/s7/image1.png")' }}
-            />
-            <div
-              className="w-[136px] h-[32px]"
-              style={{ background: 'url("/s7/image1.png")' }}
-            />
-            <div
-              className="w-[136px] h-[32px]"
-              style={{ background: 'url("/s7/image1.png")' }}
-            />
-            <div
-              className="w-[136px] h-[32px]"
-              style={{ background: 'url("/s7/image1.png")' }}
+            <Image
+              className="w-[136px] h-[33px]"
+              src="/s7/image10.png"
+              width={136}
+              height={48}
+              alt="icon"
             />
           </div>
         </div>
+
+        <div className="flex justify-stretch items-center gap-[140px] py-[16px] mt-[36px] w-full pl-[150px] pr-[150px]">
+          <Image
+            className="w-[136px] h-[54px]"
+            src="/s7/image11.png"
+            width={136}
+            height={48}
+            alt="icon"
+          />
+          <Image
+            className="w-[84px] h-[29px]"
+            src="/s7/image12.png"
+            width={136}
+            height={48}
+            alt="icon"
+          />
+        </div>
+
       </section>
 
       {/* <section className="flex flex-col py-[112px] items-center w-full">
@@ -800,50 +890,50 @@ export default function Home() {
         </div>
       </section> */}
 
-<section className="flex flex-col py-[112px] items-center w-full">
-      <div className="text-[48px] text-[#272727] font-semibold">FAQs</div>
-      <div className="flex flex-col gap-y-[16px] w-[768px]">
-        {questions.map((item, index) => (
-          <div
-            key={index}
-            className="flex flex-col border-[1px] border-black"
-          >
+      <section className="flex flex-col py-[112px] items-center w-full">
+        <div className="text-[48px] text-[#272727] font-semibold">FAQs</div>
+        <div className="flex flex-col gap-y-[16px] w-[768px]">
+          {questions.map((item, index) => (
             <div
-              className="flex justify-between items-center py-[20px] px-[24px] text-lg text-black font-semibold cursor-pointer"
-              onClick={() => toggleFAQ(index)}
+              key={index}
+              className="flex flex-col border-[1px] border-black"
             >
-              {item.question}
-              <span>
-                <svg
-                  width="32"
-                  height="32"
-                  viewBox="0 0 32 32"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  style={{
-                    transform: openIndex === index ? 'rotate(45deg)' : 'rotate(0)',
-                    transition: 'transform 0.2s ease-in-out',
-                  }}
-                >
-                  <path
-                    d="M25.3336 15.667V16.3336C25.3336 16.7018 25.0352 17.0003 24.667 17.0003H17.0003V24.667C17.0003 25.0351 16.7018 25.3336 16.3336 25.3336H15.667C15.2988 25.3336 15.0003 25.0351 15.0003 24.667V17.0003H7.33366C6.96547 17.0003 6.66699 16.7018 6.66699 16.3336V15.667C6.66699 15.2988 6.96547 15.0003 7.33366 15.0003H15.0003V7.33365C15.0003 6.96546 15.2988 6.66699 15.667 6.66699H16.3336C16.7018 6.66699 17.0003 6.96546 17.0003 7.33365V15.0003H24.667C25.0352 15.0003 25.3336 15.2988 25.3336 15.667Z"
-                    fill="black"
-                  />
-                </svg>
-              </span>
+              <div
+                className="flex justify-between items-center py-[20px] px-[24px] text-lg text-black font-semibold cursor-pointer"
+                onClick={() => toggleFAQ(index)}
+              >
+                {item.question}
+                <span>
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    style={{
+                      transform: openIndex === index ? 'rotate(45deg)' : 'rotate(0)',
+                      transition: 'transform 0.2s ease-in-out',
+                    }}
+                  >
+                    <path
+                      d="M25.3336 15.667V16.3336C25.3336 16.7018 25.0352 17.0003 24.667 17.0003H17.0003V24.667C17.0003 25.0351 16.7018 25.3336 16.3336 25.3336H15.667C15.2988 25.3336 15.0003 25.0351 15.0003 24.667V17.0003H7.33366C6.96547 17.0003 6.66699 16.7018 6.66699 16.3336V15.667C6.66699 15.2988 6.96547 15.0003 7.33366 15.0003H15.0003V7.33365C15.0003 6.96546 15.2988 6.66699 15.667 6.66699H16.3336C16.7018 6.66699 17.0003 6.96546 17.0003 7.33365V15.0003H24.667C25.0352 15.0003 25.3336 15.2988 25.3336 15.667Z"
+                      fill="black"
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div
+                className="p-[24px] border-t-[1px] border-black text-sm text-[#00000099]"
+                style={{
+                  display: openIndex === index ? 'block' : 'none',
+                }}
+              >
+                {item.answer}
+              </div>
             </div>
-            <div
-              className="p-[24px] border-t-[1px] border-black text-sm text-[#00000099]"
-              style={{
-                display: openIndex === index ? 'block' : 'none',
-              }}
-            >
-              {item.answer}
-            </div>
-          </div>
-        ))}
-      </div>
-    </section>
+          ))}
+        </div>
+      </section>
 
 
       <footer className="w-full pt-[50px] px-[64px] pb-[30px] bg-[#272727]">
