@@ -1,15 +1,43 @@
+/* eslint-disable @next/next/no-img-element */
 'use client'
 import Image from 'next/image'
+import { useState } from 'react';
 
 export default function Home() {
+  const [visibleCount, setVisibleCount] = useState(8);
+
+  // 数据数组
+  const speakers = [
+    { id: 1, name: "Greg Osuri", company: "Akash Network", img: "/speakers/1.png" },
+    { id: 2, name: "Naveen Durvasula", company: "Ritual", img: "/speakers/2.png" },
+    { id: 3, name: "Anna Bertha", company: "DCG", img: "/speakers/3.png" },
+    { id: 4, name: "Ben Fielding", company: "Gensyn", img: "/speakers/4.png" },
+    { id: 5, name: "Christian Ondaatje", company: "Founding Platform Engineer", img: "/speakers/5.png" },
+    { id: 6, name: "Guy Wuollet(a16z)", company: "akash founder", img: "/speakers/6.png" },
+    { id: 7, name: "Tom Schmidt(dragonfly)", company: "akash founder", img: "/speakers/7.png" },
+    { id: 8, name: "jiahao(Flock)", company: "akash founder", img: "/speakers/8.png" },
+    { id: 9, name: "Chris(Mirror World)", company: "akash founder", img: "/speakers/9.png" },
+  ];
+
+  // 点击按钮后展示更多数据
+  const handleShowMore = () => {
+    if (visibleCount == 8) {
+      setVisibleCount(9);
+    } else {
+      setVisibleCount(8);
+    }
+
+  };
+
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between">
+    <main className="flex min-h-screen flex-col items-center justify-between w-full overflow-x-hidden">
       <section
-        className="flex justify-center w-full bg-[#DEE8E8]"
+        className="flex justify-center w-full bg-[#DEE8E8] "
         style={{
           backgroundImage: 'url("/banner/line.svg")',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'noRepeat',
+          backgroundPosition: '0px 262px',
+          backgroundRepeat: 'no-repeat',
           backgroundSize: 'contain',
         }}
       >
@@ -17,7 +45,7 @@ export default function Home() {
           <header className="w-full flex py-[21px] justify-around">
             <div className="flex items-center">
               <span>
-                <svg
+                {/* <svg
                   width="15"
                   height="30"
                   viewBox="0 0 15 30"
@@ -32,7 +60,7 @@ export default function Home() {
                     d="M15.0047 15H0V0C8.29991 0 15.0047 6.72973 15.0047 15Z"
                     fill="#272727"
                   />
-                </svg>
+                </svg> */}
               </span>
               <strong className="ml-2">CUBES</strong>
             </div>
@@ -97,77 +125,77 @@ export default function Home() {
           </p>
           <div className="flex flex-wrap gap-x-[34px] gap-y-[24px] mt-[24px]">
             <Image
-              className="w-[136px] h-[48px]"
+              className="w-[136px] h-[54px]"
               src="/banner/initiators/image1.png"
               width={136}
               height={48}
               alt="icon"
             />
             <Image
-              className="w-[136px] h-[48px]"
+              className="w-[136px] h-[54px]"
               src="/banner/initiators/image2.png"
               width={136}
               height={48}
               alt="icon"
             />
             <Image
-              className="w-[136px] h-[48px]"
+              className="w-[136px] h-[54px]"
               src="/banner/initiators/image3.png"
               width={136}
               height={48}
               alt="icon"
             />
             <Image
-              className="w-[136px] h-[48px]"
+              className="w-[136px] h-[54px]"
               src="/banner/initiators/image4.png"
               width={136}
               height={48}
               alt="icon"
             />
             <Image
-              className="w-[136px] h-[48px]"
+              className="w-[136px] h-[54px]"
               src="/banner/initiators/image5.png"
               width={136}
               height={48}
               alt="icon"
             />
             <Image
-              className="w-[136px] h-[48px]"
+              className="w-[136px] h-[54px]"
               src="/banner/initiators/image6.png"
               width={136}
               height={48}
               alt="icon"
             />
             <Image
-              className="w-[136px] h-[48px]"
+              className="w-[136px] h-[54px]"
               src="/banner/initiators/image7.png"
               width={136}
               height={48}
               alt="icon"
             />
             <Image
-              className="w-[136px] h-[48px]"
+              className="w-[136px] h-[54px]"
               src="/banner/initiators/image8.png"
               width={136}
               height={48}
               alt="icon"
             />
             <Image
-              className="w-[136px] h-[48px]"
+              className="w-[136px] h-[54px]"
               src="/banner/initiators/image9.png"
               width={136}
               height={48}
               alt="icon"
             />
             <Image
-              className="w-[136px] h-[48px]"
+              className="w-[136px] h-[54px]"
               src="/banner/initiators/image10.png"
               width={136}
               height={48}
               alt="icon"
             />
             <Image
-              className="w-[136px] h-[48px]"
+              className="w-[136px] h-[54px]"
               src="/banner/initiators/image11.png"
               width={136}
               height={48}
@@ -179,14 +207,14 @@ export default function Home() {
           </p>
           <div className="flex flex-wrap w-full gap-x-[34px] gap-y-[24px] mt-[24px]">
             <Image
-              className="w-[136px] h-[48px]"
+              className="w-[136px] h-[54px]"
               src="/banner/sponsors/image1.png"
               width={136}
               height={48}
               alt="icon"
             />
             <Image
-              className="w-[136px] h-[48px]"
+              className="w-[136px] h-[54px]"
               src="/banner/sponsors/image2.png"
               width={136}
               height={48}
@@ -198,7 +226,7 @@ export default function Home() {
           </p>
           <div className="flex flex-wrap w-full gap-x-[34px] gap-y-[24px] mt-[24px] mb-[40px]">
             <Image
-              className="w-[136px] h-[48px]"
+              className="w-[136px] h-[54px]"
               src="/banner/organizer/image1.png"
               width={136}
               height={48}
@@ -218,7 +246,7 @@ export default function Home() {
               <span>What is CUBES?</span>
               <div className="absolute left-[8px] bottom-[12px] -z-[1] w-[310px] h-[10px] bg-[#CFF285] rounded-lg"></div>
             </div>
-            <p className="mt-[16px] text-[#6B6B6B] text-lg">
+            <p className="mt-[16px] text-[#6B6B6B] text-lg font-weight-normal">
               Hosted in the vibrant city of NewYork on October 3rd, CUBES brings
               together top minds from Yale, Stanford, UCB, Harvard, UPenn, MIT,
               Cornell, NYU, Columbia, and Oxford, along with industry leaders
@@ -284,66 +312,120 @@ export default function Home() {
             in the crypto
           </p>
           <div className="w-full flex flex-wrap justify-around gap-y-[30px] mt-[55px]">
+            {/* <div className="flex flex-col items-start p-[18px] rounded-md border-2 border-[#E8E7EE]">
+              <div className="relative">
+                <img src="/speakers/1.png" alt="" className="w-[238px] h-[238px] bg-[#E7D6FF]" />
+                <img src="/speakers/0.png" alt="" className="w-[105px] h-[38px] absolute left-[23px] bottom-[16px]" />
+              </div>
+              <div className="text-lg text-[#153C3C] font-medium mt-[8px]">
+                Greg Osuri
+              </div>
+              <div className="text-xs text-[#153C3C]">Akash Network</div>
+            </div>
             <div className="flex flex-col items-start p-[18px] rounded-md border-2 border-[#E8E7EE]">
-              <div className="w-[238px] h-[238px] bg-[#E7D6FF]"></div>
+              <div className="relative">
+                <img src="/speakers/2.png" alt="" className="w-[238px] h-[238px] bg-[#E7D6FF]" />
+                <img src="/speakers/0.png" alt="" className="w-[105px] h-[38px] absolute left-[22px] bottom-[16px]" />
+              </div>
               <div className="text-lg text-[#153C3C] font-medium mt-[8px]">
                 Naveen Durvasula
+              </div>
+              <div className="text-xs text-[#153C3C]">Ritual</div>
+            </div>
+            <div className="flex flex-col items-start p-[18px] rounded-md border-2 border-[#E8E7EE]">
+              <div className="relative">
+                <img src="/speakers/3.png" alt="" className="w-[238px] h-[238px] bg-[#E7D6FF]" />
+                <img src="/speakers/0.png" alt="" className="w-[105px] h-[38px] absolute left-[23px] bottom-[16px]" />
+              </div>
+              <div className="text-lg text-[#153C3C] font-medium mt-[8px]">
+                Anna Bertha
+              </div>
+              <div className="text-xs text-[#153C3C]">DCG</div>
+            </div>
+            <div className="flex flex-col items-start p-[18px] rounded-md border-2 border-[#E8E7EE]">
+              <div className="relative">
+                <img src="/speakers/4.png" alt="" className="w-[238px] h-[238px] bg-[#E7D6FF]" />
+                <img src="/speakers/0.png" alt="" className="w-[105px] h-[38px] absolute left-[23px] bottom-[16px]" />
+              </div>
+              <div className="text-lg text-[#153C3C] font-medium mt-[8px]">
+                Ben Fielding
+              </div>
+              <div className="text-xs text-[#153C3C]">Gensyn</div>
+            </div>
+            <div className="flex flex-col items-start p-[18px] rounded-md border-2 border-[#E8E7EE]">
+              <div className="relative">
+                <img src="/speakers/5.png" alt="" className="w-[238px] h-[238px] bg-[#E7D6FF]" />
+                <img src="/speakers/0.png" alt="" className="w-[105px] h-[38px] absolute left-[23px] bottom-[16px]" />
+              </div>
+              <div className="text-lg text-[#153C3C] font-medium mt-[8px]">
+                Christian Ondaatje
+              </div>
+              <div className="text-xs text-[#153C3C]">Founding Platform Engineer</div>
+            </div>
+            <div className="flex flex-col items-start p-[18px] rounded-md border-2 border-[#E8E7EE]">
+              <div className="relative">
+                <img src="/speakers/6.png" alt="" className="w-[238px] h-[238px] bg-[#E7D6FF]" />
+                <img src="/speakers/0.png" alt="" className="w-[105px] h-[38px] absolute left-[23px] bottom-[16px]" />
+              </div>
+              <div className="text-lg text-[#153C3C] font-medium mt-[8px]">
+                Guy Wuollet(a16z)
               </div>
               <div className="text-xs text-[#153C3C]">akash founder</div>
             </div>
             <div className="flex flex-col items-start p-[18px] rounded-md border-2 border-[#E8E7EE]">
-              <div className="w-[238px] h-[238px] bg-[#E7D6FF]"></div>
+              <div className="relative">
+                <img src="/speakers/7.png" alt="" className="w-[238px] h-[238px] bg-[#E7D6FF]" />
+                <img src="/speakers/0.png" alt="" className="w-[105px] h-[38px] absolute left-[23px] bottom-[16px]" />
+              </div>
               <div className="text-lg text-[#153C3C] font-medium mt-[8px]">
-                Naveen Durvasula
+                Tom Schmidt(dragonfly)
               </div>
               <div className="text-xs text-[#153C3C]">akash founder</div>
             </div>
             <div className="flex flex-col items-start p-[18px] rounded-md border-2 border-[#E8E7EE]">
-              <div className="w-[238px] h-[238px] bg-[#E7D6FF]"></div>
+              <div className="relative">
+                <img src="/speakers/8.png" alt="" className="w-[238px] h-[238px] bg-[#E7D6FF]" />
+                <img src="/speakers/0.png" alt="" className="w-[105px] h-[38px] absolute left-[23px] bottom-[16px]" />
+              </div>
               <div className="text-lg text-[#153C3C] font-medium mt-[8px]">
-                Naveen Durvasula
+                jiahao(Flock)
               </div>
               <div className="text-xs text-[#153C3C]">akash founder</div>
             </div>
             <div className="flex flex-col items-start p-[18px] rounded-md border-2 border-[#E8E7EE]">
-              <div className="w-[238px] h-[238px] bg-[#E7D6FF]"></div>
+              <div className="relative">
+                <img src="/speakers/9.png" alt="" className="w-[238px] h-[238px] bg-[#E7D6FF]" />
+                <img src="/speakers/0.png" alt="" className="w-[105px] h-[38px] absolute left-[23px] bottom-[16px]" />
+              </div>
               <div className="text-lg text-[#153C3C] font-medium mt-[8px]">
-                Naveen Durvasula
+                Chris( Mirror World）
               </div>
               <div className="text-xs text-[#153C3C]">akash founder</div>
-            </div>
-            <div className="flex flex-col items-start p-[18px] rounded-md border-2 border-[#E8E7EE]">
-              <div className="w-[238px] h-[238px] bg-[#E7D6FF]"></div>
-              <div className="text-lg text-[#153C3C] font-medium mt-[8px]">
-                Naveen Durvasula
+            </div> */}
+
+            {speakers.slice(0, visibleCount).map(speaker => (
+              <div key={speaker.id} className="flex flex-col items-start p-[18px] rounded-md border-2 border-[#E8E7EE]">
+                <div className="relative">
+                  <img src={speaker.img} alt={speaker.name} className="w-[238px] h-[238px] bg-[#E7D6FF]" />
+                  <img src="/speakers/0.png" alt="overlay" className="w-[105px] h-[38px] absolute left-[23px] bottom-[16px]" />
+                </div>
+                <div className="text-lg text-[#153C3C] font-medium mt-[8px]">{speaker.name}</div>
+                <div className="text-xs text-[#153C3C]">{speaker.company}</div>
               </div>
-              <div className="text-xs text-[#153C3C]">akash founder</div>
-            </div>
-            <div className="flex flex-col items-start p-[18px] rounded-md border-2 border-[#E8E7EE]">
-              <div className="w-[238px] h-[238px] bg-[#E7D6FF]"></div>
-              <div className="text-lg text-[#153C3C] font-medium mt-[8px]">
-                Naveen Durvasula
-              </div>
-              <div className="text-xs text-[#153C3C]">akash founder</div>
-            </div>
-            <div className="flex flex-col items-start p-[18px] rounded-md border-2 border-[#E8E7EE]">
-              <div className="w-[238px] h-[238px] bg-[#E7D6FF]"></div>
-              <div className="text-lg text-[#153C3C] font-medium mt-[8px]">
-                Naveen Durvasula
-              </div>
-              <div className="text-xs text-[#153C3C]">akash founder</div>
-            </div>
-            <div className="flex flex-col items-start p-[18px] rounded-md border-2 border-[#E8E7EE]">
-              <div className="w-[238px] h-[238px] bg-[#E7D6FF]"></div>
-              <div className="text-lg text-[#153C3C] font-medium mt-[8px]">
-                Naveen Durvasula
-              </div>
-              <div className="text-xs text-[#153C3C]">akash founder</div>
-            </div>
+            ))}
           </div>
-          <div className="w-[282px] h-[56px] mt-[45px] flex items-center justify-center font-medium text-base border-2 border-[#272727]">
+          {visibleCount == 8 && (
+            <div
+              className="w-[282px] h-[56px] mt-[45px] flex items-center justify-center font-medium text-base border-2 border-[#272727] cursor-pointer"
+              onClick={handleShowMore}
+            >
+              More to be revealed
+            </div>
+          )}
+
+          {/* <div className="w-[282px] h-[56px] mt-[45px] flex items-center justify-center font-medium text-base border-2 border-[#272727]">
             More to be revealed
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -440,7 +522,7 @@ export default function Home() {
 
       <section className="flex w-full py-[40px]">
         <div>
-          <Image src="/s6/left.png" width={476} height={615} alt="image" />
+          <Image src="/s6/image.png" width={476} height={615} alt="image" />
         </div>
         <div className="flex flex-1 justify-end">
           <div
@@ -458,171 +540,40 @@ export default function Home() {
             </p>
             <ul className="flex flex-col gap-[25px] mt-[46px]">
               <li className="flex items-center gap-2">
-                <svg
-                  width="22"
-                  height="23"
-                  viewBox="0 0 22 23"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g clipPath="url(#clip0_161_248)">
-                    <path
-                      d="M22 11.2964C22 5.22125 17.0751 0.296387 11 0.296387C4.92487 0.296387 0 5.22125 0 11.2964C0 17.3715 4.92487 22.2964 11 22.2964C17.0751 22.2964 22 17.3715 22 11.2964Z"
-                      fill="#CFF285"
-                    />
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M8.83145 12.8387L14.2319 7.63037L15.8887 9.30398L8.83145 16.1859L4.88867 12.3266L6.54537 10.6529L8.83145 12.8387Z"
-                      fill="#272727"
-                    />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_161_248">
-                      <rect
-                        width="22"
-                        height="22"
-                        fill="white"
-                        transform="translate(0 0.296387)"
-                      />
-                    </clipPath>
-                  </defs>
-                </svg>
+                <img src="/icon.png" width={22} height={22} alt="" />
+
                 A chance to present on-stage at CUBES in front of some of the
                 most influential figures in crypto
               </li>
               <li className="flex items-center gap-2">
-                <svg
-                  width="22"
-                  height="23"
-                  viewBox="0 0 22 23"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g clipPath="url(#clip0_161_248)">
-                    <path
-                      d="M22 11.2964C22 5.22125 17.0751 0.296387 11 0.296387C4.92487 0.296387 0 5.22125 0 11.2964C0 17.3715 4.92487 22.2964 11 22.2964C17.0751 22.2964 22 17.3715 22 11.2964Z"
-                      fill="#CFF285"
-                    />
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M8.83145 12.8387L14.2319 7.63037L15.8887 9.30398L8.83145 16.1859L4.88867 12.3266L6.54537 10.6529L8.83145 12.8387Z"
-                      fill="#272727"
-                    />
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
+                  <g clip-path="url(#clip0_161_254)">
+                    <path d="M22 11.2964C22 5.22125 17.0751 0.296387 11 0.296387C4.92487 0.296387 0 5.22125 0 11.2964C0 17.3715 4.92487 22.2964 11 22.2964C17.0751 22.2964 22 17.3715 22 11.2964Z" fill="#CFF285" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.83145 12.8387L14.2319 7.63037L15.8887 9.30398L8.83145 16.1859L4.88867 12.3266L6.54537 10.6529L8.83145 12.8387Z" fill="#272727" />
                   </g>
                   <defs>
-                    <clipPath id="clip0_161_248">
-                      <rect
-                        width="22"
-                        height="22"
-                        fill="white"
-                        transform="translate(0 0.296387)"
-                      />
+                    <clipPath id="clip0_161_254">
+                      <rect width="22" height="22" fill="white" transform="translate(0 0.296387)" />
                     </clipPath>
                   </defs>
                 </svg>
                 Special awards from industry leaders (Stay Tuned!)
               </li>
               <li className="flex items-center gap-2">
-                <svg
-                  width="22"
-                  height="23"
-                  viewBox="0 0 22 23"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g clipPath="url(#clip0_161_248)">
-                    <path
-                      d="M22 11.2964C22 5.22125 17.0751 0.296387 11 0.296387C4.92487 0.296387 0 5.22125 0 11.2964C0 17.3715 4.92487 22.2964 11 22.2964C17.0751 22.2964 22 17.3715 22 11.2964Z"
-                      fill="#CFF285"
-                    />
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M8.83145 12.8387L14.2319 7.63037L15.8887 9.30398L8.83145 16.1859L4.88867 12.3266L6.54537 10.6529L8.83145 12.8387Z"
-                      fill="#272727"
-                    />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_161_248">
-                      <rect
-                        width="22"
-                        height="22"
-                        fill="white"
-                        transform="translate(0 0.296387)"
-                      />
-                    </clipPath>
-                  </defs>
-                </svg>
+                <img src="/icon.png" width={22} height={22} alt="" srcset="" />
+
                 Opportunities for fast-track reviews into accelerators like
                 A16z’s CSS, SpringX, MIT accelerator, and Stanford accelerator
               </li>
               <li className="flex items-center gap-2">
-                <svg
-                  width="22"
-                  height="23"
-                  viewBox="0 0 22 23"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g clipPath="url(#clip0_161_248)">
-                    <path
-                      d="M22 11.2964C22 5.22125 17.0751 0.296387 11 0.296387C4.92487 0.296387 0 5.22125 0 11.2964C0 17.3715 4.92487 22.2964 11 22.2964C17.0751 22.2964 22 17.3715 22 11.2964Z"
-                      fill="#CFF285"
-                    />
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M8.83145 12.8387L14.2319 7.63037L15.8887 9.30398L8.83145 16.1859L4.88867 12.3266L6.54537 10.6529L8.83145 12.8387Z"
-                      fill="#272727"
-                    />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_161_248">
-                      <rect
-                        width="22"
-                        height="22"
-                        fill="white"
-                        transform="translate(0 0.296387)"
-                      />
-                    </clipPath>
-                  </defs>
-                </svg>
+                <img src="/icon.png" width={22} height={22} alt="" srcset="" />
+
                 Tap into a powerful investor network to connect with top-tier
                 VCs looking to fund the next big crypto innovations
               </li>
               <li className="flex items-center gap-2">
-                <svg
-                  width="22"
-                  height="23"
-                  viewBox="0 0 22 23"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g clipPath="url(#clip0_161_248)">
-                    <path
-                      d="M22 11.2964C22 5.22125 17.0751 0.296387 11 0.296387C4.92487 0.296387 0 5.22125 0 11.2964C0 17.3715 4.92487 22.2964 11 22.2964C17.0751 22.2964 22 17.3715 22 11.2964Z"
-                      fill="#CFF285"
-                    />
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M8.83145 12.8387L14.2319 7.63037L15.8887 9.30398L8.83145 16.1859L4.88867 12.3266L6.54537 10.6529L8.83145 12.8387Z"
-                      fill="#272727"
-                    />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_161_248">
-                      <rect
-                        width="22"
-                        height="22"
-                        fill="white"
-                        transform="translate(0 0.296387)"
-                      />
-                    </clipPath>
-                  </defs>
-                </svg>
+                <img src="/icon.png" width={22} height={22} alt="" srcset="" />
+
                 Directly connecting with top-tier public blockchains eager to
                 attract quality projects to thrive in their ecosystem.
               </li>
