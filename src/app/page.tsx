@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
 'use client'
 import Image from 'next/image'
@@ -5,6 +6,39 @@ import { useState } from 'react';
 
 export default function Home() {
   const [visibleCount, setVisibleCount] = useState(8);
+
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  const toggleFAQ = (index: number) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
+  const questions = [
+    {
+      question: 'Are Projects at All Stages Welcome to Apply?',
+      answer:
+        'Yes, projects at all stages of development are welcome to apply. Whether you\'re in the early ideation phase or have a more developed project, we encourage you to participate.',
+    },
+    {
+      question: 'Can I Participate in the Pitching Sessions Online?',
+      answer:
+        'No, the pitching sessions must be conducted in person at the CUBES.',
+    },
+    {
+      question: 'What Benefits Do I Receive Upon Acceptance?',
+      answer:
+        'Acceptance to CUBES grants you access to all summit events, including panel discussions, keynote speeches, pitching sessions, and the exclusive afterParty. You\'ll also receive opportunities for networking with industry leaders and peers, and special rewards.',
+    },
+    {
+      question: 'How many projects will be accepted?',
+      answer: 'CUBES 2024 only accepts approximately 10-12 projects.',
+    },
+    {
+      question: 'Will My Expenses Be Covered?',
+      answer:
+        'Selected Demo Day teams will receive a grant to cover their expenses incurred during the event.',
+    },
+  ];
 
   // 数据数组
   const speakers = [
@@ -17,12 +51,14 @@ export default function Home() {
     { id: 7, name: "Tom Schmidt(dragonfly)", company: "akash founder", img: "/speakers/7.png" },
     { id: 8, name: "jiahao(Flock)", company: "akash founder", img: "/speakers/8.png" },
     { id: 9, name: "Chris(Mirror World)", company: "akash founder", img: "/speakers/9.png" },
+    { id: 10, name: "Tim Draper(Draper)", company: "-", img: "/speakers/10.png" },
+    { id: 11, name: "Lily Liu (Solana)", company: "-", img: "/speakers/11.png" },
   ];
 
   // 点击按钮后展示更多数据
   const handleShowMore = () => {
     if (visibleCount == 8) {
-      setVisibleCount(9);
+      setVisibleCount(11);
     } else {
       setVisibleCount(8);
     }
@@ -77,13 +113,13 @@ export default function Home() {
                 </li>
               </ul>
             </nav>
-            <div className="flex px-[64px] py-[16px] text-base font-medium bg-[#272727] text-white cursor-pointer">
+            <div className="flex px-[64px] py-[16px] text-base font-medium bg-[#272727] text-white cursor-pointer" >
               Apply for CUBES
             </div>
           </header>
           <div className="flex justify-center relative text-[68px] font-semibold mt-[60px]">
-            <span className="z-[1]">CUBES</span>
-            <div className="absolute bottom-[10px] w-[322px] h-[28px] bg-[#CFF285]"></div>
+            <span className="z-[1]" style={{ fontFamily: 'ClashDisplay, sans-serif' }}> CUBE Summit</span>
+            <div className="absolute bottom-[10px] w-[400px] h-[28px] bg-[#CFF285]"></div>
           </div>
           <div className="text-[24px] text-[#383F4E] mt-[26px] font-semibold">
             October 3rd ｜ NYC
@@ -242,11 +278,11 @@ export default function Home() {
             className="flex flex-col items-start w-[582px] mt-[100px]"
             style={{ marginLeft: 'calc((100vw - 1200px) / 2)' }}
           >
-            <div className="flex justify-center relative text-[48px] font-semibold mt-[60px]">
-              <span>What is CUBES?</span>
+            <div className="flex justify-center relative text-[48px] font-semibold mt-[60px]" style={{ fontFamily: 'ClashDisplay, sans-serif' }}>
+              <span>CUBE Summit</span>
               <div className="absolute left-[8px] bottom-[12px] -z-[1] w-[310px] h-[10px] bg-[#CFF285] rounded-lg"></div>
             </div>
-            <p className="mt-[16px] text-[#6B6B6B] text-lg font-weight-normal">
+            <p className="mt-[16px] text-[#6B6B6B] text-lg font-weight-normal" style={{ fontFamily: 'Inter Display' }}>
               Hosted in the vibrant city of NewYork on October 3rd, CUBES brings
               together top minds from Yale, Stanford, UCB, Harvard, UPenn, MIT,
               Cornell, NYU, Columbia, and Oxford, along with industry leaders
@@ -281,11 +317,11 @@ export default function Home() {
             className="flex flex-col items-start w-[562px] mt-[100px]"
             style={{ marginRight: 'calc((100vw - 1200px) / 2)' }}
           >
-            <div className="flex justify-center relative text-[48px] font-semibold mt-[60px]">
-              <span>CUBES: Uniting Minds, Empowering Networks</span>
-              <div className="absolute left-[0px] bottom-[12px] -z-[1] w-[310px] h-[10px] bg-[#CFF285] rounded-lg"></div>
+            <div className="flex justify-center relative text-[48px] font-semibold mt-[60px]" style={{ fontFamily: 'ClashDisplay, sans-serif' }}>
+              <span>CUBE Summit: Uniting Minds, Empowering Networks</span>
+              <div className="absolute left-[0px] bottom-[12px] -z-[1] w-[510px] h-[10px] bg-[#CFF285] rounded-lg"></div>
             </div>
-            <p className="mt-[16px] text-[#6B6B6B] text-lg">
+            <p className="mt-[16px] text-[#6B6B6B] text-lg" style={{ fontFamily: 'Inter Display' }}>
               We unite top American universities, leveraging robust alumni
               networks to drive innovation in blockchain. By connecting academia
               and industry, we have formed a thriving network. We invite you to
@@ -311,24 +347,26 @@ export default function Home() {
             Get ready to be inspired by a lineup of world-class industry leaders
             in the crypto
           </p>
-          <div className="w-full flex flex-wrap justify-around gap-y-[30px] mt-[55px]">
+          <div className="w-full flex flex-wrap justify-start gap-y-[30px] mt-[55px]">
             {speakers.slice(0, visibleCount).map(speaker => (
-              <div key={speaker.id} className="flex flex-col items-start p-[18px] rounded-md border-2 border-[#E8E7EE]">
+              <div key={speaker.id} className={
+                `flex flex-col items-start p-[18px] rounded-md border-2 border-[#E8E7EE] ${(speaker.id)% 4 == 0 ? "" : "mr-[25px]"} `
+              }>
                 <div className="relative">
                   <img src={speaker.img} alt={speaker.name} className="w-[238px] h-[238px] bg-[#E7D6FF]" />
-                  <img src="/speakers/0.png" alt="overlay" className="w-[105px] h-[38px] absolute left-[23px] bottom-[16px]" />
+                  <img src={`/speakers/tag${speaker.id}.png`} className="w-[105px] h-[38px] absolute left-[23px] bottom-[16px]" />
                 </div>
                 <div className="text-lg text-[#153C3C] font-medium mt-[8px]">{speaker.name}</div>
                 <div className="text-xs text-[#153C3C]">{speaker.company}</div>
               </div>
             ))}
           </div>
-          {visibleCount == 8 && (
+          {(
             <div
               className="w-[282px] cursor-pointer h-[56px] mt-[45px] flex items-center justify-center font-medium text-base border-2 border-[#272727]"
               onClick={handleShowMore}
             >
-              More to be revealed
+              More Speakers
             </div>
           )}
 
@@ -564,7 +602,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="flex flex-col py-[112px] items-center w-full">
+      {/* <section className="flex flex-col py-[112px] items-center w-full">
         <div className="text-[48px] text-[#272727] font-semibold">FAQs</div>
         <div className="flex flex-col gap-y-[16px] w-[768px]">
           <div
@@ -760,7 +798,53 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+
+<section className="flex flex-col py-[112px] items-center w-full">
+      <div className="text-[48px] text-[#272727] font-semibold">FAQs</div>
+      <div className="flex flex-col gap-y-[16px] w-[768px]">
+        {questions.map((item, index) => (
+          <div
+            key={index}
+            className="flex flex-col border-[1px] border-black"
+          >
+            <div
+              className="flex justify-between items-center py-[20px] px-[24px] text-lg text-black font-semibold cursor-pointer"
+              onClick={() => toggleFAQ(index)}
+            >
+              {item.question}
+              <span>
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style={{
+                    transform: openIndex === index ? 'rotate(45deg)' : 'rotate(0)',
+                    transition: 'transform 0.2s ease-in-out',
+                  }}
+                >
+                  <path
+                    d="M25.3336 15.667V16.3336C25.3336 16.7018 25.0352 17.0003 24.667 17.0003H17.0003V24.667C17.0003 25.0351 16.7018 25.3336 16.3336 25.3336H15.667C15.2988 25.3336 15.0003 25.0351 15.0003 24.667V17.0003H7.33366C6.96547 17.0003 6.66699 16.7018 6.66699 16.3336V15.667C6.66699 15.2988 6.96547 15.0003 7.33366 15.0003H15.0003V7.33365C15.0003 6.96546 15.2988 6.66699 15.667 6.66699H16.3336C16.7018 6.66699 17.0003 6.96546 17.0003 7.33365V15.0003H24.667C25.0352 15.0003 25.3336 15.2988 25.3336 15.667Z"
+                    fill="black"
+                  />
+                </svg>
+              </span>
+            </div>
+            <div
+              className="p-[24px] border-t-[1px] border-black text-sm text-[#00000099]"
+              style={{
+                display: openIndex === index ? 'block' : 'none',
+              }}
+            >
+              {item.answer}
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+
 
       <footer className="w-full pt-[50px] px-[64px] pb-[30px] bg-[#272727]">
         <div className="flex justify-between">
