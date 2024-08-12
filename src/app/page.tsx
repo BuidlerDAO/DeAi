@@ -77,7 +77,7 @@ export default function Home() {
                 </li>
               </ul>
             </nav>
-            <div className="flex px-[64px] py-[16px] text-base font-medium bg-[#272727] text-white">
+            <div className="flex px-[64px] py-[16px] text-base font-medium bg-[#272727] text-white cursor-pointer">
               Apply for CUBES
             </div>
           </header>
@@ -99,10 +99,10 @@ export default function Home() {
             projects, shaping the future stars of the crypto world.
           </p>
           <div className="flex gap-[80px] mt-[25px]">
-            <div className="flex items-center justify-center w-[280px] h-[56px] text-[16px] font-medium text-[#272727] border-2 border-black rounded-[4px]">
+            <div className="flex cursor-pointer items-center justify-center w-[280px] h-[56px] text-[16px] font-medium text-[#272727] border-2 border-black rounded-[4px]">
               Register for Summit
             </div>
-            <div className="flex items-center justify-center gap-[8px] w-[280px] h-[56px] text-[16px] font-medium text-white bg-[#272727] rounded-[4px]">
+            <div className="flex items-center cursor-pointer justify-center gap-[8px] w-[280px] h-[56px] text-[16px] font-medium text-white bg-[#272727] rounded-[4px]">
               <svg
                 width="19"
                 height="22"
@@ -256,7 +256,7 @@ export default function Home() {
               leverage powerful alumni networks to shape the future stars of the
               crypto world.
             </p>
-            <div className="w-[146px] h-[56px] mt-[45px] flex items-center justify-center font-medium text-base border-2 border-[#272727]">
+            <div className="cursor-pointer w-[146px] h-[56px] mt-[45px] flex items-center justify-center font-medium text-base border-2 border-[#272727]">
               Read more
             </div>
           </div>
@@ -292,7 +292,7 @@ export default function Home() {
               become a vital part of our community. Join us on October 3rd and
               be a part of CUBES.
             </p>
-            <div className="w-[216px] h-[56px] mt-[45px] flex items-center justify-center font-medium text-base border-2 border-[#272727]">
+            <div className="w-[216px] cursor-pointer h-[56px] mt-[45px] flex items-center justify-center font-medium text-base border-2 border-[#272727]">
               Register for Summit
             </div>
           </div>
@@ -312,97 +312,6 @@ export default function Home() {
             in the crypto
           </p>
           <div className="w-full flex flex-wrap justify-around gap-y-[30px] mt-[55px]">
-            {/* <div className="flex flex-col items-start p-[18px] rounded-md border-2 border-[#E8E7EE]">
-              <div className="relative">
-                <img src="/speakers/1.png" alt="" className="w-[238px] h-[238px] bg-[#E7D6FF]" />
-                <img src="/speakers/0.png" alt="" className="w-[105px] h-[38px] absolute left-[23px] bottom-[16px]" />
-              </div>
-              <div className="text-lg text-[#153C3C] font-medium mt-[8px]">
-                Greg Osuri
-              </div>
-              <div className="text-xs text-[#153C3C]">Akash Network</div>
-            </div>
-            <div className="flex flex-col items-start p-[18px] rounded-md border-2 border-[#E8E7EE]">
-              <div className="relative">
-                <img src="/speakers/2.png" alt="" className="w-[238px] h-[238px] bg-[#E7D6FF]" />
-                <img src="/speakers/0.png" alt="" className="w-[105px] h-[38px] absolute left-[22px] bottom-[16px]" />
-              </div>
-              <div className="text-lg text-[#153C3C] font-medium mt-[8px]">
-                Naveen Durvasula
-              </div>
-              <div className="text-xs text-[#153C3C]">Ritual</div>
-            </div>
-            <div className="flex flex-col items-start p-[18px] rounded-md border-2 border-[#E8E7EE]">
-              <div className="relative">
-                <img src="/speakers/3.png" alt="" className="w-[238px] h-[238px] bg-[#E7D6FF]" />
-                <img src="/speakers/0.png" alt="" className="w-[105px] h-[38px] absolute left-[23px] bottom-[16px]" />
-              </div>
-              <div className="text-lg text-[#153C3C] font-medium mt-[8px]">
-                Anna Bertha
-              </div>
-              <div className="text-xs text-[#153C3C]">DCG</div>
-            </div>
-            <div className="flex flex-col items-start p-[18px] rounded-md border-2 border-[#E8E7EE]">
-              <div className="relative">
-                <img src="/speakers/4.png" alt="" className="w-[238px] h-[238px] bg-[#E7D6FF]" />
-                <img src="/speakers/0.png" alt="" className="w-[105px] h-[38px] absolute left-[23px] bottom-[16px]" />
-              </div>
-              <div className="text-lg text-[#153C3C] font-medium mt-[8px]">
-                Ben Fielding
-              </div>
-              <div className="text-xs text-[#153C3C]">Gensyn</div>
-            </div>
-            <div className="flex flex-col items-start p-[18px] rounded-md border-2 border-[#E8E7EE]">
-              <div className="relative">
-                <img src="/speakers/5.png" alt="" className="w-[238px] h-[238px] bg-[#E7D6FF]" />
-                <img src="/speakers/0.png" alt="" className="w-[105px] h-[38px] absolute left-[23px] bottom-[16px]" />
-              </div>
-              <div className="text-lg text-[#153C3C] font-medium mt-[8px]">
-                Christian Ondaatje
-              </div>
-              <div className="text-xs text-[#153C3C]">Founding Platform Engineer</div>
-            </div>
-            <div className="flex flex-col items-start p-[18px] rounded-md border-2 border-[#E8E7EE]">
-              <div className="relative">
-                <img src="/speakers/6.png" alt="" className="w-[238px] h-[238px] bg-[#E7D6FF]" />
-                <img src="/speakers/0.png" alt="" className="w-[105px] h-[38px] absolute left-[23px] bottom-[16px]" />
-              </div>
-              <div className="text-lg text-[#153C3C] font-medium mt-[8px]">
-                Guy Wuollet(a16z)
-              </div>
-              <div className="text-xs text-[#153C3C]">akash founder</div>
-            </div>
-            <div className="flex flex-col items-start p-[18px] rounded-md border-2 border-[#E8E7EE]">
-              <div className="relative">
-                <img src="/speakers/7.png" alt="" className="w-[238px] h-[238px] bg-[#E7D6FF]" />
-                <img src="/speakers/0.png" alt="" className="w-[105px] h-[38px] absolute left-[23px] bottom-[16px]" />
-              </div>
-              <div className="text-lg text-[#153C3C] font-medium mt-[8px]">
-                Tom Schmidt(dragonfly)
-              </div>
-              <div className="text-xs text-[#153C3C]">akash founder</div>
-            </div>
-            <div className="flex flex-col items-start p-[18px] rounded-md border-2 border-[#E8E7EE]">
-              <div className="relative">
-                <img src="/speakers/8.png" alt="" className="w-[238px] h-[238px] bg-[#E7D6FF]" />
-                <img src="/speakers/0.png" alt="" className="w-[105px] h-[38px] absolute left-[23px] bottom-[16px]" />
-              </div>
-              <div className="text-lg text-[#153C3C] font-medium mt-[8px]">
-                jiahao(Flock)
-              </div>
-              <div className="text-xs text-[#153C3C]">akash founder</div>
-            </div>
-            <div className="flex flex-col items-start p-[18px] rounded-md border-2 border-[#E8E7EE]">
-              <div className="relative">
-                <img src="/speakers/9.png" alt="" className="w-[238px] h-[238px] bg-[#E7D6FF]" />
-                <img src="/speakers/0.png" alt="" className="w-[105px] h-[38px] absolute left-[23px] bottom-[16px]" />
-              </div>
-              <div className="text-lg text-[#153C3C] font-medium mt-[8px]">
-                Chris( Mirror World）
-              </div>
-              <div className="text-xs text-[#153C3C]">akash founder</div>
-            </div> */}
-
             {speakers.slice(0, visibleCount).map(speaker => (
               <div key={speaker.id} className="flex flex-col items-start p-[18px] rounded-md border-2 border-[#E8E7EE]">
                 <div className="relative">
@@ -416,7 +325,7 @@ export default function Home() {
           </div>
           {visibleCount == 8 && (
             <div
-              className="w-[282px] h-[56px] mt-[45px] flex items-center justify-center font-medium text-base border-2 border-[#272727] cursor-pointer"
+              className="w-[282px] cursor-pointer h-[56px] mt-[45px] flex items-center justify-center font-medium text-base border-2 border-[#272727]"
               onClick={handleShowMore}
             >
               More to be revealed
@@ -503,7 +412,7 @@ export default function Home() {
                 team that inspires you, unlocking limitless possibilities
                 together!
               </p>
-              <div className="w-[282px] h-[56px] mt-[32px] flex items-center justify-center font-medium text-base border-2 border-[#272727]">
+              <div className="w-[282px] cursor-pointer h-[56px] mt-[32px] flex items-center justify-center font-medium text-base border-2 border-[#272727]">
                 Apply to Pitch Now
               </div>
             </div>
