@@ -9,6 +9,11 @@ export default function Home() {
   const [visibleCount, setVisibleCount] = useState(9);
 
   const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+
+  const handleClick = (index: number) => {
+    setActiveIndex(index);
+  };
 
   const toggleFAQ = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -103,21 +108,18 @@ export default function Home() {
             </div>
             <nav>
               <ul className="flex items-center gap-[36px] h-full text-[#272727]">
-                <li className="font-semibold">Home</li>
-                <li>
-                  <a href="#about">About</a>
-                </li>
-
-                <li>
-                  <a href="#speakers">Speakers</a>
-                </li>
-                <li>
-                  <a href="#partners">Partners</a>
-                </li>
-                <li>
-                  <a href="#agenda">Agenda</a>
-                </li>
+                {["Home", "About", "Speakers", "Partners", "Agenda"].map((item, index) => (
+                  <li
+                    key={index}
+                    className={` cursor-pointer ${activeIndex === index ? "font-semibold" : ""
+                      }`}
+                    onClick={() => handleClick(index)}
+                  >
+                    <a href={`#${item.toLowerCase()}`}>{item}</a>
+                  </li>
+                ))}
               </ul>
+
             </nav>
             <Tooltip title="coming soon">
               <div className="flex px-[24px] py-[16px] text-base font-medium bg-[#272727] text-white cursor-pointer rounded-[4px]" >
@@ -127,7 +129,7 @@ export default function Home() {
 
 
           </header>
-          <div className="flex justify-center relative text-[68px] font-semibold mt-[160px]">
+          <div id='home' className="flex justify-center relative text-[68px] font-semibold mt-[160px]">
             <span className="z-[1]" style={{ fontFamily: 'ClashDisplay, sans-serif' }}> CUBE Summit</span>
             <div className="absolute bottom-[10px] w-[400px] h-[28px] bg-[#CFF285]"></div>
           </div>
@@ -178,7 +180,7 @@ export default function Home() {
           <p className="text-[#383F4E] text-[24px] font-semibold mt-[80px] text-left w-full">
             Initiators
           </p>
-          <div className="flex flex-wrap gap-x-[34px] gap-y-[24px] mt-[24px]">
+          <div className="flex flex-wrap  gap-x-[34px] items-center gap-y-[24px] mt-[24px]">
             <Image
               className="w-[136px] h-[48px]"
               src="/banner/initiators/image1.png"
@@ -186,13 +188,20 @@ export default function Home() {
               height={48}
               alt="icon"
             />
-            {/* <Image
+            <Image
               className="w-[136px] h-[54px]"
               src="/banner/initiators/image2.png"
               width={136}
               height={48}
               alt="icon"
-            /> */}
+            />
+            <Image
+              className="w-[136px] h-[33px]"
+              src="/banner/initiators/image3.png"
+              width={136}
+              height={48}
+              alt="icon"
+            />
 
             <Image
               className="w-[136px] h-[48px]"
@@ -202,26 +211,31 @@ export default function Home() {
               alt="icon"
             />
             <Image
-              className="w-[136px] h-[48px]"
-              src="/banner/initiators/image3.png"
+              className="w-[148px] h-[58px]"
+              src="/banner/initiators/image7.png"
               width={136}
               height={48}
               alt="icon"
             />
+
             <Image
-              className="w-[136px] h-[48px]"
-              src="/banner/initiators/image10.png"
+              className="w-[136px] h-[54px]"
+              src="/banner/initiators/image6.png"
               width={136}
               height={48}
               alt="icon"
             />
+
+
             <Image
-              className="w-[136px] h-[48px]"
+              className="w-[97px] h-[48px]"
               src="/banner/initiators/image11.png"
-              width={136}
+              width={97}
               height={48}
               alt="icon"
             />
+
+
 
 
             <Image
@@ -233,18 +247,13 @@ export default function Home() {
             />
             <Image
               className="w-[136px] h-[54px]"
-              src="/banner/initiators/image6.png"
+              src="/banner/initiators/image12.png"
               width={136}
               height={48}
               alt="icon"
             />
-            <Image
-              className="w-[148px] h-[68px]"
-              src="/banner/initiators/image7.png"
-              width={136}
-              height={48}
-              alt="icon"
-            />
+
+
 
 
           </div>
@@ -953,28 +962,18 @@ export default function Home() {
             />
           </svg>
           <nav>
+
             <ul className="flex gap-[32px] text-white">
-              {/* <li className="font-semibold">Home</li>
-              <li>About</li>
-              <li>Speakers</li>
-              <li>Agenda</li>
-              <li>Partners</li>
-              <li>Contact Us</li> */}
-              <li className="font-semibold">Home</li>
-              <li>
-                <a href="#about">About</a>
-              </li>
-
-              <li>
-                <a href="#speakers">Speakers</a>
-              </li>
-              <li>
-                <a href="#partners">Partners</a>
-              </li>
-              <li>
-                <a href="#agenda">Agenda</a>
-              </li>
-
+              {["Home", "About", "Speakers", "Partners", "Agenda"].map((item, index) => (
+                <li
+                  key={index}
+                  className={` cursor-pointer ${activeIndex === index ? "font-semibold" : ""
+                    }`}
+                  onClick={() => handleClick(index)}
+                >
+                  <a href={`#${item.toLowerCase()}`}>{item}</a>
+                </li>
+              ))}
             </ul>
           </nav>
           <div className="flex items-center gap-[14px]">
