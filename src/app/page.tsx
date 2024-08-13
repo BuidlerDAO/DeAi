@@ -6,7 +6,7 @@ import { useState } from 'react';
 import { Tooltip, Button } from 'antd';
 
 export default function Home() {
-  const [visibleCount, setVisibleCount] = useState(8);
+  const [visibleCount, setVisibleCount] = useState(9);
 
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
@@ -43,17 +43,17 @@ export default function Home() {
 
   // 数据数组
   const speakers = [
-    { id: 1, name: "Greg Osuri", company: "Founder of Akash", img: "/speakers/1.png" },
-    { id: 2, name: "Naveen Durvasula", company: "Core Member of Ritual", img: "/speakers/2.png" },
-    { id: 3, name: "Anna Bertha", company: "Investor of DCG", img: "/speakers/3.png" },
-    { id: 4, name: "Ben Fielding", company: "Co-founder Gensyn", img: "/speakers/4.png" },
-    { id: 5, name: "Christian Ondaatje", company: "Platform Engineer of Hyperbolic", img: "/speakers/5.png" },
     { id: 6, name: "Guy Wuollet", company: "Investment Partner of a16z crypto", img: "/speakers/6.png" },
     { id: 7, name: "Tom Schmidt", company: "Partner of Dragonfly", img: "/speakers/7.png" },
+    { id: 3, name: "Anna Bertha", company: "Investor of DCG", img: "/speakers/3.png" },
     { id: 8, name: "jiahao", company: "Founder and CEO of FLock.io", img: "/speakers/8.png" },
     { id: 9, name: "Chris", company: "Co-founder of Sonic / Mirror World", img: "/speakers/9.png" },
-    { id: 10, name: "Tim Draper", company: "Founder of Draper", img: "/speakers/10.png" },
-    { id: 11, name: "Lily Liu", company: "President of Solana Foundation", img: "/speakers/11.png" },
+    { id: 1, name: "Greg Osuri", company: "Founder of Akash", img: "/speakers/1.png" },
+    { id: 2, name: "Naveen Durvasula", company: "Core Member of Ritual", img: "/speakers/2.png" },
+    { id: 4, name: "Ben Fielding", company: "Co-founder Gensyn", img: "/speakers/4.png" },
+    { id: 5, name: "Christian Ondaatje", company: "Platform Engineer of Hyperbolic", img: "/speakers/5.png" },
+    // { id: 10, name: "Tim Draper", company: "Founder of Draper", img: "/speakers/10.png" },
+    // { id: 11, name: "Lily Liu", company: "President of Solana Foundation", img: "/speakers/11.png" },
   ];
 
   // 点击按钮后展示更多数据
@@ -363,7 +363,7 @@ export default function Home() {
           <div className="w-full flex flex-wrap justify-start gap-y-[30px] mt-[55px]">
             {speakers.slice(0, visibleCount).map(speaker => (
               <div key={speaker.id} className={
-                `flex flex-col items-start p-[18px] rounded-md border-2 border-[#E8E7EE] ${(speaker.id) % 4 == 0 ? "" : "mr-[25px]"} `
+                `flex flex-col items-start p-[18px] rounded-md border-2 border-[#E8E7EE] cursor-pointer ${(speaker.id) % 4 == 0 ? "" : "mr-[25px]"} `
               }>
                 <div className="relative">
                   <img src={speaker.img} alt={speaker.name} className="w-[238px] h-[238px] bg-[#E7D6FF]" />
@@ -373,15 +373,30 @@ export default function Home() {
                 <div className="text-xs text-[#153C3C]">{speaker.company}</div>
               </div>
             ))}
+
+            <div className="flex flex-col justify-center cursor-pointer  rounded-lg border-gray-200 border-solid border-[1.435px] w-[273px] h-[325px]">
+              <div className="flex flex-col mb-0">
+                <div className="flex flex-col justify-center items-center self-center px-2.5 bg-zinc-200 h-[58px] min-h-[58px] rounded-[44px] w-[58px]">
+                  <img
+                    loading="lazy"
+                    src="/imagex.png"
+                    className="object-contain w-full rounded-none aspect-square"
+                  />
+                </div>
+                <div className="mt-3 text-xl font-medium text-center text-cyan-950 w-full">
+                  More to be revealed
+                </div>
+              </div>
+            </div>
           </div>
-          {(
+          {/* {(
             <div
               className="w-[282px] cursor-pointer h-[56px] mt-[45px] flex items-center justify-center font-medium text-base border-2 border-[#272727]"
               onClick={handleShowMore}
             >
               More Speakers
             </div>
-          )}
+          )} */}
 
           {/* <div className="w-[282px] h-[56px] mt-[45px] flex items-center justify-center font-medium text-base border-2 border-[#272727]">
             More to be revealed
