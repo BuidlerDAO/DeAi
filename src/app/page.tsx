@@ -295,14 +295,8 @@ export default function Home() {
               <div className="absolute left-[8px] bottom-[12px] -z-[1] w-[310px] h-[10px] bg-[#CFF285] rounded-lg"></div>
             </div>
             <p className="mt-[16px] text-[#6B6B6B] text-lg font-weight-normal" style={{ fontFamily: 'Inter Display' }}>
-              Hosted in the vibrant city of NewYork on October 3rd, CUBES brings
-              together top minds from Yale, Stanford, UCB, Harvard, UPenn, MIT,
-              Cornell, NYU, Columbia, and Oxford, along with industry leaders
-              from leading AI projects, major public blockchains, and top
-              venture capital firms. Featuring panel discussions, keynote
-              speeches, pitching sessions, and an exclusive afterParty, we
-              leverage powerful alumni networks to shape the future stars of the
-              crypto world.
+            Hosted in the vibrant city of NewYork on October 3rd, Collaborative University Blockchain Ecosystem Summit (CUBE Summit)brings together top minds from Yale, Stanford, UCB, Harvard, UPenn, MIT, Cornell, NYU, Columbia, and Oxford, along with industry leaders from leading AI projects, major public blockchains, and top venture capital firms.
+            Featuring panel discussions, keynote speeches, pitching sessions, and an exclusive after-party, we leverage powerful alumni networks to shape the future stars of the crypto world.
             </p>
 
 
@@ -339,11 +333,7 @@ export default function Home() {
               <div className="absolute left-[0px] bottom-[12px] -z-[1] w-[510px] h-[10px] bg-[#CFF285] rounded-lg"></div>
             </div>
             <p className="mt-[16px] text-[#6B6B6B] text-lg" style={{ fontFamily: 'Inter Display' }}>
-              We unite top American universities, leveraging robust alumni
-              networks to drive innovation in blockchain. By connecting academia
-              and industry, we have formed a thriving network. We invite you to
-              become a vital part of our community. Join us on October 3rd and
-              be a part of CUBES.
+            We unite top American universities, leveraging robust alumni networks to drive innovation in blockchain. By connecting academia and  industry, we have formed a thriving network. We invite you to become a vital part of our community. Join us on October 3rd and be a part of CUBE Summit.
             </p>
 
 
@@ -358,8 +348,10 @@ export default function Home() {
 
       <section
         id="speakers"
-        className="flex justify-center w-full py-[40px] bg-[#F6F9FC]"
+        className="flex justify-center w-full py-[40px] bg-[#F6F9FC] relative"
       >
+        <img src="/banner/image.png" className="h-[740px]  absolute top-[466px] left-[0px]" />
+
         <div className="flex flex-col items-center w-[1200px]">
           <div className="w-full text-[48px] font-semibold text-center text-[#272727]">
             Speakers
@@ -375,7 +367,7 @@ export default function Home() {
               }>
                 <div className="relative">
                   <img src={speaker.img} alt={speaker.name} className="w-[238px] h-[238px] bg-[#E7D6FF]" />
-                  <img src={`/speakers/tag${speaker.id}.png`} className="w-[105px] h-[38px] absolute left-[23px] bottom-[16px]" />
+                  <img src={`/speakers/tag${speaker.id}.png`} className="w-[105px] h-[38px] absolute left-[22px] bottom-[16px]" />
                 </div>
                 <div className="text-lg text-[#153C3C] font-medium mt-[8px]">{speaker.name}</div>
                 <div className="text-xs text-[#153C3C]">{speaker.company}</div>
@@ -399,8 +391,10 @@ export default function Home() {
 
       <section
         id="agenda"
-        className="flex justify-center w-full py-[40px] bg-[#F6F9FC]"
+        className="flex justify-center w-full py-[40px] bg-[#F6F9FC] relative"
       >
+        <img src="/banner/image1.png" className="h-[172px]  absolute top-[0px] right-[0px]" />
+
         <div className="flex flex-col items-center w-[1200px]">
           <div className="text-[48px] text-[#272727] font-semibold">Agenda</div>
           <div className="flex flex-col w-full mt-[40px] bg-[#EEF5FC]">
@@ -445,7 +439,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="flex flex-col justify-center w-full">
+      <section className="flex flex-col justify-center w-full relative">
+
+      <img src="/banner/image2.png" className="w-[403px]  absolute top-[0px] right-[0px]" />
+        
         <div className="text-[48px] text-[#272727] font-semibold text-center mt-[40px]">
           Pitching Session
         </div>
