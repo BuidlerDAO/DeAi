@@ -295,8 +295,8 @@ export default function Home() {
               <div className="absolute left-[8px] bottom-[12px] -z-[1] w-[310px] h-[10px] bg-[#CFF285] rounded-lg"></div>
             </div>
             <p className="mt-[16px] text-[#6B6B6B] text-lg font-weight-normal" style={{ fontFamily: 'Inter Display' }}>
-            Hosted in the vibrant city of NewYork on October 3rd, Collaborative University Blockchain Ecosystem Summit (CUBE Summit)brings together top minds from Yale, Stanford, UCB, Harvard, UPenn, MIT, Cornell, NYU, Columbia, and Oxford, along with industry leaders from leading AI projects, major public blockchains, and top venture capital firms.
-            Featuring panel discussions, keynote speeches, pitching sessions, and an exclusive after-party, we leverage powerful alumni networks to shape the future stars of the crypto world.
+              Hosted in the vibrant city of NewYork on October 3rd, Collaborative University Blockchain Ecosystem Summit (CUBE Summit)brings together top minds from Yale, Stanford, UCB, Harvard, UPenn, MIT, Cornell, NYU, Columbia, and Oxford, along with industry leaders from leading AI projects, major public blockchains, and top venture capital firms.
+              Featuring panel discussions, keynote speeches, pitching sessions, and an exclusive after-party, we leverage powerful alumni networks to shape the future stars of the crypto world.
             </p>
 
 
@@ -333,7 +333,7 @@ export default function Home() {
               <div className="absolute left-[0px] bottom-[12px] -z-[1] w-[510px] h-[10px] bg-[#CFF285] rounded-lg"></div>
             </div>
             <p className="mt-[16px] text-[#6B6B6B] text-lg" style={{ fontFamily: 'Inter Display' }}>
-            We unite top American universities, leveraging robust alumni networks to drive innovation in blockchain. By connecting academia and  industry, we have formed a thriving network. We invite you to become a vital part of our community. Join us on October 3rd and be a part of CUBE Summit.
+              We unite top American universities, leveraging robust alumni networks to drive innovation in blockchain. By connecting academia and  industry, we have formed a thriving network. We invite you to become a vital part of our community. Join us on October 3rd and be a part of CUBE Summit.
             </p>
 
 
@@ -441,8 +441,8 @@ export default function Home() {
 
       <section className="flex flex-col justify-center w-full relative">
 
-      <img src="/banner/image2.png" className="w-[403px]  absolute top-[0px] right-[0px]" />
-        
+        <img src="/banner/image2.png" className="w-[403px]  absolute top-[0px] right-[0px]" />
+
         <div className="text-[48px] text-[#272727] font-semibold text-center mt-[40px]">
           Pitching Session
         </div>
@@ -517,7 +517,7 @@ export default function Home() {
               </li>
               <li className="flex items-center gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
-                  <g clip-path="url(#clip0_161_254)">
+                  <g clipPath="url(#clip0_161_254)">
                     <path d="M22 11.2964C22 5.22125 17.0751 0.296387 11 0.296387C4.92487 0.296387 0 5.22125 0 11.2964C0 17.3715 4.92487 22.2964 11 22.2964C17.0751 22.2964 22 17.3715 22 11.2964Z" fill="#CFF285" />
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M8.83145 12.8387L14.2319 7.63037L15.8887 9.30398L8.83145 16.1859L4.88867 12.3266L6.54537 10.6529L8.83145 12.8387Z" fill="#272727" />
                   </g>
@@ -542,7 +542,7 @@ export default function Home() {
                 VCs looking to fund the next big crypto innovations
               </li>
               <li className="flex items-center gap-2">
-                <img src="/icon.png" width={22} height={22} alt=""/>
+                <img src="/icon.png" width={22} height={22} alt="" />
 
                 Directly connecting with top-tier public blockchains eager to
                 attract quality projects to thrive in their ecosystem.
@@ -551,15 +551,10 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="flex flex-col items-center w-full bg-[#272727] py-[40px]">
+      {/* <section className="flex flex-col items-center w-full bg-[#272727] py-[40px]">
         <div className="text-[#DDF472] text-[48px] font-semibold">Partners</div>
         <div className="flex flex-col mt-[36px]">
           <div className="flex w-full justify-center items-center gap-[120px] pl-[140px] pr-[140px]">
-            {/* <div
-              className="w-[132px] h-[32px]"
-              style={{ background: 'url("/s7/image1.png")' }}
-            /> */}
-            {/* <Image className="w-[136px] h-[32px]"  src="/s7/image1.png" width={132} height={32} alt="" /> */}
             <Image
               className="w-[136px] h-[48px]"
               src="/s7/image1.png"
@@ -595,34 +590,6 @@ export default function Home() {
               height={48}
               alt="icon"
             />
-            {/* <div
-              className="w-[136px] h-[32px]"
-              style={{ background: 'url("/s7/image1.png")' }}
-            />
-            <div
-              className="w-[136px] h-[32px]"
-              style={{ background: 'url("/s7/image1.png")' }}
-            />
-            <div
-              className="w-[136px] h-[32px]"
-              style={{ background: 'url("/s7/image1.png")' }}
-            />
-            <div
-              className="w-[136px] h-[32px]"
-              style={{ background: 'url("/s7/image1.png")' }}
-            />
-            <div
-              className="w-[136px] h-[32px]"
-              style={{ background: 'url("/s7/image1.png")' }}
-            />
-            <div
-              className="w-[136px] h-[32px]"
-              style={{ background: 'url("/s7/image1.png")' }}
-            />
-            <div
-              className="w-[136px] h-[32px]"
-              style={{ background: 'url("/s7/image1.png")' }}
-            /> */}
           </div>
           <div className="flex py-[16px] justify-center items-center gap-[110px] pl-[120px] pr-[120px] mt-[36px] ">
             <div
@@ -687,7 +654,15 @@ export default function Home() {
           />
         </div>
 
-      </section>
+      </section> */}
+      <div className="flex overflow-hidden flex-col justify-center items-center py-10 text-5xl font-semibold leading-none text-lime-300 whitespace-nowrap bg-neutral-800 max-md:text-4xl">
+        <div className="max-md:text-4xl">Partners</div>
+        <img
+          loading="lazy"
+          srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/c581ee27fb7481b63a7b1a5224a57594c9eeeb11b31bf5720f520f158f838fe1?placeholderIfAbsent=true&apiKey=53186c56703b47418c12cd21c1b9decd&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/c581ee27fb7481b63a7b1a5224a57594c9eeeb11b31bf5720f520f158f838fe1?placeholderIfAbsent=true&apiKey=53186c56703b47418c12cd21c1b9decd&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/c581ee27fb7481b63a7b1a5224a57594c9eeeb11b31bf5720f520f158f838fe1?placeholderIfAbsent=true&apiKey=53186c56703b47418c12cd21c1b9decd&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/c581ee27fb7481b63a7b1a5224a57594c9eeeb11b31bf5720f520f158f838fe1?placeholderIfAbsent=true&apiKey=53186c56703b47418c12cd21c1b9decd&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/c581ee27fb7481b63a7b1a5224a57594c9eeeb11b31bf5720f520f158f838fe1?placeholderIfAbsent=true&apiKey=53186c56703b47418c12cd21c1b9decd&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/c581ee27fb7481b63a7b1a5224a57594c9eeeb11b31bf5720f520f158f838fe1?placeholderIfAbsent=true&apiKey=53186c56703b47418c12cd21c1b9decd&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/c581ee27fb7481b63a7b1a5224a57594c9eeeb11b31bf5720f520f158f838fe1?placeholderIfAbsent=true&apiKey=53186c56703b47418c12cd21c1b9decd&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/c581ee27fb7481b63a7b1a5224a57594c9eeeb11b31bf5720f520f158f838fe1?placeholderIfAbsent=true&apiKey=53186c56703b47418c12cd21c1b9decd"
+          className="object-contain mt-10 w-full aspect-[5.99] max-md:max-w-full"
+        />
+      </div>
 
       {/* <section className="flex flex-col py-[112px] items-center w-full">
         <div className="text-[48px] text-[#272727] font-semibold">FAQs</div>
