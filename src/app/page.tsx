@@ -189,10 +189,10 @@ export default function Home() {
               alt="icon"
             />
             <Image
-              className="w-[136px] h-[54px]"
+              className="w-[54px] h-[49px] mx-[30px]"
               src="/banner/initiators/image2.png"
-              width={136}
-              height={48}
+              width={54}
+              height={49}
               alt="icon"
             />
             <Image
