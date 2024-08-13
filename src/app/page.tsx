@@ -79,7 +79,7 @@ export default function Home() {
         }}
       >
         <div className="w-[1200px] items-center justify-center flex flex-col">
-          <header className="w-full flex py-[21px] justify-around">
+          <header className="w-full flex py-[21px] justify-around fixed top-0 left-0 bg-[#DEE8E8] z-50">
             <div className="flex items-center">
               <span>
                 {/* <svg
@@ -104,25 +104,30 @@ export default function Home() {
             <nav>
               <ul className="flex items-center gap-[36px] h-full text-[#272727]">
                 <li className="font-semibold">Home</li>
-                <li>About</li>
+                <li>
+                  <a href="#about">About</a>
+                </li>
+
                 <li>
                   <a href="#speakers">Speakers</a>
                 </li>
-                <li>Partners</li>
+                <li>
+                  <a href="#partners">Partners</a>
+                </li>
                 <li>
                   <a href="#agenda">Agenda</a>
                 </li>
               </ul>
             </nav>
             <Tooltip title="coming soon">
-              <div className="flex px-[64px] py-[16px] text-base font-medium bg-[#272727] text-white cursor-pointer" >
-                Apply for  CUBE Summit
+              <div className="flex px-[24px] py-[16px] text-base font-medium bg-[#272727] text-white cursor-pointer rounded-[4px]" >
+                Apply for CUBE Summit
               </div>
             </Tooltip>
 
 
           </header>
-          <div className="flex justify-center relative text-[68px] font-semibold mt-[60px]">
+          <div className="flex justify-center relative text-[68px] font-semibold mt-[160px]">
             <span className="z-[1]" style={{ fontFamily: 'ClashDisplay, sans-serif' }}> CUBE Summit</span>
             <div className="absolute bottom-[10px] w-[400px] h-[28px] bg-[#CFF285]"></div>
           </div>
@@ -284,7 +289,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="flex w-full">
+      <section className="flex w-full" id="about">
         <div className="flex-1">
           <div
             className="flex flex-col items-start w-[582px] mt-[100px]"
@@ -301,7 +306,7 @@ export default function Home() {
 
 
             <Tooltip title="coming soon">
-              <div className="cursor-pointer w-[146px] h-[56px] mt-[45px] flex items-center justify-center font-medium text-base border-2 border-[#272727]">
+              <div className="cursor-pointer rounded-[4px] w-[146px] h-[56px] mt-[45px] flex items-center justify-center font-medium text-base border-2 border-[#272727]">
                 Read more
               </div>
             </Tooltip>
@@ -338,7 +343,7 @@ export default function Home() {
 
 
             <Tooltip title="coming soon">
-              <div className="w-[216px] cursor-pointer h-[56px] mt-[45px] flex items-center justify-center font-medium text-base border-2 border-[#272727]">
+              <div className="w-[216px]  rounded-[4px] cursor-pointer h-[56px] mt-[45px] flex items-center justify-center font-medium text-base border-2 border-[#272727]">
                 Register for Summit
               </div>
             </Tooltip>
@@ -383,7 +388,7 @@ export default function Home() {
                     className="object-contain w-full rounded-none aspect-square"
                   />
                 </div>
-                <div className="mt-3 text-xl font-medium text-center text-cyan-950 w-full">
+                <div className="mt-3 text-xl font-medium text-center text-cyan-950 w-full ">
                   More to be revealed
                 </div>
               </div>
@@ -486,7 +491,7 @@ export default function Home() {
 
 
               <Tooltip title="coming soon">
-                <div className="w-[282px] cursor-pointer h-[56px] mt-[32px] flex items-center justify-center font-medium text-base border-2 border-[#272727]">
+                <div className="w-[282px] rounded-[4px] cursor-pointer  h-[56px] mt-[32px] flex items-center justify-center font-medium text-base border-2 border-[#272727]">
                   Apply to Pitch Now
                 </div>
               </Tooltip>
@@ -670,7 +675,9 @@ export default function Home() {
         </div>
 
       </section> */}
-      <div className="flex overflow-hidden flex-col justify-center items-center py-10 text-5xl font-semibold leading-none text-lime-300 whitespace-nowrap bg-neutral-800 max-md:text-4xl">
+      <div
+        id="partners"
+        className="flex overflow-hidden flex-col justify-center items-center py-10 text-5xl font-semibold leading-none text-lime-300 whitespace-nowrap bg-neutral-800 max-md:text-4xl">
         <div className="max-md:text-4xl">Partners</div>
         <img
           loading="lazy"
@@ -883,7 +890,7 @@ export default function Home() {
           {questions.map((item, index) => (
             <div
               key={index}
-              className="flex flex-col border-[1px] border-black"
+              className="flex flex-col border-[1px] border-black rounded-[4px]"
             >
               <div
                 className="flex justify-between items-center py-[20px] px-[24px] text-lg text-black font-semibold cursor-pointer"
@@ -947,12 +954,27 @@ export default function Home() {
           </svg>
           <nav>
             <ul className="flex gap-[32px] text-white">
-              <li className="font-semibold">Home</li>
+              {/* <li className="font-semibold">Home</li>
               <li>About</li>
               <li>Speakers</li>
               <li>Agenda</li>
               <li>Partners</li>
-              <li>Contact Us</li>
+              <li>Contact Us</li> */}
+              <li className="font-semibold">Home</li>
+              <li>
+                <a href="#about">About</a>
+              </li>
+
+              <li>
+                <a href="#speakers">Speakers</a>
+              </li>
+              <li>
+                <a href="#partners">Partners</a>
+              </li>
+              <li>
+                <a href="#agenda">Agenda</a>
+              </li>
+
             </ul>
           </nav>
           <div className="flex items-center gap-[14px]">
