@@ -530,19 +530,19 @@ export default function Home() {
                 Special awards from industry leaders (Stay Tuned!)
               </li>
               <li className="flex items-center gap-2">
-                <img src="/icon.png" width={22} height={22} alt="" srcset="" />
+                <img src="/icon.png" width={22} height={22} alt="" />
 
                 Opportunities for fast-track reviews into accelerators like
                 A16z’s CSS, SpringX, MIT accelerator, and Stanford accelerator
               </li>
               <li className="flex items-center gap-2">
-                <img src="/icon.png" width={22} height={22} alt="" srcset="" />
+                <img src="/icon.png" width={22} height={22} alt="" />
 
                 Tap into a powerful investor network to connect with top-tier
                 VCs looking to fund the next big crypto innovations
               </li>
               <li className="flex items-center gap-2">
-                <img src="/icon.png" width={22} height={22} alt="" srcset="" />
+                <img src="/icon.png" width={22} height={22} alt=""/>
 
                 Directly connecting with top-tier public blockchains eager to
                 attract quality projects to thrive in their ecosystem.
