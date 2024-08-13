@@ -228,9 +228,8 @@ export default function Home() {
 
 
             <Image
-              className="w-[97px] h-[48px]"
-              src="/banner/initiators/image11.png"
-              width={97}
+              src="/banner/initiators/OxfordBlockchainSoc.svg"
+              width={136}
               height={48}
               alt="icon"
             />
