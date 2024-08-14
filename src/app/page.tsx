@@ -195,10 +195,9 @@ export default function Home() {
               alt="icon"
             />
             <Image
-              className="w-[54px] h-[49px] mx-[30px]"
               src="/banner/initiators/image2.svg"
-              width={54}
-              height={49}
+              width={136}
+              height={48}
               alt="icon"
             />
             <Image
@@ -231,6 +230,13 @@ export default function Home() {
               height={48}
               alt="icon"
             />
+            <Image
+              src="/banner/initiators/image13.svg"
+              width={136}
+              height={48}
+              alt="icon"
+            />
+
             <Image
               src="/banner/initiators/image3.svg"
               width={136}
@@ -273,13 +279,13 @@ export default function Home() {
           </p>
           <div className="flex flex-wrap w-full gap-x-[34px] gap-y-[24px] mt-[24px]">
             <Image
-              src="/banner/sponsors/image3.png"
+              src="/banner/sponsors/image3.svg"
               width={136}
               height={48}
               alt="icon"
             />
             <Image
-              src="/banner/sponsors/image1.png"
+              src="/banner/sponsors/image1.svg"
               width={136}
               height={48}
               alt="icon"
@@ -302,6 +308,12 @@ export default function Home() {
               height={48}
               alt="icon"
             />
+             {/* <Image
+              src="/banner/sponsors/image6.svg"
+              width={136}
+              height={48}
+              alt="icon"
+            /> */}
           </div>
           <p className="text-[#383F4E] text-[24px] font-semibold mt-[48px] text-left w-full">
             Organizer
@@ -329,7 +341,7 @@ export default function Home() {
             </div>
             <p className="mt-[16px] text-[#6B6B6B] text-lg font-weight-normal" style={{ fontFamily: 'Inter Display' }}>
               Hosted in the vibrant city of NewYork on October 3rd, Collaborative University Blockchain Ecosystem Summit (CUBE Summit) brings together top minds from
-              <span className="font-semibold text-[#343434]"> Columbia, Cornell, Harvard, MIT, NYU, Oxford, Stanford, UPenn and Yale, </span>
+              <span className="font-semibold text-[#343434]"> Columbia, Cornell, Harvard, MIT, NYU, Oxford, Stanford, UCB, UPenn and Yale. </span>
               along with industry leaders from leading AI projects, major public blockchains, and top venture capital firms.
               <br />
               <br />
