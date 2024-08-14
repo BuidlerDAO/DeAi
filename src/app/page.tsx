@@ -390,8 +390,8 @@ export default function Home() {
         <img src="/banner/image.png" className="h-[740px]  absolute top-[466px] left-[0px]" />
 
         <div className="flex flex-col items-center w-[1200px]">
-          <div className="w-full text-[48px] font-semibold text-center text-[#272727]">
-            Speakers
+          <div className="w-full text-[48px] font-semibold text-center text-[#272727]" style={{ fontFamily: 'ClashDisplay, sans-serif' }}>
+            Speakers and Judges
           </div>
           <p className="w-full text-[18px] text-center text-[#6B6B6B] mt-[16px]">
             Get ready to be inspired by a lineup of world-class industry leaders
