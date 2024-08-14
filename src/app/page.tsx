@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
 'use client'
@@ -182,8 +183,15 @@ export default function Home() {
           </p>
           <div className="flex flex-wrap  gap-x-[34px] items-center gap-y-[24px] mt-[24px]">
             <Image
-              className="w-[136px] h-[48px]"
-              src="/banner/initiators/image1.png"
+              className="w-[136px] h-[54px]"
+              src="/banner/initiators/image6.png"
+              width={136}
+              height={48}
+              alt="icon"
+            />
+            <Image
+              className="w-[148px] h-[58px]"
+              src="/banner/initiators/image7.png"
               width={136}
               height={48}
               alt="icon"
@@ -196,47 +204,12 @@ export default function Home() {
               alt="icon"
             />
             <Image
-              className="w-[136px] h-[33px]"
-              src="/banner/initiators/image3.png"
-              width={136}
-              height={48}
-              alt="icon"
-            />
-
-            <Image
               className="w-[136px] h-[48px]"
               src="/banner/initiators/image4.png"
               width={136}
               height={48}
               alt="icon"
             />
-            <Image
-              className="w-[148px] h-[58px]"
-              src="/banner/initiators/image7.png"
-              width={136}
-              height={48}
-              alt="icon"
-            />
-
-            <Image
-              className="w-[136px] h-[54px]"
-              src="/banner/initiators/image6.png"
-              width={136}
-              height={48}
-              alt="icon"
-            />
-
-
-            <Image
-              src="/banner/initiators/OxfordBlockchainSoc.svg"
-              width={136}
-              height={48}
-              alt="icon"
-            />
-
-
-
-
             <Image
               className="w-[136px] h-[54px]"
               src="/banner/initiators/image5.png"
@@ -245,12 +218,53 @@ export default function Home() {
               alt="icon"
             />
             <Image
+              src="/banner/initiators/OxfordBlockchainSoc.svg"
+              width={136}
+              height={48}
+              alt="icon"
+            />
+
+            <Image
               className="w-[136px] h-[54px]"
               src="/banner/initiators/image12.png"
               width={136}
               height={48}
               alt="icon"
             />
+            <Image
+              className="w-[136px] h-[33px]"
+              src="/banner/initiators/image3.png"
+              width={136}
+              height={48}
+              alt="icon"
+            />
+
+
+            <Image
+              className="w-[136px] h-[48px]"
+              src="/banner/initiators/image1.png"
+              width={136}
+              height={48}
+              alt="icon"
+            />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -277,6 +291,13 @@ export default function Home() {
             <Image
               className="w-[136px] h-[54px]"
               src="/banner/sponsors/image2.png"
+              width={136}
+              height={48}
+              alt="icon"
+            />
+            <Image
+              className="w-[136px] h-[45px]"
+              src="/banner/sponsors/image4.png"
               width={136}
               height={48}
               alt="icon"
@@ -308,7 +329,8 @@ export default function Home() {
               <div className="absolute left-[8px] bottom-[12px] -z-[1] w-[310px] h-[10px] bg-[#CFF285] rounded-lg"></div>
             </div>
             <p className="mt-[16px] text-[#6B6B6B] text-lg font-weight-normal" style={{ fontFamily: 'Inter Display' }}>
-              Hosted in the vibrant city of NewYork on October 3rd, Collaborative University Blockchain Ecosystem Summit (CUBE Summit)brings together top minds from Yale, Stanford, UCB, Harvard, UPenn, MIT, Cornell, NYU, Columbia, and Oxford, along with industry leaders from leading AI projects, major public blockchains, and top venture capital firms.
+              Hosted in the vibrant city of NewYork on October 3rd, Collaborative University Blockchain Ecosystem Summit (CUBE Summit)brings together top minds from
+              Columbia, Cornell, Harvard, MIT, NYU, Oxford, Stanford, UPenn and Yale. along with industry leaders from leading AI projects, major public blockchains, and top venture capital firms.
               Featuring panel discussions, keynote speeches, pitching sessions, and an exclusive after-party, we leverage powerful alumni networks to shape the future stars of the crypto world.
             </p>
 
@@ -560,8 +582,7 @@ export default function Home() {
               <li className="flex items-center gap-2">
                 <img src="/icon.png" width={22} height={22} alt="" />
 
-                Opportunities for fast-track reviews into accelerators like
-                A16z’s CSS, SpringX, MIT accelerator, and Stanford accelerator
+                Opportunities for fast-track reviews into accelerators like a16z's CSS and SpringX
               </li>
               <li className="flex items-center gap-2">
                 <img src="/icon.png" width={22} height={22} alt="" />
