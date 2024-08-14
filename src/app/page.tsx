@@ -320,7 +320,7 @@ export default function Home() {
       <section className="flex w-full" id="about">
         <div className="flex-1">
           <div
-            className="flex flex-col items-start w-[592px] mt-[100px]"
+            className="flex flex-col items-start w-[602px] mt-[100px]"
             style={{ marginLeft: 'calc((100vw - 1200px) / 2)' }}
           >
             <div className="flex justify-center relative text-[48px] font-semibold mt-[60px]" style={{ fontFamily: 'ClashDisplay, sans-serif' }}>
