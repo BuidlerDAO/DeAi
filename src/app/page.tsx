@@ -79,7 +79,7 @@ export default function Home() {
         className="flex justify-center w-full bg-[#DEE8E8] "
         style={{
           backgroundImage: 'url("/banner/line.svg")',
-          backgroundPosition: '0px 262px',
+          backgroundPosition: '0px 282px',
           backgroundRepeat: 'no-repeat',
           backgroundSize: 'contain',
         }}
@@ -130,7 +130,7 @@ export default function Home() {
 
 
           </header>
-          <div id='home' className="flex justify-center relative text-[68px] font-semibold mt-[160px]">
+          <div id='home' className="flex justify-center relative text-[68px] font-semibold mt-[100px]">
             <span className="z-[1]" style={{ fontFamily: 'ClashDisplay, sans-serif' }}> CUBE Summit</span>
             <div className="absolute bottom-[10px] w-[400px] h-[28px] bg-[#CFF285]"></div>
           </div>
@@ -183,40 +183,41 @@ export default function Home() {
           </p>
           <div className="flex flex-wrap  gap-x-[34px] items-center gap-y-[24px] mt-[24px]">
             <Image
-              className="w-[136px] h-[54px]"
-              src="/banner/initiators/image6.png"
+              src="/banner/initiators/image6.svg"
               width={136}
               height={48}
               alt="icon"
             />
             <Image
-              className="w-[148px] h-[58px]"
-              src="/banner/initiators/image7.png"
+              src="/banner/initiators/image7.svg"
               width={136}
               height={48}
               alt="icon"
             />
             <Image
               className="w-[54px] h-[49px] mx-[30px]"
-              src="/banner/initiators/image2.png"
+              src="/banner/initiators/image2.svg"
               width={54}
               height={49}
               alt="icon"
             />
             <Image
               className="w-[136px] h-[48px]"
-              src="/banner/initiators/image4.png"
+              src="/banner/initiators/image4.svg"
               width={136}
               height={48}
               alt="icon"
             />
+
+
             <Image
-              className="w-[136px] h-[54px]"
-              src="/banner/initiators/image5.png"
+              className="w-[108px] h-[52px]"
+              src="/banner/initiators/image5.svg"
               width={136}
               height={48}
               alt="icon"
             />
+
             <Image
               src="/banner/initiators/OxfordBlockchainSoc.svg"
               width={136}
@@ -225,15 +226,13 @@ export default function Home() {
             />
 
             <Image
-              className="w-[136px] h-[54px]"
-              src="/banner/initiators/image12.png"
+              src="/banner/initiators/image12.svg"
               width={136}
               height={48}
               alt="icon"
             />
             <Image
-              className="w-[136px] h-[33px]"
-              src="/banner/initiators/image3.png"
+              src="/banner/initiators/image3.svg"
               width={136}
               height={48}
               alt="icon"
@@ -241,8 +240,7 @@ export default function Home() {
 
 
             <Image
-              className="w-[136px] h-[48px]"
-              src="/banner/initiators/image1.png"
+              src="/banner/initiators/image1.svg"
               width={136}
               height={48}
               alt="icon"
@@ -275,29 +273,31 @@ export default function Home() {
           </p>
           <div className="flex flex-wrap w-full gap-x-[34px] gap-y-[24px] mt-[24px]">
             <Image
-              className="w-[136px] h-[54px]"
               src="/banner/sponsors/image3.png"
               width={136}
               height={48}
               alt="icon"
             />
             <Image
-              className="w-[136px] h-[54px]"
               src="/banner/sponsors/image1.png"
               width={136}
               height={48}
               alt="icon"
             />
             <Image
-              className="w-[136px] h-[54px]"
-              src="/banner/sponsors/image2.png"
+              src="/banner/sponsors/image2.svg"
               width={136}
               height={48}
               alt="icon"
             />
             <Image
-              className="w-[136px] h-[45px]"
-              src="/banner/sponsors/image4.png"
+              src="/banner/sponsors/image4.svg"
+              width={136}
+              height={48}
+              alt="icon"
+            />
+            <Image
+              src="/banner/sponsors/image5.svg"
               width={136}
               height={48}
               alt="icon"
@@ -308,8 +308,7 @@ export default function Home() {
           </p>
           <div className="flex flex-wrap w-full gap-x-[34px] gap-y-[24px] mt-[24px] mb-[40px]">
             <Image
-              className="w-[158px] h-[44px]"
-              src="/banner/organizer/image1.png"
+              src="/banner/organizer/image1.svg"
               width={136}
               height={48}
               alt="icon"
@@ -321,7 +320,7 @@ export default function Home() {
       <section className="flex w-full" id="about">
         <div className="flex-1">
           <div
-            className="flex flex-col items-start w-[582px] mt-[100px]"
+            className="flex flex-col items-start w-[592px] mt-[100px]"
             style={{ marginLeft: 'calc((100vw - 1200px) / 2)' }}
           >
             <div className="flex justify-center relative text-[48px] font-semibold mt-[60px]" style={{ fontFamily: 'ClashDisplay, sans-serif' }}>
@@ -329,8 +328,11 @@ export default function Home() {
               <div className="absolute left-[8px] bottom-[12px] -z-[1] w-[310px] h-[10px] bg-[#CFF285] rounded-lg"></div>
             </div>
             <p className="mt-[16px] text-[#6B6B6B] text-lg font-weight-normal" style={{ fontFamily: 'Inter Display' }}>
-              Hosted in the vibrant city of NewYork on October 3rd, Collaborative University Blockchain Ecosystem Summit (CUBE Summit)brings together top minds from
-              Columbia, Cornell, Harvard, MIT, NYU, Oxford, Stanford, UPenn and Yale. along with industry leaders from leading AI projects, major public blockchains, and top venture capital firms.
+              Hosted in the vibrant city of NewYork on October 3rd, Collaborative University Blockchain Ecosystem Summit (CUBE Summit) brings together top minds from
+              <span className="font-semibold text-[#343434]"> Columbia, Cornell, Harvard, MIT, NYU, Oxford, Stanford, UPenn and Yale, </span>
+              along with industry leaders from leading AI projects, major public blockchains, and top venture capital firms.
+              <br />
+              <br />
               Featuring panel discussions, keynote speeches, pitching sessions, and an exclusive after-party, we leverage powerful alumni networks to shape the future stars of the crypto world.
             </p>
 
@@ -502,11 +504,11 @@ export default function Home() {
               className="flex flex-col items-start w-[582px]"
               style={{ marginLeft: 'calc((100vw - 1200px) / 2)' }}
             >
-              <div className="flex justify-center relative text-[48px] font-semibold mt-[60px]">
+              <div className="flex justify-center relative text-[48px] font-semibold mt-[60px]" style={{ fontFamily: 'ClashDisplay, sans-serif' }}>
                 <span>Who Can Participate？</span>
               </div>
               <p className="mt-[16px] text-[#6B6B6B] text-lg">
-                We’re seeking the brightest minds in crypto and AI to join
+                We’re seeking the brightest minds in Crypto and AI to join
                 “CUBES”. All teams are welcome to apply and present your BIG
                 IDEAS, whether you’re working on infrastructure, applications,
                 gaming, or social platforms, though priority will be given to
@@ -542,23 +544,23 @@ export default function Home() {
 
       <section className="flex w-full py-[40px]">
         <div>
-          <Image src="/s6/image.png" width={476} height={615} alt="image" />
+          <Image src="/s6/image.png" width={439} height={600} alt="image" />
         </div>
         <div className="flex flex-1 justify-end">
           <div
             className="flex flex-col items-start w-[562px]"
             style={{ marginRight: 'calc((100vw - 1200px) / 2)' }}
           >
-            <div className="flex justify-center relative text-[48px] font-semibold mt-[60px]">
+            <div className="flex justify-center relative text-[38px] font-semibold mt-[20px]" style={{ fontFamily: 'ClashDisplay, sans-serif' }}>
               <span> What to expect？</span>
             </div>
-            <p className="mt-[16px] text-[#6B6B6B] text-lg">
+            <p className="mt-[6px] text-[#6B6B6B] text-lg">
               Backed by powerful alumni networks, we offer you the opportunity
               to showcase your project to top-tier investors and the heads of
               major public blockchains. Beyond serving as an ideal platform to
               launch your project, you can anticipate:
             </p>
-            <ul className="flex flex-col gap-[25px] mt-[46px]">
+            <ul className="flex flex-col gap-[24px] mt-[40px]">
               <li className="flex items-center gap-2">
                 <img src="/icon.png" width={22} height={22} alt="" />
 
@@ -595,6 +597,11 @@ export default function Home() {
 
                 Directly connecting with top-tier public blockchains eager to
                 attract quality projects to thrive in their ecosystem.
+              </li>
+              <li className="flex items-center gap-2">
+                <img src="/icon.png" width={22} height={22} alt="" />
+
+                Opportunities for 1-on-1 mentorship such as polishing your deck and improving your pitch.
               </li>
             </ul>
           </div>
