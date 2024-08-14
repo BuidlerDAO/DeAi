@@ -308,7 +308,7 @@ export default function Home() {
           </p>
           <div className="flex flex-wrap w-full gap-x-[34px] gap-y-[24px] mt-[24px] mb-[40px]">
             <Image
-              className="w-[136px] h-[54px]"
+              className="w-[158px] h-[44px]"
               src="/banner/organizer/image1.png"
               width={136}
               height={48}
@@ -582,7 +582,7 @@ export default function Home() {
               <li className="flex items-center gap-2">
                 <img src="/icon.png" width={22} height={22} alt="" />
 
-                Opportunities for fast-track reviews into accelerators like a16z's CSS and SpringX
+                Opportunities for fast-track reviews into accelerators like a16z's CSX and SpringX
               </li>
               <li className="flex items-center gap-2">
                 <img src="/icon.png" width={22} height={22} alt="" />
