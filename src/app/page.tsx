@@ -29,16 +29,16 @@ export default function Home() {
     {
       question: 'Can I Participate in the Pitching Sessions Online?',
       answer:
-        'No, the pitching sessions must be conducted in person at the CUBES.',
+        'No, the pitching sessions must be conducted in person at the CUBE Summit.',
     },
     {
       question: 'What Benefits Do I Receive Upon Acceptance?',
       answer:
-        'Acceptance to CUBES grants you access to all summit events, including panel discussions, keynote speeches, pitching sessions, and the exclusive afterParty. You\'ll also receive opportunities for networking with industry leaders and peers, and special rewards.',
+        'Acceptance to CUBE Summit grants you access to all summit events, including panel discussions, keynote speeches, pitching sessions, and the exclusive afterParty. You\'ll also receive opportunities for networking with industry leaders and peers, and special rewards.',
     },
     {
       question: 'How many projects will be accepted?',
-      answer: 'CUBES 2024 only accepts approximately 10-12 projects.',
+      answer: 'CUBE Summit 2024 only accepts approximately 10-12 projects.',
     },
     {
       question: 'Will My Expenses Be Covered?',
@@ -88,24 +88,14 @@ export default function Home() {
           <header className="w-full flex py-[21px] justify-around fixed top-0 left-0 bg-[#DEE8E8] z-50">
             <div className="flex items-center">
               <span>
-                {/* <svg
-                  width="15"
-                  height="30"
-                  viewBox="0 0 15 30"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0 15V30C8.29991 30 15.0047 23.2703 15.0047 15H0Z"
-                    fill="#BED74B"
-                  />
-                  <path
-                    d="M15.0047 15H0V0C8.29991 0 15.0047 6.72973 15.0047 15Z"
-                    fill="#272727"
-                  />
-                </svg> */}
+                <Image
+                  src="/logo.svg"
+                  width={107}
+                  height={46}
+                  alt="icon"
+                />
               </span>
-              <strong className="ml-2">CUBES</strong>
+              {/* <strong className="ml-2">CUBES</strong> */}
             </div>
             <nav>
               <ul className="flex items-center gap-[36px] h-full text-[#272727]">
@@ -308,6 +298,18 @@ export default function Home() {
               height={48}
               alt="icon"
             />
+            <Image
+              src="/banner/sponsors/image7.svg"
+              width={136}
+              height={54}
+              alt="icon"
+            />
+            <Image
+              src="/banner/sponsors/image8.svg"
+              width={136}
+              height={54}
+              alt="icon"
+            />
             {/* <Image
               src="/banner/sponsors/image6.svg"
               width={136}
@@ -496,7 +498,7 @@ export default function Home() {
             </div>
             <div className="px-[38px] py-[26px]">
               <span className="text-[24px] text-[#153C3CAD] font-extrabold">
-                The specific agenda for CUBES is coming soon…
+                The specific agenda for CUBE Summit is coming soon…
               </span>
             </div>
           </div>
@@ -521,7 +523,7 @@ export default function Home() {
               </div>
               <p className="mt-[16px] text-[#6B6B6B] text-lg">
                 We’re seeking the brightest minds in Crypto and AI to join
-                “CUBES”. All teams are welcome to apply and present your BIG
+                “CUBE Summit”. All teams are welcome to apply and present your BIG
                 IDEAS, whether you’re working on infrastructure, applications,
                 gaming, or social platforms, though priority will be given to
                 alumni projects of initiators.
@@ -576,7 +578,7 @@ export default function Home() {
               <li className="flex items-center gap-2">
                 <img src="/icon.png" width={22} height={22} alt="" />
 
-                A chance to present on-stage at CUBES in front of some of the
+                A chance to present on-stage at CUBE Summit in front of some of the
                 most influential figures in crypto
               </li>
               <li className="flex items-center gap-2">
@@ -980,7 +982,13 @@ export default function Home() {
 
       <footer className="w-full pt-[50px] px-[64px] pb-[30px] bg-[#272727]">
         <div className="flex justify-between">
-          <svg
+          <Image
+            src="/logo1.svg"
+            width={38}
+            height={16}
+            alt="icon"
+          />
+          {/* <svg
             width="69"
             height="16"
             viewBox="0 0 69 16"
@@ -999,7 +1007,7 @@ export default function Home() {
               d="M18.5092 13.16C14.7812 13.16 12.5892 10.984 12.5892 7.64C12.5892 4.296 14.7812 2.12 18.5092 2.12C22.1092 2.12 24.2692 3.832 24.2692 6.696V6.968H20.9092V6.696C20.9092 5.48 20.3332 5 18.5572 5C16.3812 5 15.7892 5.512 15.7892 7.64C15.7892 9.768 16.3812 10.28 18.5572 10.28C20.3332 10.28 20.9092 9.8 20.9092 8.584V8.312H24.2692V8.584C24.2692 11.448 22.1092 13.16 18.5092 13.16ZM30.4697 13.16C26.7257 13.16 24.9977 11.352 24.9977 8.504V2.28H28.0057V8.264C28.0057 9.784 28.4377 10.248 30.4697 10.248C32.5017 10.248 32.9337 9.784 32.9337 8.264V2.28H35.9417V8.504C35.9417 11.352 34.2137 13.16 30.4697 13.16ZM44.0269 13H36.8429V2.28H43.6589C45.9789 2.28 47.1309 3.192 47.1309 4.872C47.1309 6.248 46.4109 7.224 44.4589 7.304V7.464C46.6029 7.544 47.6269 8.536 47.6269 10.024C47.6269 11.832 46.5869 13 44.0269 13ZM39.8349 4.984V6.344H43.3389C43.9469 6.344 44.1229 6.168 44.1229 5.672C44.1229 5.176 43.8829 4.984 43.2589 4.984H39.8349ZM39.8349 8.808V10.296H43.6429C44.3629 10.296 44.5869 10.152 44.5869 9.544C44.5869 8.952 44.3789 8.808 43.6429 8.808H39.8349ZM57.7848 13H48.2648V2.28H57.7848V4.984H51.2728V6.264H57.5448V8.952H51.2728V10.296H57.7848V13ZM63.8398 13.16C60.5598 13.16 58.5598 11.992 58.5598 9.272V9.176H61.5678V9.512C61.5678 10.232 61.8238 10.424 63.8398 10.424C65.6638 10.424 65.8558 10.28 65.8558 9.8C65.8558 9.416 65.6478 9.256 64.7678 9.144L61.4078 8.696C59.4078 8.424 58.3998 7.352 58.3998 5.624C58.3998 3.912 59.7278 2.12 63.5998 2.12C67.0078 2.12 68.6398 3.608 68.6398 6.008V6.104H65.6318V5.864C65.6318 5.096 65.2958 4.84 63.2798 4.84C61.7438 4.84 61.4078 5.048 61.4078 5.512C61.4078 5.848 61.5998 6.008 62.1758 6.088L65.5358 6.584C68.1598 6.968 68.8638 8.312 68.8638 9.688C68.8638 11.528 67.4558 13.16 63.8398 13.16Z"
               fill="white"
             />
-          </svg>
+          </svg> */}
           <nav>
 
             <ul className="flex gap-[32px] text-white">
@@ -1073,7 +1081,7 @@ export default function Home() {
         </div>
         <div className="w-full h-[1px] mt-[24px] mb-[32px] bg-[#6B6B6B]" />
         <p className="text-sm text-[#D4D4D4] text-center">
-          2024 CUBES. All right reserved.
+          2024 CUBE Summit. All right reserved.
         </p>
       </footer>
     </main>
