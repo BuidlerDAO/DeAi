@@ -308,7 +308,7 @@ export default function Home() {
               height={48}
               alt="icon"
             />
-             {/* <Image
+            {/* <Image
               src="/banner/sponsors/image6.svg"
               width={136}
               height={48}
@@ -316,7 +316,7 @@ export default function Home() {
             /> */}
           </div>
           <p className="text-[#383F4E] text-[24px] font-semibold mt-[48px] text-left w-full">
-            Organizer
+            Coordinator
           </p>
           <div className="flex flex-wrap w-full gap-x-[34px] gap-y-[24px] mt-[24px] mb-[40px]">
             <Image
