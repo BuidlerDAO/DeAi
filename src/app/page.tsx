@@ -479,7 +479,7 @@ export default function Home() {
               className="flex justify-center relative text-[48px] font-semibold mt-[60px]"
               style={{ fontFamily: "ClashDisplay, sans-serif" }}
             >
-              <span>Unleash Your Potential on the Exclusive Pitching Stage</span>
+              <span>Unleash Your Potential  on an Exclusive Pitching Stage</span>
               <div className="absolute left-[0px] bottom-[12px] -z-[1] w-[510px] h-[10px] bg-[#CFF285] rounded-lg"></div>
             </div>
             <p className="mt-[16px] text-[#6B6B6B] text-lg font-normal" style={{ fontFamily: "Inter Display" }}>
@@ -510,7 +510,7 @@ export default function Home() {
             Speakers and Judges
           </div>
           <p className="w-full text-[18px] text-center text-[#6B6B6B] mt-[16px] md:px-0 px-4">
-            Get ready to be inspired by a lineup of world-class industry leaders in the crypto
+            Get ready to be inspired by a lineup of world-class industry leaders in crypto
           </p>
 
           <Row gutter={[20, 14]} className="px-5 pb-5 mt-6 md:hidden">
@@ -716,7 +716,7 @@ export default function Home() {
             className="flex md:justify-center relative text-[38px] font-semibold mt-[20px]"
             style={{ fontFamily: "ClashDisplay, sans-serif" }}
           >
-            <span>What to expect？</span>
+            <span>What to Expect？</span>
           </div>
           <p className="mt-[6px] text-[#6B6B6B] text-lg">
             Powered by our extensive alumni networks, we offer you an unparalleled opportunity to showcase your project
@@ -776,7 +776,7 @@ export default function Home() {
               className="flex justify-center relative text-[38px] font-semibold mt-[20px]"
               style={{ fontFamily: "ClashDisplay, sans-serif" }}
             >
-              <span> What to expect？</span>
+              <span> What to Expect？</span>
             </div>
             <p className="text-[#6B6B6B] text-lg">
               Powered by our extensive alumni networks, we offer you an unparalleled opportunity to showcase your
