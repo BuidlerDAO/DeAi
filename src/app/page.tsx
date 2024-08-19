@@ -155,8 +155,7 @@ export default function Home() {
             talents and foster innovative projects, paving the way for the future leaders of crypto.
             <br></br>
             <br></br>
-            We warmly welcome and encourage more colleges and institutions to join us in building a collaborative
-            blockchain future.
+            We warmly welcome and encourage more universities to join us in building a collaborative blockchain future.
           </p>
           <div className="flex flex-col md:flex-row gap-[14px] md:gap-[80px] mt-[25px]">
             <div
@@ -461,7 +460,7 @@ export default function Home() {
           <p className="mt-[16px] text-[#6B6B6B] text-lg " style={{ fontFamily: "Inter Display" }}>
             Seize the opportunity to showcase your innovative project at the forefront of “Crypto x AI” by applying for
             our exclusive pitching stage. This is your chance to present your ideas to a distinguished panel of industry
-            leaders, top-tier investors, and academic experts from some of the world's most prestigious institutions.
+            leaders, top-tier investors, and academic experts from some of the world's most distinguished institutions.
           </p>
 
           <div
@@ -661,7 +660,7 @@ export default function Home() {
               in infrastructure, applications, gaming, or social platforms.
             </div>
             <div className="text-[#6B6B6B] text-lg mt-4">
-              For ambitious individuals looking for a team, this is also an unique opportunity to connect with leading
+              For ambitious individuals looking for a team, this is also a unique opportunity to connect with leading
               alumni projects and become part of a dynamic, high-potential startup team.
             </div>
 
@@ -783,7 +782,7 @@ export default function Home() {
             <p className="text-[#6B6B6B] text-lg">
               Powered by our extensive alumni networks, we offer you an unparalleled opportunity to showcase your
               project to top-tier investors and leaders of major public blockchains. Beyond serving as an ideal
-              launchpad for your project, the platform is also a gateway to numerous invaluable opportunities,
+              launchpad for your project, the platform also provides access to numerous invaluable opportunities,
               including:
             </p>
             <ul className="flex flex-col gap-[10px] mt-[16px]">
@@ -970,7 +969,7 @@ export default function Home() {
                 September 16 - September 30:
               </span>
               <span className="text-base md:text-[24px] text-[#153C3C] font-extrabold md:ml-2">
-                One-on-One Mentorship and Pitch Preparation
+                1:1 Mentorship and Pitch Preparation
               </span>
             </div>
             <div className="px-[14px] py-[18px] md:px-[38px] md:py-[26px] border-b-[1px] border-[#0000001A] flex flex-col md:block">
