@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Drawer } from "antd";
+import { Drawer, message } from "antd";
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
@@ -27,10 +27,27 @@ const MobileMenu = () => {
       link: "#partners",
     },
     {
-      text: "Agenda",
-      link: "#agenda",
+      text: "Pitching Session",
+      link: "#pitching",
+    },
+    {
+      text: "Timeline",
+      link: "#timeline",
+    },
+    {
+      text: "Contact Us",
+      link: "#contact",
     },
   ];
+
+  const handleCopy = async () => {
+    try {
+      await navigator.clipboard.writeText("ops@cubesummit.xyz");
+      message.success("Email copied");
+    } catch (err) {
+      message.error("Email copied error");
+    }
+  };
   return (
     <>
       <span onClick={() => setShow(!show)} className="block px-2 md:hidden">
@@ -64,7 +81,13 @@ const MobileMenu = () => {
                 <li
                   key={item.text}
                   className="text-white text-base font-medium mb-5"
-                  onClick={() => router.push(item.link)}
+                  onClick={() => {
+                    if (item.text === "Contact Us") {
+                      handleCopy();
+                    } else {
+                      router.push(item.link);
+                    }
+                  }}
                 >
                   {item.text}
                 </li>

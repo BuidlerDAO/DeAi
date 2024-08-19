@@ -4,7 +4,7 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
-import { Tooltip, Button, Row, Col, message} from "antd";
+import { Tooltip, Button, Row, Col, message } from "antd";
 import LogoList from "@/component/LogoList";
 import LogoList1 from "@/component/LogoList1";
 import MobileMenu from "@/component/MobileMenu";
@@ -28,13 +28,13 @@ export default function Home() {
   const handleCopy = async () => {
     try {
       await navigator.clipboard.writeText("ops@cubesummit.xyz");
-      message.success('Email copied');
+      message.success("Email copied");
     } catch (err) {
-      message.error('Email copied error');
+      message.error("Email copied error");
     }
   };
 
-  const registerTo = () => router.push("https://lu.ma/hdbfank6")
+  const registerTo = () => router.push("https://lu.ma/hdbfank6");
 
   const questions = [
     {
@@ -66,9 +66,21 @@ export default function Home() {
     { id: 8, name: "Guy Wuollet", company: "Investment Partner at a16z crypto", img: "/speakers/6.png", icon: "6" },
     { id: 1, name: "Anna Bertha", company: "Investor at DCG", img: "/speakers/3.png", icon: "1" },
     { id: 9, name: "Jiahao Sun", company: "Founder and CEO of FLock.io", img: "/speakers/8.png", icon: "8" },
-    { id: 5, name: "David Attermann", company: "Head of Web3 Investments at M31 Capital", img: "/speakers/13.png", icon: "12" },
+    {
+      id: 5,
+      name: "David Attermann",
+      company: "Head of Web3 Investments at M31 Capital",
+      img: "/speakers/13.png",
+      icon: "12",
+    },
     { id: 3, name: "Chris Zhu", company: "Co-founder of Sonic / Mirror World", img: "/speakers/9.png", icon: "3" },
-    { id: 4, name: "Christian Ondaatje", company: "Platform Engineer of Hyperbolicd", img: "/speakers/5.png", icon: "4" },
+    {
+      id: 4,
+      name: "Christian Ondaatje",
+      company: "Platform Engineer of Hyperbolicd",
+      img: "/speakers/5.png",
+      icon: "4",
+    },
     { id: 7, name: "Greg Osuri", company: "Founder of Akash", img: "/speakers/1.png", icon: "7" },
     { id: 10, name: "Naveen Durvasula", company: "Core Member of Ritual", img: "/speakers/2.png", icon: "9" },
     { id: 2, name: "Ben Fielding", company: "Co-founder of Gensyn", img: "/speakers/4.png", icon: "2" },
@@ -121,7 +133,7 @@ export default function Home() {
             </nav>
             <div
               onClick={() => router.push("https://apply.cubesummit.xyz/")}
-              className="flex w-[218px] items-center justify-center md:px-[24px] md:py-[16px] p-[10px] text-xs md:text-base font-medium bg-[#272727] text-white cursor-pointer rounded-[4px]"
+              className="flex w-[155px] md:w-[218px] items-center justify-center md:px-[24px] md:py-[16px] p-[10px] text-xs md:text-base font-medium bg-[#272727] text-white cursor-pointer rounded-[4px]"
             >
               Apply
             </div>
@@ -138,12 +150,13 @@ export default function Home() {
           </div>
           <div className="text-[24px] text-[#383F4E] mt-5 md:mt-[26px] font-semibold">October 3rd ｜ NYC</div>
           <p className="text-[#383F4E] text-sm leading-[22px] md:leading-[30px] md:text-[20px] text-center mt-[25px] max-w-[307px] md:max-w-[661px]">
-            For the first time, ten distinguished university blockchain clubs are uniting, supported by extensive alumni networks and in collaboration with leading projects and investors. Together,
-            we aim to cultivate emerging talents and foster innovative projects, paving the way for the future leaders of crypto.
-
+            For the first time, ten distinguished university blockchain clubs are uniting, supported by extensive alumni
+            networks and in collaboration with leading projects and investors. Together, we aim to cultivate emerging
+            talents and foster innovative projects, paving the way for the future leaders of crypto.
             <br></br>
             <br></br>
-            We warmly welcome and encourage more colleges and institutions to join us in building a collaborative blockchain future.
+            We warmly welcome and encourage more colleges and institutions to join us in building a collaborative
+            blockchain future.
           </p>
           <div className="flex flex-col md:flex-row gap-[14px] md:gap-[80px] mt-[25px]">
             <div
@@ -341,29 +354,33 @@ export default function Home() {
             className="flex relative text-[34px] md:text-[48px] font-semibold"
             style={{ fontFamily: "ClashDisplay, sans-serif" }}
           >
-            <span>CUBE Summit</span>
+            <span>Our Mission</span>
             <div className="absolute left-[8px] bottom-[12px] -z-[1] w-[244px] h-[10px] bg-[#CFF285] rounded-lg"></div>
           </div>
 
           <div className="mt-4 text-lg text-[#6B6B6B]">
-            Hosted in the vibrant city of NewYork on October 3rd, Collaborative University Blockchain Ecosystem Summit
-            (CUBE Summit) brings together top minds from
-            <span className="text-[#343434] font-medium ml-1">
-              Columbia, Cornell, Harvard, MIT, NYU, Oxford, Stanford, UC Berkeley, UPenn and Yale,
-            </span>{" "}
-            along with industry leaders from leading AI projects, major public blockchains, and top venture capital
-            firms.
-            <br />
-            <br />
-            Featuring panel discussions, keynote speeches, pitching sessions, and an exclusive after-party, we leverage
-            powerful alumni networks to shape the future stars of the crypto world.
+            The inaugural Collaborative University Blockchain Ecosystem (CUBE) Summit is set in the vibrant founder and
+            investor ecosystem of New York City on October 3rd, bringing together the brightest minds in blockchain.
+            This event will unite eager students and alumni from prominent academic institutions with visionary leaders
+            from cutting-edge AI projects, major public blockchains, and top-tier venture capital firms to shape the
+            future of blockchain.
+          </div>
+
+          <div className="mt-4 flex flex-col">
+            <span className="text-[#6B6B6B] text-lg">Attendees can expect:</span>
+            <ul className="mt-1 flex flex-col pl-5 text-[#2A2020] text-base font-medium">
+              <li className="list-disc">Engaging discussions on the future of blockchain technology</li>
+              <li className="list-disc">Exclusive networking opportunities with industry leaders</li>
+              <li className="list-disc">Showcases of innovative early-stage projects</li>
+              <li className="list-disc">Potential partnerships and investment opportunities</li>
+            </ul>
           </div>
 
           <div
-            onClick={() => router.push("https://medium.com/@cubesummit")}
+            onClick={() => router.push("https://lu.ma/hdbfank6")}
             className="cursor-pointer rounded-[4px] h-[56px] mt-[45px] flex items-center justify-center font-medium text-base border-2 border-[#272727]"
           >
-            Read more
+            Register For Summit
           </div>
         </div>
         <div className="flex-1 hidden md:block">
@@ -379,37 +396,48 @@ export default function Home() {
               <div className="absolute left-[8px] bottom-[12px] -z-[1] w-[310px] h-[10px] bg-[#CFF285] rounded-lg"></div>
             </div>
             <div className="mt-[16px] text-[#6B6B6B] text-lg font-normal" style={{ fontFamily: "Inter Display" }}>
-              The inaugural Collaborative University Blockchain Ecosystem (CUBE) Summit is set in the vibrant founder and investor ecosystem of New York City on October 3rd, bringing together the brightest minds in blockchain. This event will unite eager students and alumni from prominent academic institutions with visionary leaders from cutting-edge AI projects, major public blockchains, and top-tier venture capital firms to shape the future of blockchain.
+              The inaugural Collaborative University Blockchain Ecosystem (CUBE) Summit is set in the vibrant founder
+              and investor ecosystem of New York City on October 3rd, bringing together the brightest minds in
+              blockchain. This event will unite eager students and alumni from prominent academic institutions with
+              visionary leaders from cutting-edge AI projects, major public blockchains, and top-tier venture capital
+              firms to shape the future of blockchain.
               <br />
               <br />
               Attendees can expect:
-
               <div className="pt-0 text-base font-medium leading-7  text-stone-800">
                 <div className="h-[23px] flex ">
                   <div className="font-bold text-[28px] h-[23px] mr-1">·</div>
-                  <div className="text-[16px]" style={{ fontFamily: "Inter Display" }}>Engaging discussions on the future of blockchain technology</div>
+                  <div className="text-[16px]" style={{ fontFamily: "Inter Display" }}>
+                    Engaging discussions on the future of blockchain technology
+                  </div>
                 </div>
                 <div className="h-[23px] flex ">
                   <div className="font-bold text-[28px] h-[23px] mr-1">·</div>
-                  <div className="text-[16px]" style={{ fontFamily: "Inter Display" }}>Exclusive networking opportunities with industry leaders</div>
+                  <div className="text-[16px]" style={{ fontFamily: "Inter Display" }}>
+                    Exclusive networking opportunities with industry leaders
+                  </div>
                 </div>
                 <div className="h-[23px] flex ">
                   <div className="font-bold text-[28px] h-[23px] mr-1">·</div>
-                  <div className="text-[16px]" style={{ fontFamily: "Inter Display" }}>Showcases of innovative early-stage projects</div>
+                  <div className="text-[16px]" style={{ fontFamily: "Inter Display" }}>
+                    Showcases of innovative early-stage projects
+                  </div>
                 </div>
                 <div className="h-[23px] flex ">
                   <div className="font-bold text-[28px] h-[23px] mr-1">·</div>
-                  <div className="text-[16px]" style={{ fontFamily: "Inter Display" }}>Potential partnerships and investment opportunities</div>
+                  <div className="text-[16px]" style={{ fontFamily: "Inter Display" }}>
+                    Potential partnerships and investment opportunities
+                  </div>
                 </div>
               </div>
             </div>
 
             <div
               onClick={registerTo}
-              className="cursor-pointer rounded-[4px] w-[219px] h-[56px] mt-[45px] flex items-center justify-center font-medium text-base border-2 border-[#272727]">
+              className="cursor-pointer rounded-[4px] w-[219px] h-[56px] mt-[45px] flex items-center justify-center font-medium text-base border-2 border-[#272727]"
+            >
               Register For Summit
             </div>
-
           </div>
         </div>
         <div className="mt-6 md:mt-0">
@@ -426,21 +454,21 @@ export default function Home() {
             className="flex relative text-[34px] md:text-[48px] font-semibold"
             style={{ fontFamily: "ClashDisplay, sans-serif" }}
           >
-            <span>CUBE Summit: Uniting Minds, Empowering Networks</span>
+            <span>Unleash Your Potential on the Exclusive Pitching Stage</span>
             <div className="absolute left-[8px] bottom-[12px] -z-[1] w-[244px] h-[10px] bg-[#CFF285] rounded-lg"></div>
           </div>
 
           <p className="mt-[16px] text-[#6B6B6B] text-lg " style={{ fontFamily: "Inter Display" }}>
-            We unite top universities, leveraging robust alumni networks to drive innovation in blockchain. By
-            connecting academia and industry, we have formed a thriving network. We invite you to become a vital part of
-            our community. Join us on October 3rd and be a part of CUBE Summit.
+            Seize the opportunity to showcase your innovative project at the forefront of “Crypto x AI” by applying for
+            our exclusive pitching stage. This is your chance to present your ideas to a distinguished panel of industry
+            leaders, top-tier investors, and academic experts from some of the world's most prestigious institutions.
           </p>
 
           <div
             onClick={() => router.push("https://lu.ma/hdbfank6")}
             className="cursor-pointer rounded-[4px] h-[56px] mt-[45px] flex items-center justify-center font-medium text-base border-2 border-[#272727]"
           >
-            Register for Summit
+            Learn More
           </div>
         </div>
         <div className="flex-1 justify-end hidden md:flex">
@@ -456,7 +484,10 @@ export default function Home() {
               <div className="absolute left-[0px] bottom-[12px] -z-[1] w-[510px] h-[10px] bg-[#CFF285] rounded-lg"></div>
             </div>
             <p className="mt-[16px] text-[#6B6B6B] text-lg font-normal" style={{ fontFamily: "Inter Display" }}>
-              Seize the opportunity to showcase your innovative project at the forefront of “Crypto x AI” by applying for our exclusive pitching stage. This is your chance to present your ideas to a distinguished panel of industry leaders, top-tier investors, and academic experts from some of the world's most prestigious institutions.
+              Seize the opportunity to showcase your innovative project at the forefront of “Crypto x AI” by applying
+              for our exclusive pitching stage. This is your chance to present your ideas to a distinguished panel of
+              industry leaders, top-tier investors, and academic experts from some of the world's most prestigious
+              institutions.
             </p>
 
             <div
@@ -527,8 +558,9 @@ export default function Home() {
               .map((speaker) => (
                 <div
                   key={speaker.id}
-                  className={`flex flex-col items-start p-[18px] rounded-md border-2 border-[#E8E7EE] cursor-pointer ${speaker.id % 4 == 0 ? "" : "mr-[25px]"
-                    } `}
+                  className={`flex flex-col items-start p-[18px] rounded-md border-2 border-[#E8E7EE] cursor-pointer ${
+                    speaker.id % 4 == 0 ? "" : "mr-[25px]"
+                  } `}
                 >
                   <div className="relative">
                     <img src={speaker.img} alt={speaker.name} className="w-[238px] h-[238px] bg-[#E7D6FF]" />
@@ -588,59 +620,59 @@ export default function Home() {
 
       <div
         id="partners"
-        className="flex overflow-hidden flex-col justify-center items-center py-10 bg-slate-100">
-        <div className="text-5xl font-semibold leading-none text-neutral-800 max-md:text-4xl" style={{ fontFamily: "ClashDisplay, sans-serif" }}>
+        className="flex overflow-hidden flex-col justify-center items-center py-4 md:py-10 bg-slate-100"
+      >
+        <div
+          className="text-5xl font-semibold leading-none text-neutral-800 max-md:text-4xl"
+          style={{ fontFamily: "ClashDisplay, sans-serif" }}
+        >
           Partners
         </div>
-        <div className="flex flex-col mt-10 w-full max-md:max-w-full">
+        <div className="flex flex-col mt-6 md:mt-10 w-full max-md:max-w-full">
           <img
             loading="lazy"
             srcSet="/partners.png"
-            className="object-contain w-full aspect-[4.5] max-md:max-w-full"
+            className="hidden md:inline-block object-contain w-full aspect-[4.5] max-md:max-w-full"
           />
-          <img
-            loading="lazy"
-            srcSet="/logolist.png"
-            className="md:hidden mt-6"
-          />
+          <img loading="lazy" srcSet="/partners-mobile.png" className="md:hidden" />
         </div>
       </div>
 
-
-
-
-
-
-
-
-      <section className="flex flex-col justify-center w-full relative" id='pitching'>
+      <section className="flex flex-col justify-center w-full relative" id="pitching">
         <img src="/banner/image2.png" className="w-[403px]  absolute top-[0px] right-[0px] hidden md:block" />
 
-        <div className="text-[40px] md:text-[48px] text-[#272727] font-semibold text-center mt-[40px]" style={{ fontFamily: "ClashDisplay, sans-serif" }}>
+        <div
+          className="text-[40px] md:text-[48px] text-[#272727] font-semibold px-5 md:px-0 md:text-center mt-6 md:mt-[40px]"
+          style={{ fontFamily: "ClashDisplay, sans-serif" }}
+        >
           Pitching Session
         </div>
-        <div className="flex flex-col md:flex-row mt-[40px]">
+        <div className="flex flex-col md:flex-row mt-[30px]">
           <div className="flex flex-col px-5 md:hidden">
             <div
-              className="text-[#272727] text-[34px] font-semibold"
+              className="text-[#272727] text-[34px] leading-[36px] font-semibold"
               style={{ fontFamily: "ClashDisplay, sans-serif" }}
             >
               Who Can Participate？
             </div>
             <div className="text-[#6B6B6B] text-lg mt-4">
-              We’re seeking the brightest minds in Crypto and AI to join “CUBE Summit”. All teams are welcome to apply
-              and present your BIG IDEAS, whether you’re working on infrastructure, applications, gaming, or social
-              platforms, though priority will be given to alumni projects of initiators.
+              We're on the lookout for leading visionaries building in the 'Crypto x AI' space to join the CUBE Summit
+              pitching contest. All teams are invited to apply and showcase your boldest ideas—whether you're innovating
+              in infrastructure, applications, gaming, or social platforms. We welcome all builders seeking to make a
+              difference, with priority given to projects of our co-initiating universities.
             </div>
             <div className="text-[#6B6B6B] text-lg mt-4">
-              As a talented individual, you will have a chance to join forces with top talent: find co-founders for your
-              project or join a team that inspires you, unlocking limitless possibilities together!
+              For ambitious individuals looking for a team, this is also an unique opportunity to connect with leading
+              alumni projects and become part of a dynamic, high-potential startup team.
             </div>
+
+            <div className="text-[#2A2020] text-lg font-medium mt-4">Let's Build the Blockchain of Tomorrow!</div>
+
             <div
               onClick={() => router.push("https://apply.cubesummit.xyz/")}
               className="mb-4 rounded-[4px] cursor-pointer  h-[56px] mt-[32px] flex items-center justify-center font-medium text-base border-2 border-[#272727]"
             >
-              Apply to Pitch Now
+              Apply Now
             </div>
           </div>
 
@@ -653,14 +685,16 @@ export default function Home() {
                 <span>Who Can Participate？</span>
               </div>
               <p className="mt-[16px] text-[#6B6B6B] text-lg font-normal">
-                We're on the lookout for leading visionaries building in the 'Crypto x AI' space to join the CUBE Summit pitching contest. All teams are invited to apply and showcase your boldest ideas—whether you're innovating in infrastructure, applications, gaming, or social platforms. We welcome all builders seeking to make a difference, with priority given to projects of our co-initiating universities.
+                We're on the lookout for leading visionaries building in the 'Crypto x AI' space to join the CUBE Summit
+                pitching contest. All teams are invited to apply and showcase your boldest ideas—whether you're
+                innovating in infrastructure, applications, gaming, or social platforms. We welcome all builders seeking
+                to make a difference, with priority given to projects of our co-initiating universities.
               </p>
               <p className="mt-[16px] text-[#6B6B6B] text-lg font-normal">
-                For ambitious individuals looking for a team, this is also an unique opportunity to connect with leading alumni projects and become part of a dynamic, high-potential startup team.
+                For ambitious individuals looking for a team, this is also an unique opportunity to connect with leading
+                alumni projects and become part of a dynamic, high-potential startup team.
               </p>
-              <p className="mt-[16px] text-[#2A2020] text-[18px]">
-                Let's Build the Blockchain of Tomorrow!
-              </p>
+              <p className="mt-[16px] text-[#2A2020] text-[18px]">Let's Build the Blockchain of Tomorrow!</p>
 
               <div
                 onClick={() => router.push("https://apply.cubesummit.xyz/")}
@@ -682,62 +716,62 @@ export default function Home() {
         </div>
         <div className="md:hidden flex flex-col px-5 mb-4">
           <div
-            className="flex justify-center relative text-[38px] font-semibold mt-[20px]"
+            className="flex md:justify-center relative text-[38px] font-semibold mt-[20px]"
             style={{ fontFamily: "ClashDisplay, sans-serif" }}
           >
-            <span> What to expect</span>
+            <span>What to expect？</span>
           </div>
           <p className="mt-[6px] text-[#6B6B6B] text-lg">
-            Backed by powerful alumni networks, we offer you the opportunity to showcase your project to top-tier
-            investors and the heads of major public blockchains. Beyond serving as an ideal platform to launch your
-            project, you can anticipate:
+            Powered by our extensive alumni networks, we offer you an unparalleled opportunity to showcase your project
+            to top-tier investors and leaders of major public blockchains. Beyond serving as an ideal launchpad for your
+            project, the platform is also a gateway to numerous invaluable opportunities, including:
           </p>
-          <ul className="flex flex-col gap-[24px] mt-[40px]">
+          <ul className="flex flex-col gap-[14px] mt-[12px] text-[#252424] font-medium">
             <li className="flex items-center gap-2">
-              <img src="/icon.png" width={22} height={22} alt="" />A chance to present on-stage at CUBE Summit in front
-              of some of the most influential figures in crypto
-            </li>
-            <li className="flex items-center gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
-                <g clipPath="url(#clip0_161_254)">
-                  <path
-                    d="M22 11.2964C22 5.22125 17.0751 0.296387 11 0.296387C4.92487 0.296387 0 5.22125 0 11.2964C0 17.3715 4.92487 22.2964 11 22.2964C17.0751 22.2964 22 17.3715 22 11.2964Z"
-                    fill="#CFF285"
-                  />
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M8.83145 12.8387L14.2319 7.63037L15.8887 9.30398L8.83145 16.1859L4.88867 12.3266L6.54537 10.6529L8.83145 12.8387Z"
-                    fill="#272727"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_161_254">
-                    <rect width="22" height="22" fill="white" transform="translate(0 0.296387)" />
-                  </clipPath>
-                </defs>
-              </svg>
-              Special awards from industry leaders (Stay Tuned!)
+              <img src="/icon.png" width={22} height={22} alt="" />
+              <span>
+                <span className="font-extrabold">Special prizes</span> presented by industry leaders (stay tuned!)
+              </span>
             </li>
             <li className="flex items-center gap-2">
               <img src="/icon.png" width={22} height={22} alt="" />
-              Opportunities for fast-track reviews into accelerators like a16z's CSX and SpringX
+              <span>
+                Opportunities for fast-track reviews into accelerators{" "}
+                <span className="font-extrabold">like a16z crypto’s CSX and SpringX Solana Accelerator</span>
+              </span>
             </li>
             <li className="flex items-center gap-2">
               <img src="/icon.png" width={22} height={22} alt="" />
-              Tap into a powerful investor network to connect with top-tier VCs looking to fund the next big crypto
-              innovations
+              <span>
+                Tap into an <span className="font-extrabold">influential investor network</span> to connect with
+                top-tier VCs looking to back the next
+              </span>
             </li>
             <li className="flex items-center gap-2">
               <img src="/icon.png" width={22} height={22} alt="" />
-              Directly connecting with top-tier public blockchains eager to attract quality projects to thrive in their
-              ecosystem.
+              <span>
+                Opportunities for direct access with <span className="font-extrabold">leading public chains</span>
+              </span>
             </li>
             <li className="flex items-center gap-2">
               <img src="/icon.png" width={22} height={22} alt="" />
-              Opportunities for 1-on-1 mentorship such as polishing your deck and improving your pitch.
+              <span>1:1 mentoring, focused on refining pitch materials and enhancing presentation skills</span>
+            </li>
+            <li className="flex items-center gap-2">
+              <img src="/icon.png" width={22} height={22} alt="" />
+              <span>Exclusive access to an evening event with initiators and speakers for deep connections</span>
+            </li>
+            <li className="flex items-center gap-2">
+              <img src="/icon.png" width={22} height={22} alt="" />
+              <span>
+                Grants for <span className="font-extrabold">travel and accommodation expenses</span>
+              </span>
             </li>
           </ul>
+          <span className="text-[#6B6B6B] text-lg mt-3">
+            Seize this chance to propel your project to new heights and make a lasting impact on the future of
+            technology.
+          </span>
         </div>
         <div className="md:flex flex-1 justify-end hidden">
           <div className="flex flex-col items-start w-[562px]" style={{ marginRight: "calc((100vw - 1200px) / 2)" }}>
@@ -748,66 +782,63 @@ export default function Home() {
               <span> What to expect？</span>
             </div>
             <p className="text-[#6B6B6B] text-lg">
-              Powered by our extensive alumni networks, we offer you an unparalleled opportunity to showcase your project to top-tier investors and leaders of major public blockchains. Beyond serving as an ideal launchpad for your project, the platform is also a gateway to numerous invaluable opportunities, including:
+              Powered by our extensive alumni networks, we offer you an unparalleled opportunity to showcase your
+              project to top-tier investors and leaders of major public blockchains. Beyond serving as an ideal
+              launchpad for your project, the platform is also a gateway to numerous invaluable opportunities,
+              including:
             </p>
             <ul className="flex flex-col gap-[10px] mt-[16px]">
               <li className="flex items-center gap-2">
                 <img src="/icon.png" width={22} height={22} alt="" />
                 <div className="self-stretch my-auto w-[521px] max-md:max-w-full">
-                  <span className="font-extrabold">Special prizes</span> presented by
-                  industry leaders (stay tuned!)
+                  <span className="font-extrabold">Special prizes</span> presented by industry leaders (stay tuned!)
                 </div>
               </li>
               <li className="flex items-center gap-2">
                 <img src="/icon.png" width={22} height={22} alt="" />
                 <div className="self-stretch my-auto w-[563px] max-md:max-w-full">
                   Opportunities for fast-track reviews into accelerators{" "}
-                  <span className="font-extrabold">
-                    like a16z crypto’s CSX and SpringX Solana Accelerator
-                  </span>
+                  <span className="font-extrabold">like a16z crypto’s CSX and SpringX Solana Accelerator</span>
                 </div>
               </li>
               <li className="flex items-center gap-2">
                 <img src="/icon.png" width={22} height={22} alt="" />
                 <div className="self-stretch my-auto w-[563px] max-md:max-w-full">
-                  Tap into an{" "}
-                  <span className="font-extrabold">influential investor network</span> to
-                  connect with top-tier VCs looking to back the next
+                  Tap into an <span className="font-extrabold">influential investor network</span> to connect with
+                  top-tier VCs looking to back the next
                 </div>
               </li>
               <li className="flex items-center gap-2">
                 <img src="/icon.png" width={22} height={22} alt="" />
                 <div className="self-stretch my-auto w-[563px] max-md:max-w-full">
-                  Opportunities for direct access with{" "}
-                  <span className="font-extrabold">leading public chains</span>
+                  Opportunities for direct access with <span className="font-extrabold">leading public chains</span>
                 </div>
               </li>
               <li className="flex items-center gap-2">
                 <img src="/icon.png" width={22} height={22} alt="" />
                 <div className="self-stretch my-auto w-[563px] max-md:max-w-full">
-                  1:1 mentoring, focused on refining pitch materials and enhancing
-                  presentation skills
-                </div>              </li>
+                  1:1 mentoring, focused on refining pitch materials and enhancing presentation skills
+                </div>{" "}
+              </li>
 
               <li className="flex items-center gap-2">
                 <img src="/icon.png" width={22} height={22} alt="" />
                 <div className="self-stretch my-auto w-[563px] max-md:max-w-full">
-                  Exclusive access to an evening event with initiators and speakers for deep
-                  connections
+                  Exclusive access to an evening event with initiators and speakers for deep connections
                 </div>
               </li>
 
               <li className="flex items-center gap-2">
                 <img src="/icon.png" width={22} height={22} alt="" />
                 <div className="self-stretch my-auto w-[563px] max-md:max-w-full">
-                  Grants for{" "}
-                  <span className="font-extrabold">travel and accommodation expenses</span>
-                </div></li>
+                  Grants for <span className="font-extrabold">travel and accommodation expenses</span>
+                </div>
+              </li>
 
               <li className="flex items-center gap-1 text-[#6B6B6B]">
-                Seize this chance to propel your project to new heights and make a lasting impact on the future of technology.
+                Seize this chance to propel your project to new heights and make a lasting impact on the future of
+                technology.
               </li>
-
             </ul>
           </div>
         </div>
@@ -918,18 +949,20 @@ export default function Home() {
       </section> */}
 
       <section id="timeline" className="flex justify-center w-full py-5 md:py-[40px] bg-[#F6F9FC] relative">
-        <img src="/banner/image1.png" className="h-[172px]  absolute top-[0px] right-[0px]" />
+        <img src="/banner/image1.png" className="h-[172px]  absolute top-[0px] right-[0px] hidden md:inline-block" />
 
         <div className="flex flex-col items-center w-[1200px] px-4 md:px-0">
-          <div className="text-[48px] text-[#272727] font-semibold" style={{ fontFamily: "ClashDisplay, sans-serif" }}>Timeline</div>
+          <div className="text-[48px] text-[#272727] font-semibold" style={{ fontFamily: "ClashDisplay, sans-serif" }}>
+            Timeline
+          </div>
           <div className="flex flex-col w-full mt-6 md:mt-[40px] bg-[#EEF5FC]">
             <div className="px-[14px] py-[18px] md:px-[38px] md:py-[26px] border-b-[1px] border-[#0000001A] flex flex-col md:block">
-              <span className="text-base md:text-[24px] text-[#153C3CAD] font-semibold">August 15 - August 31:</span>
+              <span className="text-base md:text-[24px] text-[#153C3CAD] font-semibold">August 19 - September 1:</span>
               <span className="text-base md:text-[24px] text-[#153C3C] font-extrabold md:ml-2">Application Period</span>
             </div>
             <div className="px-[14px] py-[18px] md:px-[38px] md:py-[26px] border-b-[1px] border-[#0000001A] flex flex-col md:block">
               <span className="text-base md:text-[24px] text-[#153C3CAD] font-semibold">
-                September 1 - September 15:
+                September 2 - September 15:
               </span>
               <span className="text-base md:text-[24px] text-[#153C3C] font-extrabold md:ml-2">Interview Phase</span>
             </div>
@@ -955,18 +988,27 @@ export default function Home() {
       </section>
 
       <div className="flex overflow-hidden flex-col justify-center items-center py-10 text-5xl font-semibold leading-none text-lime-300 bg-neutral-800 max-md:text-4xl">
-        <div className="max-md:max-w-full max-md:text-4xl" style={{ fontFamily: "ClashDisplay, sans-serif" }}>
+        <div
+          className="text-center md:text-left max-md:max-w-full max-md:text-4xl mb-5 md:mb-0"
+          style={{ fontFamily: "ClashDisplay, sans-serif" }}
+        >
           Collaborative Support
         </div>
         <img
           loading="lazy"
           srcSet="/support.png"
-          className="object-contain mt-10 w-full aspect-[2.57] max-md:max-w-full"
+          className="object-contain mt-10 w-full aspect-[2.57] hidden md:inline-block max-md:max-w-full"
         />
+        <img src="/support-mobile.png" alt="" className="md:hidden" />
       </div>
 
       <section className="flex flex-col py-[34px] md:py-[112px] items-center w-full">
-        <div className="text-[34px] md:text-[48px] text-[#272727] font-semibold mb-5 md:mb-0" style={{ fontFamily: "ClashDisplay, sans-serif" }}>FAQs</div>
+        <div
+          className="text-[34px] md:text-[48px] text-[#272727] font-semibold mb-5 md:mb-0"
+          style={{ fontFamily: "ClashDisplay, sans-serif" }}
+        >
+          FAQs
+        </div>
         <div className="flex flex-col gap-y-[16px] px-5 md:px-0 md:w-[768px]">
           {questions.map((item, index) => (
             <div key={index} className="flex flex-col border-[1px] border-black rounded-[4px]">
@@ -1008,19 +1050,27 @@ export default function Home() {
       </section>
 
       <footer className="bg-[#272727] flex items-center justify-center py-[30px] w-full md:hidden">
-        <div className="flex flex-col items-center w-[256px]">
+        <div className="flex flex-col items-center w-[300px]">
           <Image src="/logo1.svg" width={72} height={31} alt="icon" />
           <Row gutter={[32, 16]} className="mt-6">
-            {["Home", "About", "Speakers", "Partners", "Agenda"].map((item, index) => (
-              <Col
-                span={8}
-                key={index}
-                className={`text-white cursor-pointer ${activeIndex === index ? "font-semibold" : ""}`}
-                onClick={() => handleClick(index)}
-              >
-                <a href={`#${item.toLowerCase()}`}>{item}</a>
-              </Col>
-            ))}
+            {["Home", "About", "Speakers", "Partners", "Pitching Session", "Timeline", "Contact Us"].map(
+              (item, index) => (
+                <Col
+                  span={8}
+                  key={index}
+                  className={`text-white cursor-pointer ${activeIndex === index ? "font-semibold" : ""}`}
+                  onClick={() => {
+                    if (item === "Contact Us") {
+                      handleCopy();
+                    } else {
+                      router.push(`#${item.toLowerCase()}`);
+                    }
+                  }}
+                >
+                  {item}
+                </Col>
+              )
+            )}
           </Row>
 
           <div className="flex items-center gap-[36px] mt-6">
@@ -1083,7 +1133,7 @@ export default function Home() {
           </svg> */}
           <nav>
             <ul className="flex gap-[32px] text-white">
-              {["Home", "About", "Speakers", "Partners", "Pitching Session", "Timeline",].map((item, index) => (
+              {["Home", "About", "Speakers", "Partners", "Pitching Session", "Timeline"].map((item, index) => (
                 <li
                   key={index}
                   className={` cursor-pointer ${activeIndex === index ? "font-semibold" : ""}`}
@@ -1092,13 +1142,9 @@ export default function Home() {
                   <a href={`#${item.split(" ")[0].toLowerCase()}`}>{item}</a>
                 </li>
               ))}
-              <li
-                 
-                  className={` cursor-pointer `}
-                  onClick={handleCopy}
-                >
-                  <div>Contact Us</div>                 
-                </li>
+              <li className={` cursor-pointer `} onClick={handleCopy}>
+                <div>Contact Us</div>
+              </li>
             </ul>
           </nav>
           <div className="flex items-center gap-[14px]">
