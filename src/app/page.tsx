@@ -368,7 +368,7 @@ export default function Home() {
 
           <div className="mt-4 flex flex-col">
             <span className="text-[#6B6B6B] text-lg">Attendees can expect:</span>
-            <ul className="mt-1 flex flex-col pl-5 text-[#2A2020] text-base font-medium">
+            <ul className="mt-1 flex  flex-col pl-5 text-[#2A2020] text-base font-medium">
               <li className="list-disc">Engaging discussions on the future of blockchain technology</li>
               <li className="list-disc">Exclusive networking opportunities with industry leaders</li>
               <li className="list-disc">Showcases of innovative early-stage projects</li>
@@ -404,27 +404,27 @@ export default function Home() {
               <br />
               <br />
               Attendees can expect:
-              <div className="pt-0 text-base font-medium leading-7  text-stone-800">
-                <div className="h-[23px] flex ">
-                  <div className="font-bold text-[28px] h-[23px] mr-1">·</div>
+              <div className="pt-0 text-base font-medium leading-7 gap-1  text-stone-800">
+                <div className=" flex gap-1">
+                  <div className="font-bold text-[28px]  mr-1">·</div>
                   <div className="text-[16px]" style={{ fontFamily: "Inter Display" }}>
                     Engaging discussions on the future of blockchain technology
                   </div>
                 </div>
-                <div className="h-[23px] flex ">
-                  <div className="font-bold text-[28px] h-[23px] mr-1">·</div>
+                <div className=" flex gap-1">
+                  <div className="font-bold text-[28px] mr-1">·</div>
                   <div className="text-[16px]" style={{ fontFamily: "Inter Display" }}>
                     Exclusive networking opportunities with industry leaders
                   </div>
                 </div>
-                <div className="h-[23px] flex ">
-                  <div className="font-bold text-[28px] h-[23px] mr-1">·</div>
+                <div className=" flex gap-1">
+                  <div className="font-bold text-[28px]  mr-1">·</div>
                   <div className="text-[16px]" style={{ fontFamily: "Inter Display" }}>
                     Showcases of innovative early-stage projects
                   </div>
                 </div>
-                <div className="h-[23px] flex ">
-                  <div className="font-bold text-[28px] h-[23px] mr-1">·</div>
+                <div className=" flex gap-1">
+                  <div className="font-bold text-[28px]  mr-1">·</div>
                   <div className="text-[16px]" style={{ fontFamily: "Inter Display" }}>
                     Potential partnerships and investment opportunities
                   </div>
