@@ -11,7 +11,7 @@ import MobileMenu from "@/component/MobileMenu";
 import { useRouter } from "next/navigation";
 
 export default function Home() {
-  const [visibleCount, setVisibleCount] = useState(10);
+  const [visibleCount, setVisibleCount] = useState(12);
   const router = useRouter();
 
   const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -24,6 +24,8 @@ export default function Home() {
   const toggleFAQ = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
   };
+
+  const registerTo = () => router.push("https://lu.ma/hdbfank6")
 
   const questions = [
     {
@@ -52,17 +54,18 @@ export default function Home() {
 
   // 数据数组
   const speakers = [
-    { id: 6, name: "Guy Wuollet", company: "Investment Partner at a16z crypto", img: "/speakers/6.png" },
-    { id: 4, name: "Christian Ondaatje", company: "Platform Engineer of Hyperbolic", img: "/speakers/5.png" },
-    { id: 1, name: "Anna Bertha", company: "Investor at DCG", img: "/speakers/3.png" },
-    { id: 8, name: "Jiahao Sun", company: "Founder and CEO of FLock.io", img: "/speakers/8.png" },
-    { id: 3, name: "Chris Zhu", company: "Co-founder of Sonic / Mirror World", img: "/speakers/9.png" },
-    { id: 7, name: "Greg Osuri", company: "Founder of Akash", img: "/speakers/1.png" },
-    { id: 9, name: "Naveen Durvasula", company: "Core Member of Ritual", img: "/speakers/2.png" },
-    { id: 2, name: "Ben Fielding", company: "Co-founder of Gensyn", img: "/speakers/4.png" },
-    { id: 5, name: "Evan Feng", company: "Partner at CoinFund", img: "/speakers/12.png" },
-    { id: 10, name: "Tom Schmidt", company: "Partner at Dragonfly", img: "/speakers/7.png" },
-    // { id: 11, name: "Lily Liu", company: "President of Solana Foundation", img: "/speakers/11.png" },
+    { id: 8, name: "Guy Wuollet", company: "Investment Partner at a16z crypto", img: "/speakers/6.png", icon: "6" },
+    { id: 1, name: "Anna Bertha", company: "Investor at DCG", img: "/speakers/3.png", icon: "1" },
+    { id: 9, name: "Jiahao Sun", company: "Founder and CEO of FLock.io", img: "/speakers/8.png", icon: "8" },
+    { id: 5, name: "David Attermann", company: "Head of Web3 Investments at M31 Capital", img: "/speakers/13.png", icon: "12" },
+    { id: 3, name: "Chris Zhu", company: "Co-founder of Sonic / Mirror World", img: "/speakers/9.png", icon: "3" },
+    { id: 4, name: "Christian Ondaatje", company: "Platform Engineer of Hyperbolicd", img: "/speakers/5.png", icon: "4" },
+    { id: 7, name: "Greg Osuri", company: "Founder of Akash", img: "/speakers/1.png", icon: "7" },
+    { id: 10, name: "Naveen Durvasula", company: "Core Member of Ritual", img: "/speakers/2.png", icon: "9" },
+    { id: 2, name: "Ben Fielding", company: "Co-founder of Gensyn", img: "/speakers/4.png", icon: "2" },
+    { id: 6, name: "Evan Feng", company: "Partner at CoinFund", img: "/speakers/12.png", icon: "5" },
+    { id: 11, name: "Nihal Maunder", company: "Junior Partner at Pantera", img: "/speakers/14.png", icon: "14" },
+    { id: 12, name: "Tom Schmidt", company: "Partner at Dragonfly", img: "/speakers/7.png", icon: "13" },
   ];
 
   // 点击按钮后展示更多数据
@@ -96,22 +99,22 @@ export default function Home() {
             </div>
             <nav className="md:block hidden">
               <ul className="flex items-center gap-[36px] h-full text-[#272727]">
-                {["Home", "About", "Speakers", "Partners", "Agenda"].map((item, index) => (
+                {["Home", "About", "Speakers", "Partners", "Pitching Session", "Timeline"].map((item, index) => (
                   <li
                     key={index}
                     className={` cursor-pointer ${activeIndex === index ? "font-semibold" : ""}`}
                     onClick={() => handleClick(index)}
                   >
-                    <a href={`#${item.toLowerCase()}`}>{item}</a>
+                    <a href={`#${item.split(" ")[0].toLowerCase()}`}>{item}</a>
                   </li>
                 ))}
               </ul>
             </nav>
             <div
               onClick={() => router.push("https://apply.cubesummit.xyz/")}
-              className="flex items-center justify-center md:px-[24px] md:py-[16px] p-[10px] text-xs md:text-base font-medium bg-[#272727] text-white cursor-pointer rounded-[4px]"
+              className="flex w-[218px] items-center justify-center md:px-[24px] md:py-[16px] p-[10px] text-xs md:text-base font-medium bg-[#272727] text-white cursor-pointer rounded-[4px]"
             >
-              Apply for CUBE Summit
+              Apply
             </div>
           </header>
           <div
@@ -126,9 +129,12 @@ export default function Home() {
           </div>
           <div className="text-[24px] text-[#383F4E] mt-5 md:mt-[26px] font-semibold">October 3rd ｜ NYC</div>
           <p className="text-[#383F4E] text-sm leading-[22px] md:leading-[30px] md:text-[20px] text-center mt-[25px] max-w-[307px] md:max-w-[646px]">
-            For the first time, top university blockchain clubs are teaming up, backed by extensive alumni networks, in
-            collaboration with leading blockchains, projects, and VCs, to ignite emerging talents and innovative
-            projects, shaping the future stars of the crypto world.
+            For the first time, ten distinguished university blockchain clubs are uniting, supported by extensive alumni networks and in collaboration with leading projects and investors. Together,
+            we aim to cultivate emerging talents and foster innovative projects, paving the way for the future leaders of crypto.
+
+            <br></br>
+            <br></br>
+            We warmly welcome and encourage more colleges and institutions to join us in building a collaborative blockchain future.
           </p>
           <div className="flex flex-col md:flex-row gap-[14px] md:gap-[80px] mt-[25px]">
             <div
@@ -150,7 +156,7 @@ export default function Home() {
                   fill="#CFF285"
                 />
               </svg>
-              <span>Apply to Pitch by August 31</span>
+              <span>Apply to Pitch by September 1</span>
             </div>
           </div>
           <p className="text-[#383F4E] text-xl md:text-[24px] font-semibold mt-[80px] text-center md:text-left w-full">
@@ -247,6 +253,13 @@ export default function Home() {
               className="w-[100px] md:w-[136px]"
             />
             <Image
+              src="/banner/sponsors/image4.svg"
+              width={136}
+              height={48}
+              alt="icon"
+              className="w-[100px] md:w-[136px]"
+            />
+            <Image
               src="/banner/sponsors/image1.svg"
               width={136}
               height={48}
@@ -260,20 +273,7 @@ export default function Home() {
               alt="icon"
               className="w-[100px] md:w-[136px]"
             />
-            <Image
-              src="/banner/sponsors/image4.svg"
-              width={136}
-              height={48}
-              alt="icon"
-              className="w-[100px] md:w-[136px]"
-            />
-            <Image
-              src="/banner/sponsors/image5.svg"
-              width={136}
-              height={48}
-              alt="icon"
-              className="w-[100px] md:w-[136px]"
-            />
+
             <Image
               src="/banner/sponsors/image7.svg"
               width={136}
@@ -285,6 +285,14 @@ export default function Home() {
               src="/banner/sponsors/image8.svg"
               width={136}
               height={54}
+              alt="icon"
+              className="w-[100px] md:w-[136px]"
+            />
+
+            <Image
+              src="/banner/sponsors/image5.svg"
+              width={136}
+              height={48}
               alt="icon"
               className="w-[100px] md:w-[136px]"
             />
@@ -301,6 +309,14 @@ export default function Home() {
           <div className="flex flex-wrap w-full gap-5 justify-center md:justify-start md:gap-x-[34px] md:gap-y-[24px] mt-[24px] mb-[40px]">
             <Image
               src="/banner/organizer/image1.svg"
+              width={136}
+              height={48}
+              alt="icon"
+              className="w-[100px] md:w-[136px]"
+            />
+
+            <Image
+              src="/banner/organizer/image2.svg"
               width={136}
               height={48}
               alt="icon"
@@ -350,29 +366,41 @@ export default function Home() {
               className="flex justify-center relative text-[48px] font-semibold mt-[60px]"
               style={{ fontFamily: "ClashDisplay, sans-serif" }}
             >
-              <span>CUBE Summit</span>
+              <span>Our Mission</span>
               <div className="absolute left-[8px] bottom-[12px] -z-[1] w-[310px] h-[10px] bg-[#CFF285] rounded-lg"></div>
             </div>
             <p className="mt-[16px] text-[#6B6B6B] text-lg font-weight-normal" style={{ fontFamily: "Inter Display" }}>
-              Hosted in the vibrant city of NewYork on October 3rd, Collaborative University Blockchain Ecosystem Summit
-              (CUBE Summit) brings together top minds from
-              <span className="font-semibold text-[#343434]">
-                {" "}
-                Columbia, Cornell, Harvard, MIT, NYU, Oxford, Stanford, UCB, UPenn and Yale.{" "}
-              </span>
-              along with industry leaders from leading AI projects, major public blockchains, and top venture capital
-              firms.
+              The inaugural Collaborative University Blockchain Ecosystem (CUBE) Summit is set in the vibrant founder and investor ecosystem of New York City on October 3rd, bringing together the brightest minds in blockchain. This event will unite eager students and alumni from prominent academic institutions with visionary leaders from cutting-edge AI projects, major public blockchains, and top-tier venture capital firms to shape the future of blockchain.
               <br />
               <br />
-              Featuring panel discussions, keynote speeches, pitching sessions, and an exclusive after-party, we
-              leverage powerful alumni networks to shape the future stars of the crypto world.
+              Attendees can expect:
+
+              <div className="pt-0 text-base font-medium leading-7  text-stone-800">
+                <div className="h-[23px] flex ">
+                  <div className="font-bold text-[28px] h-[23px] mr-1">·</div>
+                  <div>Engaging discussions on the future of blockchain technology</div>
+                </div>
+                <div className="h-[23px] flex ">
+                  <div className="font-bold text-[28px] h-[23px] mr-1">·</div>
+                  <div>Exclusive networking opportunities with industry leaders</div>
+                </div>
+                <div className="h-[23px] flex ">
+                  <div className="font-bold text-[28px] h-[23px] mr-1">·</div>
+                  <div>Showcases of innovative early-stage projects</div>
+                </div>
+                <div className="h-[23px] flex ">
+                  <div className="font-bold text-[28px] h-[23px] mr-1">·</div>
+                  <div>Potential partnerships and investment opportunities</div>
+                </div>
+              </div>
             </p>
 
-            <Tooltip title="coming soon">
-              <div className="cursor-pointer rounded-[4px] w-[146px] h-[56px] mt-[45px] flex items-center justify-center font-medium text-base border-2 border-[#272727]">
-                Read more
-              </div>
-            </Tooltip>
+            <div
+              onClick={registerTo}
+              className="cursor-pointer rounded-[4px] w-[219px] h-[56px] mt-[45px] flex items-center justify-center font-medium text-base border-2 border-[#272727]">
+              Register For Summit
+            </div>
+
           </div>
         </div>
         <div className="mt-6 md:mt-0">
@@ -415,20 +443,18 @@ export default function Home() {
               className="flex justify-center relative text-[48px] font-semibold mt-[60px]"
               style={{ fontFamily: "ClashDisplay, sans-serif" }}
             >
-              <span>CUBE Summit: Uniting Minds, Empowering Networks</span>
+              <span>Unleash Your Potential on the Exclusive Pitching Stage</span>
               <div className="absolute left-[0px] bottom-[12px] -z-[1] w-[510px] h-[10px] bg-[#CFF285] rounded-lg"></div>
             </div>
             <p className="mt-[16px] text-[#6B6B6B] text-lg" style={{ fontFamily: "Inter Display" }}>
-              We unite top universities, leveraging robust alumni networks to drive innovation in blockchain. By
-              connecting academia and industry, we have formed a thriving network. We invite you to become a vital part
-              of our community. Join us on October 3rd and be a part of CUBE Summit.
+              Seize the opportunity to showcase your innovative project at the forefront of “Crypto x AI” by applying for our exclusive pitching stage. This is your chance to present your ideas to a distinguished panel of industry leaders, top-tier investors, and academic experts from some of the world's most prestigious institutions.
             </p>
 
             <div
-              onClick={() => router.push("https://lu.ma/hdbfank6")}
+              onClick={() => router.push("/#pitching")}
               className="w-[216px]  rounded-[4px] cursor-pointer h-[56px] mt-[45px] flex items-center justify-center font-medium text-base border-2 border-[#272727]"
             >
-              Register for Summit
+              Learn More
             </div>
           </div>
         </div>
@@ -492,14 +518,13 @@ export default function Home() {
               .map((speaker) => (
                 <div
                   key={speaker.id}
-                  className={`flex flex-col items-start p-[18px] rounded-md border-2 border-[#E8E7EE] cursor-pointer ${
-                    speaker.id % 4 == 0 ? "" : "mr-[25px]"
-                  } `}
+                  className={`flex flex-col items-start p-[18px] rounded-md border-2 border-[#E8E7EE] cursor-pointer ${speaker.id % 4 == 0 ? "" : "mr-[25px]"
+                    } `}
                 >
                   <div className="relative">
                     <img src={speaker.img} alt={speaker.name} className="w-[238px] h-[238px] bg-[#E7D6FF]" />
                     <img
-                      src={`/speakers/tag${speaker.id}.png`}
+                      src={`/speakers/tag${speaker.icon}.png`}
                       className="w-[105px] h-[38px] absolute left-[22px] bottom-[16px]"
                     />
                   </div>
@@ -530,48 +555,59 @@ export default function Home() {
           </div> */}
         </div>
       </section>
-
-      <section id="agenda" className="flex justify-center w-full py-5 md:py-[40px] bg-[#F6F9FC] relative">
-        <img src="/banner/image1.png" className="h-[172px]  absolute top-[0px] right-[0px]" />
-
-        <div className="flex flex-col items-center w-[1200px] px-4 md:px-0">
-          <div className="text-[48px] text-[#272727] font-semibold">Agenda</div>
-          <div className="flex flex-col w-full mt-6 md:mt-[40px] bg-[#EEF5FC]">
-            <div className="px-[14px] py-[18px] md:px-[38px] md:py-[26px] border-b-[1px] border-[#0000001A] flex flex-col md:block">
-              <span className="text-base md:text-[24px] text-[#153C3CAD] font-semibold">August 15 - August 31:</span>
-              <span className="text-base md:text-[24px] text-[#153C3C] font-extrabold md:ml-2">Application Period</span>
-            </div>
-            <div className="px-[14px] py-[18px] md:px-[38px] md:py-[26px] border-b-[1px] border-[#0000001A] flex flex-col md:block">
-              <span className="text-base md:text-[24px] text-[#153C3CAD] font-semibold">
-                September 1 - September 15:
-              </span>
-              <span className="text-base md:text-[24px] text-[#153C3C] font-extrabold md:ml-2">Interview Phase</span>
-            </div>
-            <div className="px-[14px] py-[18px] md:px-[38px] md:py-[26px] border-b-[1px] border-[#0000001A] flex flex-col md:block">
-              <span className="text-base md:text-[24px] text-[#153C3CAD] font-semibold">
-                September 16 - September 30:
-              </span>
-              <span className="text-base md:text-[24px] text-[#153C3C] font-extrabold md:ml-2">
-                One-on-One Mentorship and Pitch Preparation
-              </span>
-            </div>
-            <div className="px-[14px] py-[18px] md:px-[38px] md:py-[26px] border-b-[1px] border-[#0000001A] flex flex-col md:block">
-              <span className="text-base md:text-[24px] text-[#153C3CAD] font-semibold">October 3:</span>
-              <span className="text-base md:text-[24px] text-[#153C3C] font-extrabold md:ml-2">Summit Kickoff</span>
-            </div>
-            <div className="px-[14px] py-[18px] md:px-[38px] md:py-[26px]">
-              <span className="text-base md:text-[24px] text-[#153C3CAD] font-semibold md:ml-2">
-                The specific agenda for CUBE Summit is coming soon…
-              </span>
-            </div>
-          </div>
+      {/* <div
+        id="partners"
+        className="flex px-2 md:px-0 overflow-hidden flex-col justify-center items-center py-10 text-5xl font-semibold leading-none whitespace-nowrap max-md:text-4xl bg-[#F6F9FC]"
+      >
+        <div className="text-5xl font-semibold leading-none text-neutral-800 max-md:text-4xl">
+          Partners
         </div>
-      </section>
+        <div className="flex flex-col mt-10 w-full max-md:max-w-full">
+          <img
+            loading="lazy"
+            srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/234276c2a6a1d91ea139f59bc9e0db55ad246857759b07ae22e30b84e0ccc67f?placeholderIfAbsent=true&apiKey=53186c56703b47418c12cd21c1b9decd&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/234276c2a6a1d91ea139f59bc9e0db55ad246857759b07ae22e30b84e0ccc67f?placeholderIfAbsent=true&apiKey=53186c56703b47418c12cd21c1b9decd&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/234276c2a6a1d91ea139f59bc9e0db55ad246857759b07ae22e30b84e0ccc67f?placeholderIfAbsent=true&apiKey=53186c56703b47418c12cd21c1b9decd&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/234276c2a6a1d91ea139f59bc9e0db55ad246857759b07ae22e30b84e0ccc67f?placeholderIfAbsent=true&apiKey=53186c56703b47418c12cd21c1b9decd&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/234276c2a6a1d91ea139f59bc9e0db55ad246857759b07ae22e30b84e0ccc67f?placeholderIfAbsent=true&apiKey=53186c56703b47418c12cd21c1b9decd&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/234276c2a6a1d91ea139f59bc9e0db55ad246857759b07ae22e30b84e0ccc67f?placeholderIfAbsent=true&apiKey=53186c56703b47418c12cd21c1b9decd&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/234276c2a6a1d91ea139f59bc9e0db55ad246857759b07ae22e30b84e0ccc67f?placeholderIfAbsent=true&apiKey=53186c56703b47418c12cd21c1b9decd&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/234276c2a6a1d91ea139f59bc9e0db55ad246857759b07ae22e30b84e0ccc67f?placeholderIfAbsent=true&apiKey=53186c56703b47418c12cd21c1b9decd"
+            className="object-contain w-full aspect-[4.5] max-md:max-w-full"
+          />
+          <img
+            loading="lazy"
+            srcSet="/logolist.png"
+            className="md:hidden mt-6"
+          // className="object-contain mt-10 w-full aspect-[5.99] hidden md:block max-md:max-w-full"
+          />
+        </div>
+      </div> */}
 
-      <section className="flex flex-col justify-center w-full relative">
+      <div
+        id="partners"
+        className="flex overflow-hidden flex-col justify-center items-center py-10 bg-slate-100">
+        <div className="text-5xl font-semibold leading-none text-neutral-800 max-md:text-4xl" style={{ fontFamily: "ClashDisplay, sans-serif" }}>
+          Partners
+        </div>
+        <div className="flex flex-col mt-10 w-full max-md:max-w-full">
+          <img
+            loading="lazy"
+            srcSet="/partners.png"
+            className="object-contain w-full aspect-[4.5] max-md:max-w-full"
+          />
+          <img
+            loading="lazy"
+            srcSet="/logolist.png"
+            className="md:hidden mt-6"
+          />
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+      <section className="flex flex-col justify-center w-full relative" id='pitching'>
         <img src="/banner/image2.png" className="w-[403px]  absolute top-[0px] right-[0px] hidden md:block" />
 
-        <div className="text-[40px] md:text-[48px] text-[#272727] font-semibold text-center mt-[40px]">
+        <div className="text-[40px] md:text-[48px] text-[#272727] font-semibold text-center mt-[40px]" style={{ fontFamily: "ClashDisplay, sans-serif" }}>
           Pitching Session
         </div>
         <div className="flex flex-col md:flex-row mt-[40px]">
@@ -608,20 +644,20 @@ export default function Home() {
                 <span>Who Can Participate？</span>
               </div>
               <p className="mt-[16px] text-[#6B6B6B] text-lg">
-                We’re seeking the brightest minds in Crypto and AI to join “CUBE Summit”. All teams are welcome to apply
-                and present your BIG IDEAS, whether you’re working on infrastructure, applications, gaming, or social
-                platforms, though priority will be given to alumni projects of initiators.
+                For early-stage projects in the 'AI x Crypto' space, we’re seeking leading candidates to join the CUBE Summit pitching session. All teams are welcome to apply, whether you're working in infrastructure, applications, gaming, or social platforms.
               </p>
               <p className="mt-[16px] text-[#6B6B6B] text-lg">
-                As a talented individual, you will have a chance to join forces with top talent: find co-founders for
-                your project or join a team that inspires you, unlocking limitless possibilities together!
+                For talented individuals, this is a rare chance to connect with top alumni projects and join a high-potential startup team.
+              </p>
+              <p className="mt-[16px] text-[#2A2020]">
+                Let’s “Make Something Great” together!
               </p>
 
               <div
                 onClick={() => router.push("https://apply.cubesummit.xyz/")}
                 className="w-[282px] rounded-[4px] cursor-pointer  h-[56px] mt-[32px] flex items-center justify-center font-medium text-base border-2 border-[#272727]"
               >
-                Apply to Pitch Now
+                Apply Now
               </div>
             </div>
           </div>
@@ -702,56 +738,67 @@ export default function Home() {
             >
               <span> What to expect？</span>
             </div>
-            <p className="mt-[6px] text-[#6B6B6B] text-lg">
-              Backed by powerful alumni networks, we offer you the opportunity to showcase your project to top-tier
-              investors and the heads of major public blockchains. Beyond serving as an ideal platform to launch your
-              project, you can anticipate:
+            <p className="text-[#6B6B6B] text-lg">
+              Powered by our extensive alumni networks, we offer you an unparalleled opportunity to showcase your project to top-tier investors and leaders of major public blockchains. Beyond serving as an ideal launchpad for your project, the platform is also a gateway to numerous invaluable opportunities, including:
             </p>
-            <ul className="flex flex-col gap-[24px] mt-[40px]">
+            <ul className="flex flex-col gap-[10px] mt-[16px]">
               <li className="flex items-center gap-2">
-                <img src="/icon.png" width={22} height={22} alt="" />A chance to present on-stage at CUBE Summit in
-                front of some of the most influential figures in crypto
-              </li>
-              <li className="flex items-center gap-2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
-                  <g clipPath="url(#clip0_161_254)">
-                    <path
-                      d="M22 11.2964C22 5.22125 17.0751 0.296387 11 0.296387C4.92487 0.296387 0 5.22125 0 11.2964C0 17.3715 4.92487 22.2964 11 22.2964C17.0751 22.2964 22 17.3715 22 11.2964Z"
-                      fill="#CFF285"
-                    />
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M8.83145 12.8387L14.2319 7.63037L15.8887 9.30398L8.83145 16.1859L4.88867 12.3266L6.54537 10.6529L8.83145 12.8387Z"
-                      fill="#272727"
-                    />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_161_254">
-                      <rect width="22" height="22" fill="white" transform="translate(0 0.296387)" />
-                    </clipPath>
-                  </defs>
-                </svg>
-                Special awards from industry leaders (Stay Tuned!)
+                <img src="/icon.png" width={22} height={22} alt="" />
+                <div className="self-stretch my-auto w-[521px] max-md:max-w-full">
+                  <span className="font-extrabold">Special prizes</span> presented by
+                  industry leaders (stay tuned!)
+                </div>
               </li>
               <li className="flex items-center gap-2">
                 <img src="/icon.png" width={22} height={22} alt="" />
-                Opportunities for fast-track reviews into accelerators like a16z's CSX and SpringX
+                <div className="self-stretch my-auto w-[563px] max-md:max-w-full">
+                  Opportunities for fast-track reviews into accelerators{" "}
+                  <span className="font-extrabold">
+                    like a16z crypto’s CSX and SpringX Solana Accelerator
+                  </span>
+                </div>
               </li>
               <li className="flex items-center gap-2">
                 <img src="/icon.png" width={22} height={22} alt="" />
-                Tap into a powerful investor network to connect with top-tier VCs looking to fund the next big crypto
-                innovations
+                <div className="self-stretch my-auto w-[563px] max-md:max-w-full">
+                  Tap into an{" "}
+                  <span className="font-extrabold">influential investor network</span> to
+                  connect with top-tier VCs looking to back the next
+                </div>
               </li>
               <li className="flex items-center gap-2">
                 <img src="/icon.png" width={22} height={22} alt="" />
-                Directly connecting with top-tier public blockchains eager to attract quality projects to thrive in
-                their ecosystem.
+                <div className="self-stretch my-auto w-[563px] max-md:max-w-full">
+                  Opportunities for direct access with{" "}
+                  <span className="font-extrabold">leading public chains</span>
+                </div>
               </li>
               <li className="flex items-center gap-2">
                 <img src="/icon.png" width={22} height={22} alt="" />
-                Opportunities for 1-on-1 mentorship such as polishing your deck and improving your pitch.
+                <div className="self-stretch my-auto w-[563px] max-md:max-w-full">
+                  1:1 mentoring, focused on refining pitch materials and enhancing
+                  presentation skills
+                </div>              </li>
+
+              <li className="flex items-center gap-2">
+                <img src="/icon.png" width={22} height={22} alt="" />
+                <div className="self-stretch my-auto w-[563px] max-md:max-w-full">
+                  Exclusive access to an evening event with initiators and speakers for deep
+                  connections
+                </div>
               </li>
+
+              <li className="flex items-center gap-2">
+                <img src="/icon.png" width={22} height={22} alt="" />
+                <div className="self-stretch my-auto w-[563px] max-md:max-w-full">
+                  Grants for{" "}
+                  <span className="font-extrabold">travel and accommodation expenses</span>
+                </div></li>
+
+              <li className="flex items-center gap-1 text-[#6B6B6B]">
+                Seize this chance to propel your project to new heights and make a lasting impact on the future of technology.
+              </li>
+
             </ul>
           </div>
         </div>
@@ -860,23 +907,54 @@ export default function Home() {
         </div>
 
       </section> */}
-      <div
-        id="partners"
-        className="flex px-2 md:px-0 overflow-hidden flex-col justify-center items-center py-10 text-5xl font-semibold leading-none text-lime-300 whitespace-nowrap bg-neutral-800 max-md:text-4xl"
-      >
-        <div className="max-md:text-4xl">Partners</div>
-        <img
-          loading="lazy"
-          srcSet="/partners.png"
-          className="object-contain mt-10 w-full aspect-[5.99] hidden md:block max-md:max-w-full"
-        />
-        <img
-          loading="lazy"
-          srcSet="/logolist.png"
-          className="md:hidden mt-6"
-          // className="object-contain mt-10 w-full aspect-[5.99] hidden md:block max-md:max-w-full"
-        />
+
+      <section id="timeline" className="flex justify-center w-full py-5 md:py-[40px] bg-[#F6F9FC] relative">
+        <img src="/banner/image1.png" className="h-[172px]  absolute top-[0px] right-[0px]" />
+
+        <div className="flex flex-col items-center w-[1200px] px-4 md:px-0">
+          <div className="text-[48px] text-[#272727] font-semibold" style={{ fontFamily: "ClashDisplay, sans-serif" }}>Timeline</div>
+          <div className="flex flex-col w-full mt-6 md:mt-[40px] bg-[#EEF5FC]">
+            <div className="px-[14px] py-[18px] md:px-[38px] md:py-[26px] border-b-[1px] border-[#0000001A] flex flex-col md:block">
+              <span className="text-base md:text-[24px] text-[#153C3CAD] font-semibold">August 15 - August 31:</span>
+              <span className="text-base md:text-[24px] text-[#153C3C] font-extrabold md:ml-2">Application Period</span>
+            </div>
+            <div className="px-[14px] py-[18px] md:px-[38px] md:py-[26px] border-b-[1px] border-[#0000001A] flex flex-col md:block">
+              <span className="text-base md:text-[24px] text-[#153C3CAD] font-semibold">
+                September 1 - September 15:
+              </span>
+              <span className="text-base md:text-[24px] text-[#153C3C] font-extrabold md:ml-2">Interview Phase</span>
+            </div>
+            <div className="px-[14px] py-[18px] md:px-[38px] md:py-[26px] border-b-[1px] border-[#0000001A] flex flex-col md:block">
+              <span className="text-base md:text-[24px] text-[#153C3CAD] font-semibold">
+                September 16 - September 30:
+              </span>
+              <span className="text-base md:text-[24px] text-[#153C3C] font-extrabold md:ml-2">
+                One-on-One Mentorship and Pitch Preparation
+              </span>
+            </div>
+            <div className="px-[14px] py-[18px] md:px-[38px] md:py-[26px] border-b-[1px] border-[#0000001A] flex flex-col md:block">
+              <span className="text-base md:text-[24px] text-[#153C3CAD] font-semibold">October 3:</span>
+              <span className="text-base md:text-[24px] text-[#153C3C] font-extrabold md:ml-2">Summit Kickoff</span>
+            </div>
+            <div className="px-[14px] py-[18px] md:px-[38px] md:py-[26px]">
+              <span className="text-base md:text-[24px] text-[#153C3CAD] font-semibold md:ml-2">
+                The specific agenda for CUBE Summit is coming soon…
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div className="flex overflow-hidden flex-col justify-center items-center py-10 text-5xl font-semibold leading-none text-lime-300 bg-neutral-800 max-md:text-4xl">
+      <div className="max-md:max-w-full max-md:text-4xl">
+        Collaborative Support
       </div>
+      <img
+        loading="lazy"
+        srcSet="/support.png"
+        className="object-contain mt-10 w-full aspect-[2.57] max-md:max-w-full"
+      />
+    </div>
 
       <section className="flex flex-col py-[34px] md:py-[112px] items-center w-full">
         <div className="text-[34px] md:text-[48px] text-[#272727] font-semibold mb-5 md:mb-0">FAQs</div>
@@ -996,13 +1074,13 @@ export default function Home() {
           </svg> */}
           <nav>
             <ul className="flex gap-[32px] text-white">
-              {["Home", "About", "Speakers", "Partners", "Agenda"].map((item, index) => (
+              {["Home", "About", "Speakers", "Partners", "Pitching Session", "Timeline", "Contact Us"].map((item, index) => (
                 <li
                   key={index}
                   className={` cursor-pointer ${activeIndex === index ? "font-semibold" : ""}`}
                   onClick={() => handleClick(index)}
                 >
-                  <a href={`#${item.toLowerCase()}`}>{item}</a>
+                  <a href={`#${item.split(" ")[0].toLowerCase()}`}>{item}</a>
                 </li>
               ))}
             </ul>
