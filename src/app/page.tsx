@@ -989,12 +989,12 @@ export default function Home() {
           className="text-center md:text-left max-md:max-w-full max-md:text-4xl mb-5 md:mb-0"
           style={{ fontFamily: "ClashDisplay, sans-serif" }}
         >
-          Collaborative Support
+          Collaborative Supporters
         </div>
         <img
           loading="lazy"
           srcSet="/support.png"
-          className="object-contain mt-10 w-full aspect-[2.57] hidden md:inline-block max-md:max-w-full"
+          className="object-contain mt-10 w-full hidden md:inline-block max-md:max-w-full"
         />
         <img src="/support-mobile.png" alt="" className="md:hidden" />
       </div>
