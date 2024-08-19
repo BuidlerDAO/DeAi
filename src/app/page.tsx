@@ -656,7 +656,7 @@ export default function Home() {
                 We're on the lookout for leading visionaries building in the 'Crypto x AI' space to join the CUBE Summit pitching contest. All teams are invited to apply and showcase your boldest ideas—whether you're innovating in infrastructure, applications, gaming, or social platforms. We welcome all builders seeking to make a difference, with priority given to projects of our co-initiating universities.
               </p>
               <p className="mt-[16px] text-[#6B6B6B] text-lg font-normal">
-                For ambitious individuals looking for a team, this is also an unique opportunity to connect with leading alumni projects and become part of a dynamic, high-potential startup team.
+                For ambitious individuals looking for a team, this is also a unique opportunity to connect with leading alumni projects and become part of a dynamic, high-potential startup team.
               </p>
               <p className="mt-[16px] text-[#2A2020] text-[18px]">
                 Let's Build the Blockchain of Tomorrow!
