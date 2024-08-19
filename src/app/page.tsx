@@ -691,9 +691,10 @@ export default function Home() {
                 to make a difference, with priority given to projects of our co-initiating universities.
               </p>
               <p className="mt-[16px] text-[#6B6B6B] text-lg font-normal">
-                For ambitious individuals looking for a team, this is also an unique opportunity to connect with leading
+                For ambitious individuals looking for a team, this is also a unique opportunity to connect with leading
                 alumni projects and become part of a dynamic, high-potential startup team.
               </p>
+              <p className="mt-[16px] text-[#2A2020] text-[18px]">Let's Build the Blockchain of Tomorrow!</p>
               <p className="mt-[16px] text-[#2A2020] text-[18px]">Let's Build the Blockchain of Tomorrow!</p>
 
               <div
