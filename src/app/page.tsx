@@ -367,7 +367,7 @@ export default function Home() {
 
           <div className="mt-4 flex flex-col">
             <span className="text-[#6B6B6B] text-lg">Attendees can expect:</span>
-            <ul className="mt-1 flex  flex-col pl-5 text-[#2A2020] text-base font-medium">
+            <ul className="mt-3 flex  flex-col pl-5 text-[#2A2020] text-base font-medium">
               <li className="list-disc">Engaging discussions on the future of blockchain technology</li>
               <li className="list-disc">Exclusive networking opportunities with industry leaders</li>
               <li className="list-disc">Showcases of innovative early-stage projects</li>
