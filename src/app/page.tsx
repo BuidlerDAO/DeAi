@@ -155,7 +155,7 @@ export default function Home() {
             talents and foster innovative projects, paving the way for the future leaders of crypto.
             <br></br>
             <br></br>
-            We warmly welcome and encourage more colleges and institutions to join us in building a collaborative
+            We warmly welcome and encourage more universities to join us in building a collaborative
             blockchain future.
           </p>
           <div className="flex flex-col md:flex-row gap-[14px] md:gap-[80px] mt-[25px]">
