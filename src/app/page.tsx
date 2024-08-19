@@ -802,7 +802,7 @@ export default function Home() {
                 <img src="/icon.png" width={22} height={22} alt="" />
                 <div className="self-stretch my-auto w-[563px] max-md:max-w-full">
                   Tap into an <span className="font-extrabold">influential investor network</span> to connect with
-                  top-tier VCs looking to back the next wave of crypto innovation.
+                  top-tier VCs looking to back the next wave of crypto innovation
                 </div>
               </li>
               <li className="flex items-center gap-2">
@@ -1060,7 +1060,7 @@ export default function Home() {
                     if (item === "Contact Us") {
                       handleCopy();
                     } else {
-                      router.push(`#${item.toLowerCase()}`);
+                      router.push(`#${item.split(" ")[0].toLowerCase()}`);
                     }
                   }}
                 >
