@@ -3,14 +3,15 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'ClashDisplay';
-  src: url('/fonts/ClashDisplay-Semibold.otf') format('opentype');
+  font-family: "ClashDisplay";
+  src: url("/fonts/ClashDisplay-Semibold.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 
 body {
-  font-family: 'ClashDisplay', sans-serif;
+  font-family: "ClashDisplay", sans-serif;
+  scroll-behavior: smooth;
 }
 
 :root {
