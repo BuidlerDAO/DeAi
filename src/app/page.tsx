@@ -43,21 +43,21 @@ export default function Home() {
         "Yes, projects at all stages of development are welcome to apply. Whether you're in the early ideation phase or have a more developed project, we encourage you to participate.",
     },
     {
-      question: "Can I Participate in the Pitching Sessions Online?",
+      question: "Can I Participate in the Pitching Sessions Virtually?",
       answer: "No, the pitching sessions must be conducted in person at the CUBE Summit.",
     },
     {
       question: "What Benefits Do I Receive Upon Acceptance?",
       answer:
-        "Acceptance to CUBE Summit grants you access to all summit events, including panel discussions, keynote speeches, pitching sessions, and the exclusive afterParty. You'll also receive opportunities for networking with industry leaders and peers, and special rewards.",
+        "Acceptance to CUBE Summit grants you access to all summit events, including panel discussions, fireside chats, pitching sessions, and the exclusive after-party event. You'll also receive opportunities to network with industry leaders and peers, and special prizes.",
     },
     {
-      question: "How many projects will be accepted?",
-      answer: "CUBE Summit 2024 only accepts approximately 10-12 projects.",
+      question: "How many projects will be selected to pitch live on Oct 3rd in NYC",
+      answer: "CUBE Summit 2024 Only accepts 10 projects.",
     },
     {
       question: "Will My Expenses Be Covered?",
-      answer: "Selected Demo Day teams will receive a grant to cover their expenses incurred during the event.",
+      answer: "Selected pitching team will receive a grant to cover their flights and accomodations for the event.",
     },
   ];
 
@@ -465,7 +465,7 @@ export default function Home() {
           </p>
 
           <div
-            onClick={() => router.push("https://lu.ma/hdbfank6")}
+            onClick={() => router.push("#pitching")}
             className="cursor-pointer rounded-[4px] h-[56px] mt-[45px] flex items-center justify-center font-medium text-base border-2 border-[#272727]"
           >
             Learn More
@@ -486,7 +486,7 @@ export default function Home() {
             <p className="mt-[16px] text-[#6B6B6B] text-lg font-normal" style={{ fontFamily: "Inter Display" }}>
               Seize the opportunity to showcase your innovative project at the forefront of “Crypto x AI” by applying
               for our exclusive pitching stage. This is your chance to present your ideas to a distinguished panel of
-              industry leaders, top-tier investors, and academic experts from some of the world's most prestigious
+              industry leaders, top-tier investors, and academic experts from some of the world's most distinguished
               institutions.
             </p>
 
@@ -522,9 +522,9 @@ export default function Home() {
                 <Col span={12} key={i}>
                   <div className="border rounded-[5px] border-[#E8E7EE] p-[10px] space-y-1 flex flex-col h-full">
                     <div className=" relative">
-                      <img src={speaker.img} alt={speaker.name} />
+                      <img src={speaker.img} alt={speaker.name} className="bg-[#E7D6FF]" />
                       <img
-                        src={`/speakers/tag${speaker.id}.png`}
+                        src={`/speakers/tag${speaker.icon}.png`}
                         className="w-[60px] h-[22px] absolute left-[12px] bottom-[8px]"
                       />
                     </div>
@@ -658,8 +658,7 @@ export default function Home() {
             <div className="text-[#6B6B6B] text-lg mt-4">
               We're on the lookout for leading visionaries building in the 'Crypto x AI' space to join the CUBE Summit
               pitching contest. All teams are invited to apply and showcase your boldest ideas—whether you're innovating
-              in infrastructure, applications, gaming, or social platforms. We welcome all builders seeking to make a
-              difference, with priority given to projects of our co-initiating universities.
+              in infrastructure, applications, gaming, or social platforms.
             </div>
             <div className="text-[#6B6B6B] text-lg mt-4">
               For ambitious individuals looking for a team, this is also an unique opportunity to connect with leading
@@ -687,8 +686,7 @@ export default function Home() {
               <p className="mt-[16px] text-[#6B6B6B] text-lg font-normal">
                 We're on the lookout for leading visionaries building in the 'Crypto x AI' space to join the CUBE Summit
                 pitching contest. All teams are invited to apply and showcase your boldest ideas—whether you're
-                innovating in infrastructure, applications, gaming, or social platforms. We welcome all builders seeking
-                to make a difference, with priority given to projects of our co-initiating universities.
+                innovating in infrastructure, applications, gaming, or social platforms.
               </p>
               <p className="mt-[16px] text-[#6B6B6B] text-lg font-normal">
                 For ambitious individuals looking for a team, this is also a unique opportunity to connect with leading
@@ -725,7 +723,7 @@ export default function Home() {
           <p className="mt-[6px] text-[#6B6B6B] text-lg">
             Powered by our extensive alumni networks, we offer you an unparalleled opportunity to showcase your project
             to top-tier investors and leaders of major public blockchains. Beyond serving as an ideal launchpad for your
-            project, the platform is also a gateway to numerous invaluable opportunities, including:
+            project, the platform also provides access to numerous invaluable opportunities, including::
           </p>
           <ul className="flex flex-col gap-[14px] mt-[12px] text-[#252424] font-medium">
             <li className="flex items-center gap-2">
@@ -745,7 +743,7 @@ export default function Home() {
               <img src="/icon.png" width={22} height={22} alt="" />
               <span>
                 Tap into an <span className="font-extrabold">influential investor network</span> to connect with
-                top-tier VCs looking to back the next
+                top-tier VCs looking to back the next wave of crypto innovation.
               </span>
             </li>
             <li className="flex items-center gap-2">
@@ -769,10 +767,10 @@ export default function Home() {
               </span>
             </li>
           </ul>
-          <span className="text-[#6B6B6B] text-lg mt-3">
+          {/* <span className="text-[#6B6B6B] text-lg mt-3">
             Seize this chance to propel your project to new heights and make a lasting impact on the future of
             technology.
-          </span>
+          </span> */}
         </div>
         <div className="md:flex flex-1 justify-end hidden">
           <div className="flex flex-col items-start w-[562px]" style={{ marginRight: "calc((100vw - 1200px) / 2)" }}>
@@ -806,7 +804,7 @@ export default function Home() {
                 <img src="/icon.png" width={22} height={22} alt="" />
                 <div className="self-stretch my-auto w-[563px] max-md:max-w-full">
                   Tap into an <span className="font-extrabold">influential investor network</span> to connect with
-                  top-tier VCs looking to back the next
+                  top-tier VCs looking to back the next wave of crypto innovation.
                 </div>
               </li>
               <li className="flex items-center gap-2">
@@ -836,10 +834,10 @@ export default function Home() {
                 </div>
               </li>
 
-              <li className="flex items-center gap-1 text-[#6B6B6B]">
+              {/* <li className="flex items-center gap-1 text-[#6B6B6B]">
                 Seize this chance to propel your project to new heights and make a lasting impact on the future of
                 technology.
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
@@ -958,12 +956,12 @@ export default function Home() {
           </div>
           <div className="flex flex-col w-full mt-6 md:mt-[40px] bg-[#EEF5FC]">
             <div className="px-[14px] py-[18px] md:px-[38px] md:py-[26px] border-b-[1px] border-[#0000001A] flex flex-col md:block">
-              <span className="text-base md:text-[24px] text-[#153C3CAD] font-semibold">August 19 - September 1:</span>
+              <span className="text-base md:text-[24px] text-[#153C3CAD] font-semibold">August 15 - September 31:</span>
               <span className="text-base md:text-[24px] text-[#153C3C] font-extrabold md:ml-2">Application Period</span>
             </div>
             <div className="px-[14px] py-[18px] md:px-[38px] md:py-[26px] border-b-[1px] border-[#0000001A] flex flex-col md:block">
               <span className="text-base md:text-[24px] text-[#153C3CAD] font-semibold">
-                September 2 - September 15:
+                September 1 - September 15:
               </span>
               <span className="text-base md:text-[24px] text-[#153C3C] font-extrabold md:ml-2">Interview Phase</span>
             </div>
