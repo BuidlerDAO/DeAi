@@ -128,7 +128,7 @@ export default function Home() {
             <div className="absolute bottom-[10px] w-[273px] h-[20px] md:w-[400px] md:h-[28px] bg-[#CFF285]"></div>
           </div>
           <div className="text-[24px] text-[#383F4E] mt-5 md:mt-[26px] font-semibold">October 3rd ｜ NYC</div>
-          <p className="text-[#383F4E] text-sm leading-[22px] md:leading-[30px] md:text-[20px] text-center mt-[25px] max-w-[307px] md:max-w-[646px]">
+          <p className="text-[#383F4E] text-sm leading-[22px] md:leading-[30px] md:text-[20px] text-center mt-[25px] max-w-[307px] md:max-w-[661px]">
             For the first time, ten distinguished university blockchain clubs are uniting, supported by extensive alumni networks and in collaboration with leading projects and investors. Together,
             we aim to cultivate emerging talents and foster innovative projects, paving the way for the future leaders of crypto.
 
@@ -369,7 +369,7 @@ export default function Home() {
               <span>Our Mission</span>
               <div className="absolute left-[8px] bottom-[12px] -z-[1] w-[310px] h-[10px] bg-[#CFF285] rounded-lg"></div>
             </div>
-            <p className="mt-[16px] text-[#6B6B6B] text-lg font-weight-normal" style={{ fontFamily: "Inter Display" }}>
+            <div className="mt-[16px] text-[#6B6B6B] text-lg font-weight-normal" style={{ fontFamily: "Inter Display" }}>
               The inaugural Collaborative University Blockchain Ecosystem (CUBE) Summit is set in the vibrant founder and investor ecosystem of New York City on October 3rd, bringing together the brightest minds in blockchain. This event will unite eager students and alumni from prominent academic institutions with visionary leaders from cutting-edge AI projects, major public blockchains, and top-tier venture capital firms to shape the future of blockchain.
               <br />
               <br />
@@ -393,7 +393,7 @@ export default function Home() {
                   <div>Potential partnerships and investment opportunities</div>
                 </div>
               </div>
-            </p>
+            </div>
 
             <div
               onClick={registerTo}
@@ -676,7 +676,7 @@ export default function Home() {
             className="flex justify-center relative text-[38px] font-semibold mt-[20px]"
             style={{ fontFamily: "ClashDisplay, sans-serif" }}
           >
-            <span> What to expect？</span>
+            <span> What to expect</span>
           </div>
           <p className="mt-[6px] text-[#6B6B6B] text-lg">
             Backed by powerful alumni networks, we offer you the opportunity to showcase your project to top-tier
@@ -946,7 +946,7 @@ export default function Home() {
       </section>
 
       <div className="flex overflow-hidden flex-col justify-center items-center py-10 text-5xl font-semibold leading-none text-lime-300 bg-neutral-800 max-md:text-4xl">
-      <div className="max-md:max-w-full max-md:text-4xl">
+      <div className="max-md:max-w-full max-md:text-4xl" style={{ fontFamily: "ClashDisplay, sans-serif" }}>
         Collaborative Support
       </div>
       <img
@@ -957,7 +957,7 @@ export default function Home() {
     </div>
 
       <section className="flex flex-col py-[34px] md:py-[112px] items-center w-full">
-        <div className="text-[34px] md:text-[48px] text-[#272727] font-semibold mb-5 md:mb-0">FAQs</div>
+        <div className="text-[34px] md:text-[48px] text-[#272727] font-semibold mb-5 md:mb-0" style={{ fontFamily: "ClashDisplay, sans-serif" }}>FAQs</div>
         <div className="flex flex-col gap-y-[16px] px-5 md:px-0 md:w-[768px]">
           {questions.map((item, index) => (
             <div key={index} className="flex flex-col border-[1px] border-black rounded-[4px]">
