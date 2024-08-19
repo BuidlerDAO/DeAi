@@ -49,7 +49,7 @@ export default function Home() {
     {
       question: "What Benefits Do I Receive Upon Acceptance?",
       answer:
-        "Acceptance to CUBE Summit grants you access to all summit events, including panel discussions, fireside chats, pitching sessions, and the exclusive after party. You'll also receive opportunities to network with industry leaders and peers, and special prizes.",
+        "Acceptance to CUBE Summit grants you access to all summit events, including panel discussions, fireside chats, pitching sessions, and the exclusive after-party event. You'll also receive opportunities to network with industry leaders and peers, and special prizes.",
     },
     {
       question: "How many projects will be selected to pitch live on Oct 3rd in NYC",
@@ -155,8 +155,7 @@ export default function Home() {
             talents and foster innovative projects, paving the way for the future leaders of crypto.
             <br></br>
             <br></br>
-            We warmly welcome and encourage more universities to join us in building a collaborative
-            blockchain future.
+            We warmly welcome and encourage more universities to join us in building a collaborative blockchain future.
           </p>
           <div className="flex flex-col md:flex-row gap-[14px] md:gap-[80px] mt-[25px]">
             <div
@@ -465,7 +464,7 @@ export default function Home() {
           </p>
 
           <div
-            onClick={() => router.push("https://lu.ma/hdbfank6")}
+            onClick={() => router.push("#pitching")}
             className="cursor-pointer rounded-[4px] h-[56px] mt-[45px] flex items-center justify-center font-medium text-base border-2 border-[#272727]"
           >
             Learn More
@@ -486,7 +485,8 @@ export default function Home() {
             <p className="mt-[16px] text-[#6B6B6B] text-lg font-normal" style={{ fontFamily: "Inter Display" }}>
               Seize the opportunity to showcase your innovative project at the forefront of “Crypto x AI” by applying
               for our exclusive pitching stage. This is your chance to present your ideas to a distinguished panel of
-              industry leaders, top-tier investors, and academic experts from some of the world's most distinguished institutions.
+              industry leaders, top-tier investors, and academic experts from some of the world's most distinguished
+              institutions.
             </p>
 
             <div
@@ -521,9 +521,9 @@ export default function Home() {
                 <Col span={12} key={i}>
                   <div className="border rounded-[5px] border-[#E8E7EE] p-[10px] space-y-1 flex flex-col h-full">
                     <div className=" relative">
-                      <img src={speaker.img} alt={speaker.name} />
+                      <img src={speaker.img} alt={speaker.name} className="bg-[#E7D6FF]" />
                       <img
-                        src={`/speakers/tag${speaker.id}.png`}
+                        src={`/speakers/tag${speaker.icon}.png`}
                         className="w-[60px] h-[22px] absolute left-[12px] bottom-[8px]"
                       />
                     </div>
@@ -557,8 +557,9 @@ export default function Home() {
               .map((speaker) => (
                 <div
                   key={speaker.id}
-                  className={`flex flex-col items-start p-[18px] rounded-md border-2 border-[#E8E7EE] cursor-pointer ${speaker.id % 4 == 0 ? "" : "mr-[25px]"
-                    } `}
+                  className={`flex flex-col items-start p-[18px] rounded-md border-2 border-[#E8E7EE] cursor-pointer ${
+                    speaker.id % 4 == 0 ? "" : "mr-[25px]"
+                  } `}
                 >
                   <div className="relative">
                     <img src={speaker.img} alt={speaker.name} className="w-[238px] h-[238px] bg-[#E7D6FF]" />
@@ -656,8 +657,7 @@ export default function Home() {
             <div className="text-[#6B6B6B] text-lg mt-4">
               We're on the lookout for leading visionaries building in the 'Crypto x AI' space to join the CUBE Summit
               pitching contest. All teams are invited to apply and showcase your boldest ideas—whether you're innovating
-              in infrastructure, applications, gaming, or social platforms. We welcome all builders seeking to make a
-              difference, with priority given to projects of our co-initiating universities.
+              in infrastructure, applications, gaming, or social platforms.
             </div>
             <div className="text-[#6B6B6B] text-lg mt-4">
               For ambitious individuals looking for a team, this is also a unique opportunity to connect with leading
@@ -685,8 +685,7 @@ export default function Home() {
               <p className="mt-[16px] text-[#6B6B6B] text-lg font-normal">
                 We're on the lookout for leading visionaries building in the 'Crypto x AI' space to join the CUBE Summit
                 pitching contest. All teams are invited to apply and showcase your boldest ideas—whether you're
-                innovating in infrastructure, applications, gaming, or social platforms. We welcome all builders seeking
-                to make a difference, with priority given to projects of our co-initiating universities.
+                innovating in infrastructure, applications, gaming, or social platforms.
               </p>
               <p className="mt-[16px] text-[#6B6B6B] text-lg font-normal">
                 For ambitious individuals looking for a team, this is also a unique opportunity to connect with leading
@@ -723,7 +722,7 @@ export default function Home() {
           <p className="mt-[6px] text-[#6B6B6B] text-lg">
             Powered by our extensive alumni networks, we offer you an unparalleled opportunity to showcase your project
             to top-tier investors and leaders of major public blockchains. Beyond serving as an ideal launchpad for your
-            project, the platform also provides access to numerous invaluable opportunities, including:
+            project, the platform also provides access to numerous invaluable opportunities, including::
           </p>
           <ul className="flex flex-col gap-[14px] mt-[12px] text-[#252424] font-medium">
             <li className="flex items-center gap-2">
@@ -783,7 +782,8 @@ export default function Home() {
             <p className="text-[#6B6B6B] text-lg">
               Powered by our extensive alumni networks, we offer you an unparalleled opportunity to showcase your
               project to top-tier investors and leaders of major public blockchains. Beyond serving as an ideal
-              launchpad for your project, the platform also provides access to numerous invaluable opportunities, including:
+              launchpad for your project, the platform also provides access to numerous invaluable opportunities,
+              including:
             </p>
             <ul className="flex flex-col gap-[10px] mt-[16px]">
               <li className="flex items-center gap-2">
@@ -955,12 +955,12 @@ export default function Home() {
           </div>
           <div className="flex flex-col w-full mt-6 md:mt-[40px] bg-[#EEF5FC]">
             <div className="px-[14px] py-[18px] md:px-[38px] md:py-[26px] border-b-[1px] border-[#0000001A] flex flex-col md:block">
-              <span className="text-base md:text-[24px] text-[#153C3CAD] font-semibold">August 19 - September 1:</span>
+              <span className="text-base md:text-[24px] text-[#153C3CAD] font-semibold">August 15 - September 31:</span>
               <span className="text-base md:text-[24px] text-[#153C3C] font-extrabold md:ml-2">Application Period</span>
             </div>
             <div className="px-[14px] py-[18px] md:px-[38px] md:py-[26px] border-b-[1px] border-[#0000001A] flex flex-col md:block">
               <span className="text-base md:text-[24px] text-[#153C3CAD] font-semibold">
-                September 2 - September 15:
+                September 1 - September 15:
               </span>
               <span className="text-base md:text-[24px] text-[#153C3C] font-extrabold md:ml-2">Interview Phase</span>
             </div>
