@@ -453,11 +453,11 @@ export default function Home() {
             className="flex relative text-[34px] md:text-[48px] font-semibold"
             style={{ fontFamily: "ClashDisplay, sans-serif" }}
           >
-            <span>Unleash Your Potential on the Exclusive Pitching Stage</span>
+            <span>Unleash Your Potential on an Exclusive Pitching Stage</span>
             <div className="absolute left-[8px] bottom-[12px] -z-[1] w-[244px] h-[10px] bg-[#CFF285] rounded-lg"></div>
           </div>
 
-          <p className="mt-[16px] text-[#6B6B6B] text-lg " style={{ fontFamily: "Inter Display" }}>
+          <p className="mt-[16px] text-[#6B6B6B] text-lg ">
             Seize the opportunity to showcase your innovative project at the forefront of “Crypto x AI” by applying for
             our exclusive pitching stage. This is your chance to present your ideas to a distinguished panel of industry
             leaders, top-tier investors, and academic experts from some of the world's most distinguished institutions.
@@ -721,7 +721,7 @@ export default function Home() {
           <p className="mt-[6px] text-[#6B6B6B] text-lg">
             Powered by our extensive alumni networks, we offer you an unparalleled opportunity to showcase your project
             to top-tier investors and leaders of major public blockchains. Beyond serving as an ideal launchpad for your
-            project, the platform also provides access to numerous invaluable opportunities, including::
+            project, the platform also provides access to numerous invaluable opportunities, including:
           </p>
           <ul className="flex flex-col gap-[14px] mt-[12px] text-[#252424] font-medium">
             <li className="flex items-center gap-2">
@@ -954,12 +954,12 @@ export default function Home() {
           </div>
           <div className="flex flex-col w-full mt-6 md:mt-[40px] bg-[#EEF5FC]">
             <div className="px-[14px] py-[18px] md:px-[38px] md:py-[26px] border-b-[1px] border-[#0000001A] flex flex-col md:block">
-              <span className="text-base md:text-[24px] text-[#153C3CAD] font-semibold">August 15 - September 31:</span>
+              <span className="text-base md:text-[24px] text-[#153C3CAD] font-semibold">August 19 - September 1:</span>
               <span className="text-base md:text-[24px] text-[#153C3C] font-extrabold md:ml-2">Application Period</span>
             </div>
             <div className="px-[14px] py-[18px] md:px-[38px] md:py-[26px] border-b-[1px] border-[#0000001A] flex flex-col md:block">
               <span className="text-base md:text-[24px] text-[#153C3CAD] font-semibold">
-                September 1 - September 15:
+                September 2 - September 15:
               </span>
               <span className="text-base md:text-[24px] text-[#153C3C] font-extrabold md:ml-2">Interview Phase</span>
             </div>
