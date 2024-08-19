@@ -52,8 +52,8 @@ export default function Home() {
         "Acceptance to CUBE Summit grants you access to all summit events, including panel discussions, fireside chats, pitching sessions, and the exclusive after-party event. You'll also receive opportunities to network with industry leaders and peers, and special prizes.",
     },
     {
-      question: "How many projects will be selected to pitch live on Oct 3rd in NYC",
-      answer: "CUBE Summit 2024 Only accepts 10 projects.",
+      question: "How many projects will be selected to pitch live on Oct 3rd in NYC?",
+      answer: "CUBE Summit 2024 only accepts 10 projects.",
     },
     {
       question: "Will My Expenses Be Covered?",
@@ -692,7 +692,6 @@ export default function Home() {
                 alumni projects and become part of a dynamic, high-potential startup team.
               </p>
               <p className="mt-[16px] text-[#2A2020] text-[18px]">Let's Build the Blockchain of Tomorrow!</p>
-              <p className="mt-[16px] text-[#2A2020] text-[18px]">Let's Build the Blockchain of Tomorrow!</p>
 
               <div
                 onClick={() => router.push("https://apply.cubesummit.xyz/")}
@@ -742,7 +741,7 @@ export default function Home() {
               <img src="/icon.png" width={22} height={22} alt="" />
               <span>
                 Tap into an <span className="font-extrabold">influential investor network</span> to connect with
-                top-tier VCs looking to back the next wave of crypto innovation.
+                top-tier VCs looking to back the next wave of crypto innovation
               </span>
             </li>
             <li className="flex items-center gap-2">
