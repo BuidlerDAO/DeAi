@@ -43,21 +43,21 @@ export default function Home() {
         "Yes, projects at all stages of development are welcome to apply. Whether you're in the early ideation phase or have a more developed project, we encourage you to participate.",
     },
     {
-      question: "Can I Participate in the Pitching Sessions Online?",
+      question: "Can I Participate in the Pitching Sessions Virtually?",
       answer: "No, the pitching sessions must be conducted in person at the CUBE Summit.",
     },
     {
       question: "What Benefits Do I Receive Upon Acceptance?",
       answer:
-        "Acceptance to CUBE Summit grants you access to all summit events, including panel discussions, keynote speeches, pitching sessions, and the exclusive afterParty. You'll also receive opportunities for networking with industry leaders and peers, and special rewards.",
+        "Acceptance to CUBE Summit grants you access to all summit events, including panel discussions, fireside chats, pitching sessions, and the exclusive after party. You'll also receive opportunities to network with industry leaders and peers, and special prizes.",
     },
     {
-      question: "How many projects will be accepted?",
-      answer: "CUBE Summit 2024 only accepts approximately 10-12 projects.",
+      question: "How many projects will be selected to pitch live on Oct 3rd in NYC",
+      answer: "CUBE Summit 2024 Only accepts 10 projects.",
     },
     {
       question: "Will My Expenses Be Covered?",
-      answer: "Selected Demo Day teams will receive a grant to cover their expenses incurred during the event.",
+      answer: "Selected pitching team will receive a grant to cover their flights and accomodations for the event.",
     },
   ];
 
@@ -461,7 +461,7 @@ export default function Home() {
           <p className="mt-[16px] text-[#6B6B6B] text-lg " style={{ fontFamily: "Inter Display" }}>
             Seize the opportunity to showcase your innovative project at the forefront of “Crypto x AI” by applying for
             our exclusive pitching stage. This is your chance to present your ideas to a distinguished panel of industry
-            leaders, top-tier investors, and academic experts from some of the world's most prestigious institutions.
+            leaders, top-tier investors, and academic experts from some of the world's most distinguished institutions.
           </p>
 
           <div
@@ -486,8 +486,7 @@ export default function Home() {
             <p className="mt-[16px] text-[#6B6B6B] text-lg font-normal" style={{ fontFamily: "Inter Display" }}>
               Seize the opportunity to showcase your innovative project at the forefront of “Crypto x AI” by applying
               for our exclusive pitching stage. This is your chance to present your ideas to a distinguished panel of
-              industry leaders, top-tier investors, and academic experts from some of the world's most prestigious
-              institutions.
+              industry leaders, top-tier investors, and academic experts from some of the world's most distinguished institutions.
             </p>
 
             <div
@@ -558,9 +557,8 @@ export default function Home() {
               .map((speaker) => (
                 <div
                   key={speaker.id}
-                  className={`flex flex-col items-start p-[18px] rounded-md border-2 border-[#E8E7EE] cursor-pointer ${
-                    speaker.id % 4 == 0 ? "" : "mr-[25px]"
-                  } `}
+                  className={`flex flex-col items-start p-[18px] rounded-md border-2 border-[#E8E7EE] cursor-pointer ${speaker.id % 4 == 0 ? "" : "mr-[25px]"
+                    } `}
                 >
                   <div className="relative">
                     <img src={speaker.img} alt={speaker.name} className="w-[238px] h-[238px] bg-[#E7D6FF]" />
@@ -662,7 +660,7 @@ export default function Home() {
               difference, with priority given to projects of our co-initiating universities.
             </div>
             <div className="text-[#6B6B6B] text-lg mt-4">
-              For ambitious individuals looking for a team, this is also an unique opportunity to connect with leading
+              For ambitious individuals looking for a team, this is also a unique opportunity to connect with leading
               alumni projects and become part of a dynamic, high-potential startup team.
             </div>
 
@@ -725,7 +723,7 @@ export default function Home() {
           <p className="mt-[6px] text-[#6B6B6B] text-lg">
             Powered by our extensive alumni networks, we offer you an unparalleled opportunity to showcase your project
             to top-tier investors and leaders of major public blockchains. Beyond serving as an ideal launchpad for your
-            project, the platform is also a gateway to numerous invaluable opportunities, including:
+            project, the platform also provides access to numerous invaluable opportunities, including:
           </p>
           <ul className="flex flex-col gap-[14px] mt-[12px] text-[#252424] font-medium">
             <li className="flex items-center gap-2">
@@ -745,7 +743,7 @@ export default function Home() {
               <img src="/icon.png" width={22} height={22} alt="" />
               <span>
                 Tap into an <span className="font-extrabold">influential investor network</span> to connect with
-                top-tier VCs looking to back the next
+                top-tier VCs looking to back the next wave of crypto innovation.
               </span>
             </li>
             <li className="flex items-center gap-2">
@@ -769,10 +767,10 @@ export default function Home() {
               </span>
             </li>
           </ul>
-          <span className="text-[#6B6B6B] text-lg mt-3">
+          {/* <span className="text-[#6B6B6B] text-lg mt-3">
             Seize this chance to propel your project to new heights and make a lasting impact on the future of
             technology.
-          </span>
+          </span> */}
         </div>
         <div className="md:flex flex-1 justify-end hidden">
           <div className="flex flex-col items-start w-[562px]" style={{ marginRight: "calc((100vw - 1200px) / 2)" }}>
@@ -785,8 +783,7 @@ export default function Home() {
             <p className="text-[#6B6B6B] text-lg">
               Powered by our extensive alumni networks, we offer you an unparalleled opportunity to showcase your
               project to top-tier investors and leaders of major public blockchains. Beyond serving as an ideal
-              launchpad for your project, the platform is also a gateway to numerous invaluable opportunities,
-              including:
+              launchpad for your project, the platform also provides access to numerous invaluable opportunities, including:
             </p>
             <ul className="flex flex-col gap-[10px] mt-[16px]">
               <li className="flex items-center gap-2">
@@ -806,7 +803,7 @@ export default function Home() {
                 <img src="/icon.png" width={22} height={22} alt="" />
                 <div className="self-stretch my-auto w-[563px] max-md:max-w-full">
                   Tap into an <span className="font-extrabold">influential investor network</span> to connect with
-                  top-tier VCs looking to back the next
+                  top-tier VCs looking to back the next wave of crypto innovation.
                 </div>
               </li>
               <li className="flex items-center gap-2">
@@ -836,10 +833,10 @@ export default function Home() {
                 </div>
               </li>
 
-              <li className="flex items-center gap-1 text-[#6B6B6B]">
+              {/* <li className="flex items-center gap-1 text-[#6B6B6B]">
                 Seize this chance to propel your project to new heights and make a lasting impact on the future of
                 technology.
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
@@ -972,7 +969,7 @@ export default function Home() {
                 September 16 - September 30:
               </span>
               <span className="text-base md:text-[24px] text-[#153C3C] font-extrabold md:ml-2">
-                One-on-One Mentorship and Pitch Preparation
+                1:1 Mentorship and Pitch Preparation
               </span>
             </div>
             <div className="px-[14px] py-[18px] md:px-[38px] md:py-[26px] border-b-[1px] border-[#0000001A] flex flex-col md:block">
