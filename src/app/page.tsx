@@ -1168,7 +1168,7 @@ export default function Home() {
             </svg>
             <Image
               className="cursor-pointer"
-              onClick={() => router.push("https://x.com/cubesummit")}
+              onClick={() => router.push("https://x.com/CUBE_Summit")}
               src="/twitter.png"
               alt="twitter"
               width={20}
