@@ -1192,6 +1192,7 @@ export default function Home() {
               height={20}
             />
 
+
           </div>
         </div>
         <div className="w-full h-[1px] mt-[24px] mb-[32px] bg-[#6B6B6B]" />
