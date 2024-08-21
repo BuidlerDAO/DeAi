@@ -385,7 +385,7 @@ export default function Home() {
         </div>
         <div className="flex-1 hidden md:block">
           <div
-            className="flex flex-col items-start md:w-[602px] mt-[100px]"
+            className="flex flex-col items-start md:w-[602px] "
             style={{ marginLeft: "calc((100vw - 1200px) / 2)" }}
           >
             <div
