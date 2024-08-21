@@ -1092,7 +1092,7 @@ export default function Home() {
               </defs>
             </svg>
             <Image
-              onClick={() => router.push("https://x.com/cubesummit")}
+              onClick={() => router.push("https://x.com/CUBE_Summit")}
               src="/twitter.png"
               alt="twitter"
               width={20}
