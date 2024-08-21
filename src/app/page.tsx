@@ -479,7 +479,7 @@ export default function Home() {
               className="flex justify-center relative text-[48px] font-semibold mt-[60px]"
               style={{ fontFamily: "ClashDisplay, sans-serif" }}
             >
-              <span>Unleash Your Potential on the Exclusive Pitching Stage</span>
+              <span>Unleash Your Potential on an Exclusive Pitching Stage</span>
               <div className="absolute left-[0px] bottom-[12px] -z-[1] w-[510px] h-[10px] bg-[#CFF285] rounded-lg"></div>
             </div>
             <p className="mt-[16px] text-[#6B6B6B] text-lg font-normal" style={{ fontFamily: "Inter Display" }}>
@@ -1093,7 +1093,7 @@ export default function Home() {
               </defs>
             </svg>
             <Image
-              onClick={() => router.push("https://x.com/cubesummit")}
+              onClick={() => router.push("https://x.com/CUBE_Summit")}
               src="/twitter.png"
               alt="twitter"
               width={20}
