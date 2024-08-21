@@ -11,7 +11,7 @@ import MobileMenu from "@/component/MobileMenu";
 import { useRouter } from "next/navigation";
 
 export default function Home() {
-  const [visibleCount, setVisibleCount] = useState(12);
+  const [visibleCount, setVisibleCount] = useState(15);
   const router = useRouter();
 
   const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -53,7 +53,7 @@ export default function Home() {
     },
     {
       question: "How many projects will be selected to pitch live on Oct 3rd in NYC?",
-      answer: "CUBE Summit 2024 only accepts 10 projects.",
+      answer: "We'll select 10 projects to present live in NYC.",
     },
     {
       question: "Will My Expenses Be Covered?",
@@ -86,7 +86,8 @@ export default function Home() {
     { id: 2, name: "Ben Fielding", company: "Co-founder of Gensyn", img: "/speakers/4.png", icon: "2" },
     { id: 6, name: "Evan Feng", company: "Partner at CoinFund", img: "/speakers/12.png", icon: "5" },
     { id: 11, name: "Nihal Maunder", company: "Junior Partner at Pantera", img: "/speakers/14.png", icon: "14" },
-    { id: 12, name: "Tom Schmidt", company: "Partner at Dragonfly", img: "/speakers/7.png", icon: "13" },
+    { id: 13, name: "Tom Schmidt", company: "Partner at Dragonfly", img: "/speakers/7.png", icon: "13" },
+    { id: 12, name: "Sean Ren", company: "Cofounder of Sahara AI", img: "/speakers/15.png", icon: "15" },
   ];
 
   // 点击按钮后展示更多数据
@@ -311,7 +312,7 @@ export default function Home() {
             />
 
             <Image
-              src="/banner/sponsors/image5.svg"
+              src="/banner/sponsors/image9.svg"
               width={136}
               height={48}
               alt="icon"
@@ -557,9 +558,8 @@ export default function Home() {
               .map((speaker) => (
                 <div
                   key={speaker.id}
-                  className={`flex flex-col items-start p-[18px] rounded-md border-2 border-[#E8E7EE] cursor-pointer ${
-                    speaker.id % 4 == 0 ? "" : "mr-[25px]"
-                  } `}
+                  className={`flex flex-col items-start p-[18px] rounded-md border-2 border-[#E8E7EE] cursor-pointer ${speaker.id % 4 == 0 ? "" : "mr-[25px]"
+                    } `}
                 >
                   <div className="relative">
                     <img src={speaker.img} alt={speaker.name} className="w-[238px] h-[238px] bg-[#E7D6FF]" />
@@ -1070,7 +1070,7 @@ export default function Home() {
             )}
           </Row>
 
-          <div className="flex items-center gap-[36px] mt-6">
+          <div className="flex items-center gap-[15px] mt-6">
             <svg
               onClick={() => router.push("https://medium.com/@cubesummit")}
               width="24"
@@ -1095,6 +1095,14 @@ export default function Home() {
               onClick={() => router.push("https://x.com/cubesummit")}
               src="/twitter.png"
               alt="twitter"
+              width={20}
+              height={20}
+            />
+            <Image
+              className="cursor-pointer"
+              onClick={() => router.push("https://t.me/cubesummit")}
+              src="/tg.png"
+              alt="tg"
               width={20}
               height={20}
             />
@@ -1144,7 +1152,16 @@ export default function Home() {
               </li>
             </ul>
           </nav>
-          <div className="flex items-center gap-[14px]">
+          <div className="flex items-center gap-[12px]">
+            <Image
+              className="cursor-pointer"
+              onClick={() => router.push("https://t.me/cubesummit")}
+              src="/tg.png"
+              alt="tg"
+              width={20}
+              height={20}
+            />
+
             <svg
               className="cursor-pointer"
               onClick={() => router.push("https://medium.com/@cubesummit")}
@@ -1174,6 +1191,7 @@ export default function Home() {
               width={20}
               height={20}
             />
+
           </div>
         </div>
         <div className="w-full h-[1px] mt-[24px] mb-[32px] bg-[#6B6B6B]" />
