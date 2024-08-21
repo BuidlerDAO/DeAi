@@ -52,7 +52,7 @@ export default function Home() {
         "Acceptance to CUBE Summit grants you access to all summit events, including panel discussions, fireside chats, pitching sessions, and the exclusive after-party event. You'll also receive opportunities to network with industry leaders and peers, and special prizes.",
     },
     {
-      question: "How many projects will be selected to pitch live on Oct 3rd in NYC?",
+      question: "How Many Projects Will Be Selected To Pitch Live On Oct 3rd In NYC?",
       answer: "We'll select 10 projects to present live in NYC.",
     },
     {
