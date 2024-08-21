@@ -11,7 +11,7 @@ import MobileMenu from "@/component/MobileMenu";
 import { useRouter } from "next/navigation";
 
 export default function Home() {
-  const [visibleCount, setVisibleCount] = useState(15);
+  const [visibleCount, setVisibleCount] = useState(12);
   const router = useRouter();
 
   const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -52,7 +52,7 @@ export default function Home() {
         "Acceptance to CUBE Summit grants you access to all summit events, including panel discussions, fireside chats, pitching sessions, and the exclusive after-party event. You'll also receive opportunities to network with industry leaders and peers, and special prizes.",
     },
     {
-      question: "How many projects will be selected to pitch live on Oct 3rd in NYC?",
+      question: "How Many Projects Will Be Selected To Pitch Live On Oct 3rd In NYC?",
       answer: "We'll select 10 projects to present live in NYC.",
     },
     {
@@ -86,8 +86,7 @@ export default function Home() {
     { id: 2, name: "Ben Fielding", company: "Co-founder of Gensyn", img: "/speakers/4.png", icon: "2" },
     { id: 6, name: "Evan Feng", company: "Partner at CoinFund", img: "/speakers/12.png", icon: "5" },
     { id: 11, name: "Nihal Maunder", company: "Junior Partner at Pantera", img: "/speakers/14.png", icon: "14" },
-    { id: 13, name: "Tom Schmidt", company: "Partner at Dragonfly", img: "/speakers/7.png", icon: "13" },
-    { id: 12, name: "Sean Ren", company: "Cofounder of Sahara AI", img: "/speakers/15.png", icon: "15" },
+    { id: 12, name: "Tom Schmidt", company: "Partner at Dragonfly", img: "/speakers/7.png", icon: "13" },
   ];
 
   // 点击按钮后展示更多数据
@@ -312,7 +311,7 @@ export default function Home() {
             />
 
             <Image
-              src="/banner/sponsors/image9.png"
+              src="/banner/sponsors/image5.svg"
               width={136}
               height={48}
               alt="icon"
@@ -384,7 +383,10 @@ export default function Home() {
           </div>
         </div>
         <div className="flex-1 hidden md:block">
-          <div className="flex flex-col items-start md:w-[602px] " style={{ marginLeft: "calc((100vw - 1200px) / 2)" }}>
+          <div
+            className="flex flex-col items-start md:w-[602px] mt-[100px]"
+            style={{ marginLeft: "calc((100vw - 1200px) / 2)" }}
+          >
             <div
               className="flex justify-center relative text-[48px] font-semibold mt-[60px]"
               style={{ fontFamily: "ClashDisplay, sans-serif" }}
@@ -1068,7 +1070,7 @@ export default function Home() {
             )}
           </Row>
 
-          <div className="flex items-center gap-[15px] mt-6">
+          <div className="flex items-center gap-[36px] mt-6">
             <svg
               onClick={() => router.push("https://medium.com/@cubesummit")}
               width="24"
@@ -1093,14 +1095,6 @@ export default function Home() {
               onClick={() => router.push("https://x.com/CUBE_Summit")}
               src="/twitter.png"
               alt="twitter"
-              width={20}
-              height={20}
-            />
-            <Image
-              className="cursor-pointer"
-              onClick={() => router.push("https://t.me/cubesummit")}
-              src="/tg.png"
-              alt="tg"
               width={20}
               height={20}
             />
@@ -1150,16 +1144,7 @@ export default function Home() {
               </li>
             </ul>
           </nav>
-          <div className="flex items-center gap-[12px]">
-            <Image
-              className="cursor-pointer"
-              onClick={() => router.push("https://t.me/cubesummit")}
-              src="/tg.png"
-              alt="tg"
-              width={20}
-              height={20}
-            />
-
+          <div className="flex items-center gap-[14px]">
             <svg
               className="cursor-pointer"
               onClick={() => router.push("https://medium.com/@cubesummit")}
