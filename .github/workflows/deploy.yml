@@ -4,7 +4,7 @@ env:
   VERCEL_PROJECT_ID: prj_2L6r7rq6DvgncAa55uGsSbocroqD
 on:
   push:
-    branches-ignore:
+    branches:
       - test
 jobs:
   Deploy-Preview:
