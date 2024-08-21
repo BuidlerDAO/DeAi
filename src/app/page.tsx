@@ -312,7 +312,7 @@ export default function Home() {
             />
 
             <Image
-              src="/banner/sponsors/image9.svg"
+              src="/banner/sponsors/image9.png"
               width={136}
               height={48}
               alt="icon"
