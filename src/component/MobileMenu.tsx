@@ -40,6 +40,7 @@ const MobileMenu = () => {
     },
   ];
 
+  
   const handleCopy = async () => {
     try {
       await navigator.clipboard.writeText("ops@cubesummit.xyz");

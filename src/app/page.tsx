@@ -11,7 +11,7 @@ import MobileMenu from "@/component/MobileMenu";
 import { useRouter } from "next/navigation";
 
 export default function Home() {
-  const [visibleCount, setVisibleCount] = useState(12);
+  const [visibleCount, setVisibleCount] = useState(15);
   const router = useRouter();
 
   const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -52,8 +52,8 @@ export default function Home() {
         "Acceptance to CUBE Summit grants you access to all summit events, including panel discussions, fireside chats, pitching sessions, and the exclusive after-party event. You'll also receive opportunities to network with industry leaders and peers, and special prizes.",
     },
     {
-      question: "How many projects will be selected to pitch live on Oct 3rd in NYC",
-      answer: "CUBE Summit 2024 Only accepts 10 projects.",
+      question: "How many projects will be selected to pitch live on Oct 3rd in NYC?",
+      answer: "We'll select 10 projects to present live in NYC.",
     },
     {
       question: "Will My Expenses Be Covered?",
@@ -86,7 +86,8 @@ export default function Home() {
     { id: 2, name: "Ben Fielding", company: "Co-founder of Gensyn", img: "/speakers/4.png", icon: "2" },
     { id: 6, name: "Evan Feng", company: "Partner at CoinFund", img: "/speakers/12.png", icon: "5" },
     { id: 11, name: "Nihal Maunder", company: "Junior Partner at Pantera", img: "/speakers/14.png", icon: "14" },
-    { id: 12, name: "Tom Schmidt", company: "Partner at Dragonfly", img: "/speakers/7.png", icon: "13" },
+    { id: 13, name: "Tom Schmidt", company: "Partner at Dragonfly", img: "/speakers/7.png", icon: "13" },
+    { id: 12, name: "Sean Ren", company: "Cofounder of Sahara AI", img: "/speakers/15.png", icon: "15" },
   ];
 
   // 点击按钮后展示更多数据
@@ -311,7 +312,7 @@ export default function Home() {
             />
 
             <Image
-              src="/banner/sponsors/image5.svg"
+              src="/banner/sponsors/image9.png"
               width={136}
               height={48}
               alt="icon"
@@ -367,7 +368,7 @@ export default function Home() {
 
           <div className="mt-4 flex flex-col">
             <span className="text-[#6B6B6B] text-lg">Attendees can expect:</span>
-            <ul className="mt-1 flex flex-col pl-5 text-[#2A2020] text-base font-medium">
+            <ul className="mt-3 flex  flex-col pl-5 text-[#2A2020] text-base font-medium">
               <li className="list-disc">Engaging discussions on the future of blockchain technology</li>
               <li className="list-disc">Exclusive networking opportunities with industry leaders</li>
               <li className="list-disc">Showcases of innovative early-stage projects</li>
@@ -383,10 +384,7 @@ export default function Home() {
           </div>
         </div>
         <div className="flex-1 hidden md:block">
-          <div
-            className="flex flex-col items-start md:w-[602px] mt-[100px]"
-            style={{ marginLeft: "calc((100vw - 1200px) / 2)" }}
-          >
+          <div className="flex flex-col items-start md:w-[602px] " style={{ marginLeft: "calc((100vw - 1200px) / 2)" }}>
             <div
               className="flex justify-center relative text-[48px] font-semibold mt-[60px]"
               style={{ fontFamily: "ClashDisplay, sans-serif" }}
@@ -403,27 +401,27 @@ export default function Home() {
               <br />
               <br />
               Attendees can expect:
-              <div className="pt-0 text-base font-medium leading-7  text-stone-800">
-                <div className="h-[23px] flex ">
-                  <div className="font-bold text-[28px] h-[23px] mr-1">·</div>
+              <div className="pt-0 text-base font-medium leading-7 gap-1  text-stone-800">
+                <div className=" flex gap-1">
+                  <div className="font-bold text-[28px]  mr-1">·</div>
                   <div className="text-[16px]" style={{ fontFamily: "Inter Display" }}>
                     Engaging discussions on the future of blockchain technology
                   </div>
                 </div>
-                <div className="h-[23px] flex ">
-                  <div className="font-bold text-[28px] h-[23px] mr-1">·</div>
+                <div className=" flex gap-1">
+                  <div className="font-bold text-[28px] mr-1">·</div>
                   <div className="text-[16px]" style={{ fontFamily: "Inter Display" }}>
                     Exclusive networking opportunities with industry leaders
                   </div>
                 </div>
-                <div className="h-[23px] flex ">
-                  <div className="font-bold text-[28px] h-[23px] mr-1">·</div>
+                <div className=" flex gap-1">
+                  <div className="font-bold text-[28px]  mr-1">·</div>
                   <div className="text-[16px]" style={{ fontFamily: "Inter Display" }}>
                     Showcases of innovative early-stage projects
                   </div>
                 </div>
-                <div className="h-[23px] flex ">
-                  <div className="font-bold text-[28px] h-[23px] mr-1">·</div>
+                <div className=" flex gap-1">
+                  <div className="font-bold text-[28px]  mr-1">·</div>
                   <div className="text-[16px]" style={{ fontFamily: "Inter Display" }}>
                     Potential partnerships and investment opportunities
                   </div>
@@ -453,11 +451,11 @@ export default function Home() {
             className="flex relative text-[34px] md:text-[48px] font-semibold"
             style={{ fontFamily: "ClashDisplay, sans-serif" }}
           >
-            <span>Unleash Your Potential on the Exclusive Pitching Stage</span>
+            <span>Unleash Your Potential on an Exclusive Pitching Stage</span>
             <div className="absolute left-[8px] bottom-[12px] -z-[1] w-[244px] h-[10px] bg-[#CFF285] rounded-lg"></div>
           </div>
 
-          <p className="mt-[16px] text-[#6B6B6B] text-lg " style={{ fontFamily: "Inter Display" }}>
+          <p className="mt-[16px] text-[#6B6B6B] text-lg ">
             Seize the opportunity to showcase your innovative project at the forefront of “Crypto x AI” by applying for
             our exclusive pitching stage. This is your chance to present your ideas to a distinguished panel of industry
             leaders, top-tier investors, and academic experts from some of the world's most distinguished institutions.
@@ -510,7 +508,7 @@ export default function Home() {
             Speakers and Judges
           </div>
           <p className="w-full text-[18px] text-center text-[#6B6B6B] mt-[16px] md:px-0 px-4">
-            Get ready to be inspired by a lineup of world-class industry leaders in the crypto
+            Get ready to be inspired by a lineup of world-class industry leaders in crypto
           </p>
 
           <Row gutter={[20, 14]} className="px-5 pb-5 mt-6 md:hidden">
@@ -692,7 +690,6 @@ export default function Home() {
                 alumni projects and become part of a dynamic, high-potential startup team.
               </p>
               <p className="mt-[16px] text-[#2A2020] text-[18px]">Let's Build the Blockchain of Tomorrow!</p>
-              <p className="mt-[16px] text-[#2A2020] text-[18px]">Let's Build the Blockchain of Tomorrow!</p>
 
               <div
                 onClick={() => router.push("https://apply.cubesummit.xyz/")}
@@ -717,12 +714,12 @@ export default function Home() {
             className="flex md:justify-center relative text-[38px] font-semibold mt-[20px]"
             style={{ fontFamily: "ClashDisplay, sans-serif" }}
           >
-            <span>What to expect？</span>
+            <span>What to Expect？</span>
           </div>
           <p className="mt-[6px] text-[#6B6B6B] text-lg">
             Powered by our extensive alumni networks, we offer you an unparalleled opportunity to showcase your project
             to top-tier investors and leaders of major public blockchains. Beyond serving as an ideal launchpad for your
-            project, the platform also provides access to numerous invaluable opportunities, including::
+            project, the platform also provides access to numerous invaluable opportunities, including:
           </p>
           <ul className="flex flex-col gap-[14px] mt-[12px] text-[#252424] font-medium">
             <li className="flex items-center gap-2">
@@ -742,7 +739,7 @@ export default function Home() {
               <img src="/icon.png" width={22} height={22} alt="" />
               <span>
                 Tap into an <span className="font-extrabold">influential investor network</span> to connect with
-                top-tier VCs looking to back the next wave of crypto innovation.
+                top-tier VCs looking to back the next wave of crypto innovation
               </span>
             </li>
             <li className="flex items-center gap-2">
@@ -777,7 +774,7 @@ export default function Home() {
               className="flex justify-center relative text-[38px] font-semibold mt-[20px]"
               style={{ fontFamily: "ClashDisplay, sans-serif" }}
             >
-              <span> What to expect？</span>
+              <span> What to Expect？</span>
             </div>
             <p className="text-[#6B6B6B] text-lg">
               Powered by our extensive alumni networks, we offer you an unparalleled opportunity to showcase your
@@ -803,7 +800,7 @@ export default function Home() {
                 <img src="/icon.png" width={22} height={22} alt="" />
                 <div className="self-stretch my-auto w-[563px] max-md:max-w-full">
                   Tap into an <span className="font-extrabold">influential investor network</span> to connect with
-                  top-tier VCs looking to back the next wave of crypto innovation.
+                  top-tier VCs looking to back the next wave of crypto innovation
                 </div>
               </li>
               <li className="flex items-center gap-2">
@@ -955,12 +952,12 @@ export default function Home() {
           </div>
           <div className="flex flex-col w-full mt-6 md:mt-[40px] bg-[#EEF5FC]">
             <div className="px-[14px] py-[18px] md:px-[38px] md:py-[26px] border-b-[1px] border-[#0000001A] flex flex-col md:block">
-              <span className="text-base md:text-[24px] text-[#153C3CAD] font-semibold">August 15 - September 31:</span>
+              <span className="text-base md:text-[24px] text-[#153C3CAD] font-semibold">August 19 - September 1:</span>
               <span className="text-base md:text-[24px] text-[#153C3C] font-extrabold md:ml-2">Application Period</span>
             </div>
             <div className="px-[14px] py-[18px] md:px-[38px] md:py-[26px] border-b-[1px] border-[#0000001A] flex flex-col md:block">
               <span className="text-base md:text-[24px] text-[#153C3CAD] font-semibold">
-                September 1 - September 15:
+                September 2 - September 15:
               </span>
               <span className="text-base md:text-[24px] text-[#153C3C] font-extrabold md:ml-2">Interview Phase</span>
             </div>
@@ -990,12 +987,12 @@ export default function Home() {
           className="text-center md:text-left max-md:max-w-full max-md:text-4xl mb-5 md:mb-0"
           style={{ fontFamily: "ClashDisplay, sans-serif" }}
         >
-          Collaborative Support
+          Collaborative Supporters
         </div>
         <img
           loading="lazy"
           srcSet="/support.png"
-          className="object-contain mt-10 w-full aspect-[2.57] hidden md:inline-block max-md:max-w-full"
+          className="object-contain mt-10 w-full hidden md:inline-block max-md:max-w-full"
         />
         <img src="/support-mobile.png" alt="" className="md:hidden" />
       </div>
@@ -1061,7 +1058,7 @@ export default function Home() {
                     if (item === "Contact Us") {
                       handleCopy();
                     } else {
-                      router.push(`#${item.toLowerCase()}`);
+                      router.push(`#${item.split(" ")[0].toLowerCase()}`);
                     }
                   }}
                 >
@@ -1071,7 +1068,7 @@ export default function Home() {
             )}
           </Row>
 
-          <div className="flex items-center gap-[36px] mt-6">
+          <div className="flex items-center gap-[15px] mt-6">
             <svg
               onClick={() => router.push("https://medium.com/@cubesummit")}
               width="24"
@@ -1096,6 +1093,14 @@ export default function Home() {
               onClick={() => router.push("https://x.com/CUBE_Summit")}
               src="/twitter.png"
               alt="twitter"
+              width={20}
+              height={20}
+            />
+            <Image
+              className="cursor-pointer"
+              onClick={() => router.push("https://t.me/cubesummit")}
+              src="/tg.png"
+              alt="tg"
               width={20}
               height={20}
             />
@@ -1145,7 +1150,16 @@ export default function Home() {
               </li>
             </ul>
           </nav>
-          <div className="flex items-center gap-[14px]">
+          <div className="flex items-center gap-[12px]">
+            <Image
+              className="cursor-pointer"
+              onClick={() => router.push("https://t.me/cubesummit")}
+              src="/tg.png"
+              alt="tg"
+              width={20}
+              height={20}
+            />
+
             <svg
               className="cursor-pointer"
               onClick={() => router.push("https://medium.com/@cubesummit")}
@@ -1169,7 +1183,7 @@ export default function Home() {
             </svg>
             <Image
               className="cursor-pointer"
-              onClick={() => router.push("https://x.com/cubesummit")}
+              onClick={() => router.push("https://x.com/CUBE_Summit")}
               src="/twitter.png"
               alt="twitter"
               width={20}
