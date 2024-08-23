@@ -63,31 +63,32 @@ export default function Home() {
 
   // 数据数组
   const speakers = [
-    { id: 8, name: "Guy Wuollet", company: "Investment Partner at a16z crypto", img: "/speakers/6.png", icon: "6" },
+    { id: 9, name: "Guy Wuollet", company: "Investment Partner at a16z crypto", img: "/speakers/6.png", icon: "6" },
     { id: 1, name: "Anna Bertha", company: "Investor at DCG", img: "/speakers/3.png", icon: "1" },
-    { id: 9, name: "Jiahao Sun", company: "Founder and CEO of FLock.io", img: "/speakers/8.png", icon: "8" },
+    { id: 10, name: "Jiahao Sun", company: "Founder and CEO of FLock.io", img: "/speakers/8.png", icon: "8" },
     {
-      id: 5,
+      id: 6,
       name: "David Attermann",
       company: "Head of Web3 Investments at M31 Capital",
       img: "/speakers/13.png",
       icon: "12",
     },
-    { id: 3, name: "Chris Zhu", company: "Co-founder of Sonic / Mirror World", img: "/speakers/9.png", icon: "3" },
+    { id: 4, name: "Chris Zhu", company: "Co-founder of Sonic / Mirror World", img: "/speakers/9.png", icon: "3" },
     {
-      id: 4,
+      id: 5,
       name: "Christian Ondaatje",
       company: "Platform Engineer of Hyperbolicd",
       img: "/speakers/5.png",
       icon: "4",
     },
-    { id: 7, name: "Greg Osuri", company: "Founder of Akash", img: "/speakers/1.png", icon: "7" },
-    { id: 10, name: "Naveen Durvasula", company: "Core Member of Ritual", img: "/speakers/2.png", icon: "9" },
-    { id: 2, name: "Ben Fielding", company: "Co-founder of Gensyn", img: "/speakers/4.png", icon: "2" },
-    { id: 6, name: "Evan Feng", company: "Partner at CoinFund", img: "/speakers/12.png", icon: "5" },
-    { id: 11, name: "Nihal Maunder", company: "Junior Partner at Pantera", img: "/speakers/14.png", icon: "14" },
-    { id: 13, name: "Tom Schmidt", company: "Partner at Dragonfly", img: "/speakers/7.png", icon: "13" },
-    { id: 12, name: "Sean Ren", company: "Cofounder of Sahara AI", img: "/speakers/15.png", icon: "15" },
+    { id: 8, name: "Greg Osuri", company: "Founder of Akash", img: "/speakers/1.png", icon: "7" },
+    { id: 11, name: "Naveen Durvasula", company: "Core Member of Ritual", img: "/speakers/2.png", icon: "9" },
+    { id: 3, name: "Ben Fielding", company: "Co-founder of Gensyn", img: "/speakers/4.png", icon: "2" },
+    { id: 2, name: "Baek Kim", company: "Partner at Hashed", img: "/speakers/16.png", icon: "16" },
+    { id: 7, name: "Evan Feng", company: "Partner at CoinFund", img: "/speakers/12.png", icon: "5" },
+    { id: 12, name: "Nihal Maunder", company: "Junior Partner at Pantera", img: "/speakers/14.png", icon: "14" },
+    { id: 14, name: "Tom Schmidt", company: "Partner at Dragonfly", img: "/speakers/7.png", icon: "13" },
+    { id: 13, name: "Sean Ren", company: "Cofounder of Sahara AI", img: "/speakers/15.png", icon: "15" },
   ];
 
   // 点击按钮后展示更多数据
