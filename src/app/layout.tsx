@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "CUBE Summit",
-  description: "For the first time, top university blockchain clubs are teaming up, backed by extensive alumni networks, in collaboration with leading blockchains, projects, and VCs, to ignite emerging talent and innovative projects, shaping the future stars of the crypto world.",
+  description: "For the first time, distinguished university blockchain clubs are teaming up, backed by extensive alumni networks, in collaboration with leading blockchains, projects, and VCs, to ignite emerging talent and innovative projects, shaping the future stars of the crypto world.",
 };
 
 export default function RootLayout({
