@@ -355,7 +355,7 @@ export default function Home() {
       <section className="flex flex-col md:flex-row w-full" id="about">
         <div className="mt-9 px-5 md:hidden">
           <div className="flex relative text-[34px] md:text-[48px] font-semibold">
-            <span>Our Mission</span>
+            <span style={{ fontFamily: "ClashDisplay, sans-serif" }}>Our Mission</span>
             <div className="absolute left-[8px] bottom-[12px] -z-[1] w-[244px] h-[10px] bg-[#CFF285] rounded-lg"></div>
           </div>
 
@@ -387,7 +387,7 @@ export default function Home() {
         <div className="flex-1 hidden md:block">
           <div className="flex flex-col items-start md:w-[602px] " style={{ marginLeft: "calc((100vw - 1200px) / 2)" }}>
             <div className="flex justify-center relative text-[48px] font-semibold mt-[60px]">
-              <span>Our Mission</span>
+              <span style={{ fontFamily: "ClashDisplay, sans-serif" }}>Our Mission</span>
               <div className="absolute left-[8px] bottom-[12px] -z-[1] w-[310px] h-[10px] bg-[#CFF285] rounded-lg"></div>
             </div>
             <div className="mt-[16px] text-[#6B6B6B] text-lg font-normal" style={{ fontFamily: "Inter Display" }}>
