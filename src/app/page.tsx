@@ -63,7 +63,7 @@ export default function Home() {
 
   // 数据数组
   const speakers = [
-    { id: 1, name: "Allan", company: "Partner of Blockchain For Good Alliance", img: "/speakers/17.png", icon: "17" },
+    // { id: 1, name: "Allan", company: "Partner of Blockchain For Good Alliance", img: "/speakers/17.png", icon: "17" },
     { id: 11, name: "Guy Wuollet", company: "Investment Partner at a16z crypto", img: "/speakers/6.png", icon: "6" },
     { id: 2, name: "Anna Bertha", company: "Investor at DCG", img: "/speakers/3.png", icon: "1" },
     { id: 12, name: "Jiahao Sun", company: "Founder and CEO of FLock.io", img: "/speakers/8.png", icon: "8" },
