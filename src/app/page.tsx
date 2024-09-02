@@ -1027,7 +1027,7 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="flex overflow-hidden flex-col justify-center items-center py-10 text-5xl font-semibold leading-none text-lime-300 bg-neutral-800 max-md:text-4xl">
+      <div className="flex overflow-hidden flex-col w-full justify-center items-center py-10 text-5xl font-semibold leading-none text-lime-300 bg-neutral-800 max-md:text-4xl">
         <div
           className="text-center md:text-left max-md:max-w-full max-md:text-4xl mb-5 md:mb-0"
           style={{ fontFamily: "ClashDisplay, sans-serif" }}
