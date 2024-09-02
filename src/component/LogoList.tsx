@@ -6,6 +6,17 @@ const LogoList = () => {
     <Row gutter={[16, 12]} className="px-5 mt-6 md:hidden">
       <Col span={8}>
         <Image
+          src="/banner/initiators/image16.svg"
+          width={80}
+          height={48}
+          alt="icon"
+          className="w-[80px] md:w-[80px]"
+        />
+      </Col>
+
+
+      <Col span={8}>
+        <Image
           src="/banner/initiators/image6.svg"
           width={136}
           height={48}

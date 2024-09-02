@@ -11,7 +11,7 @@ import MobileMenu from "@/component/MobileMenu";
 import { useRouter } from "next/navigation";
 
 export default function Home() {
-  const [visibleCount, setVisibleCount] = useState(20);
+  const [visibleCount, setVisibleCount] = useState(25);
   const router = useRouter();
 
   const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -62,11 +62,44 @@ export default function Home() {
   ];
 
   // 数据数组
+  // const speakers = [
+  //   // { id: 1, name: "Allan", company: "Partner of Blockchain For Good Alliance", img: "/speakers/17.png", icon: "17" },
+  //   { id: 10, name: "Guy Wuollet", company: "Investment Partner at a16z crypto", img: "/speakers/6.png", icon: "6" },
+  //   { id: 1, name: "Anna Bertha", company: "Investor at DCG", img: "/speakers/3.png", icon: "1" },
+  //   { id: 11, name: "Jiahao Sun", company: "Founder and CEO of FLock.io", img: "/speakers/8.png", icon: "8" },
+  //   {
+  //     id: 6,
+  //     name: "David Attermann",
+  //     company: "Head of Web3 Investments at M31 Capital",
+  //     img: "/speakers/13.png",
+  //     icon: "12",
+  //   },
+  //   { id: 4, name: "Chris Zhu", company: "Co-founder of Sonic / Mirror World", img: "/speakers/9.png", icon: "3" },
+  //   {
+  //     id: 5,
+  //     name: "Christian Ondaatje",
+  //     company: "Platform Engineer of Hyperbolicd",
+  //     img: "/speakers/5.png",
+  //     icon: "4",
+  //   },
+  //   { id: 9, name: "Greg Osuri", company: "Founder of Akash", img: "/speakers/1.png", icon: "7" },
+  //   { id: 12, name: "Mads Pedersen", company: "Partner at Figment Capital", img: "/speakers/19.png", icon: "19" },
+  //   { id: 13, name: "Naveen Durvasula", company: "Core Member of Ritual", img: "/speakers/2.png", icon: "9" },
+  //   { id: 3, name: "Ben Fielding", company: "Co-founder of Gensyn", img: "/speakers/4.png", icon: "2" },
+  //   { id: 2, name: "Baek Kim", company: "Partner at Hashed", img: "/speakers/16.png", icon: "16" },
+  //   { id: 7, name: "Dmitriy Berenzon", company: "Partner at Archetype", img: "/speakers/18.png", icon: "18" },
+  //   { id: 8, name: "Evan Feng", company: "Partner at CoinFund", img: "/speakers/12.png", icon: "5" },
+  //   { id: 14, name: "Nihal Maunder", company: "Junior Partner at Pantera", img: "/speakers/14.png", icon: "14" },
+  //   { id: 16, name: "Tom Schmidt", company: "Partner at Dragonfly", img: "/speakers/7.png", icon: "13" },
+  //   { id: 15, name: "Sean Ren", company: "Cofounder of Sahara AI", img: "/speakers/15.png", icon: "15" },
+  // ];
+
   const speakers = [
-    // { id: 1, name: "Allan", company: "Partner of Blockchain For Good Alliance", img: "/speakers/17.png", icon: "17" },
-    { id: 10, name: "Guy Wuollet", company: "Investment Partner at a16z crypto", img: "/speakers/6.png", icon: "6" },
-    { id: 1, name: "Anna Bertha", company: "Investor at DCG", img: "/speakers/3.png", icon: "1" },
-    { id: 11, name: "Jiahao Sun", company: "Founder and CEO of FLock.io", img: "/speakers/8.png", icon: "8" },
+    { id: 1, name: "Kuleen Nimkar", company: "Growth at Solana Foundation", img: "/speakers/20.png", icon: "11" },
+    { id: 2, name: "Muneeb Ali", company: "Co-Founder of Stacks", img: "/speakers/21.png", icon: "21" },
+    { id: 3, name: "Sam Williams", company: "CEO of Forward Research, Founder of Arweave and AO", img: "/speakers/22.png", icon: "22" },
+    { id: 4, name: "Anna Bertha", company: "Investor at DCG", img: "/speakers/3.png", icon: "1" },
+    { id: 5, name: "Baek Kim", company: "Partner at Hashed", img: "/speakers/16.png", icon: "16" },
     {
       id: 6,
       name: "David Attermann",
@@ -74,24 +107,32 @@ export default function Home() {
       img: "/speakers/13.png",
       icon: "12",
     },
-    { id: 4, name: "Chris Zhu", company: "Co-founder of Sonic / Mirror World", img: "/speakers/9.png", icon: "3" },
+    { id: 7, name: "Dmitriy Berenzon", company: "Partner at Archetype", img: "/speakers/18.png", icon: "18" },
+    { id: 8, name: "Evan Feng", company: "Partner at CoinFund", img: "/speakers/12.png", icon: "5" },
+    { id: 9, name: "Greg Scanlon", company: "Managing Principal at Franklin Templeton Blockchain Fund", img: "/speakers/23.png", icon: "23" },
+
+    { id: 10, name: "Guy Wuollet", company: "Investment Partner at a16z crypto", img: "/speakers/6.png", icon: "6" },
+    { id: 11, name: "Mads Pedersen", company: "Partner at Figment Capital", img: "/speakers/19.png", icon: "19" },
+    { id: 12, name: "Nihal Maunder", company: "Junior Partner at Pantera", img: "/speakers/14.png", icon: "14" },
+    { id: 13, name: "Tom Schmidt", company: "Partner at Dragonfly", img: "/speakers/7.png", icon: "13" },
+    { id: 14, name: "Wei Dai", company: "Research Partner at 1kx", img: "/speakers/24.png", icon: "24" },
+    { id: 15, name: "Allan", company: "Partner at Blockchain For Good Alliance", img: "/speakers/17.png", icon: "17" },
+    { id: 16, name: "Ben Fielding", company: "Co-founder of Gensyn", img: "/speakers/4.png", icon: "2" },
     {
-      id: 5,
+      id: 17,
       name: "Christian Ondaatje",
       company: "Platform Engineer of Hyperbolicd",
       img: "/speakers/5.png",
       icon: "4",
     },
-    { id: 9, name: "Greg Osuri", company: "Founder of Akash", img: "/speakers/1.png", icon: "7" },
-    { id: 12, name: "Mads Pedersen", company: "Partner at Figment Capital", img: "/speakers/19.png", icon: "19" },
-    { id: 13, name: "Naveen Durvasula", company: "Core Member of Ritual", img: "/speakers/2.png", icon: "9" },
-    { id: 3, name: "Ben Fielding", company: "Co-founder of Gensyn", img: "/speakers/4.png", icon: "2" },
-    { id: 2, name: "Baek Kim", company: "Partner at Hashed", img: "/speakers/16.png", icon: "16" },
-    { id: 7, name: "Dmitriy Berenzon", company: "Partner at Archetype", img: "/speakers/18.png", icon: "18" },
-    { id: 8, name: "Evan Feng", company: "Partner at CoinFund", img: "/speakers/12.png", icon: "5" },
-    { id: 14, name: "Nihal Maunder", company: "Junior Partner at Pantera", img: "/speakers/14.png", icon: "14" },
-    { id: 16, name: "Tom Schmidt", company: "Partner at Dragonfly", img: "/speakers/7.png", icon: "13" },
-    { id: 15, name: "Sean Ren", company: "Cofounder of Sahara AI", img: "/speakers/15.png", icon: "15" },
+    { id: 18, name: "Greg Osuri", company: "Founder of Akash", img: "/speakers/1.png", icon: "7" },
+
+    { id: 19, name: "Jiahao Sun", company: "Founder and CEO of FLock.io", img: "/speakers/8.png", icon: "8" },
+
+    { id: 20, name: "Naveen Durvasula", company: "Core Member of Ritual", img: "/speakers/2.png", icon: "9" },
+    { id: 21, name: "Sean Ren", company: "Cofounder of Sahara AI", img: "/speakers/15.png", icon: "15" },
+    // { id: 4, name: "Chris Zhu", company: "Co-founder of Sonic / Mirror World", img: "/speakers/9.png", icon: "3" },
+
   ];
 
   // 点击按钮后展示更多数据
@@ -155,7 +196,7 @@ export default function Home() {
           </div>
           <div className="text-[24px] text-[#383F4E] mt-5 md:mt-[26px] font-semibold">October 3rd ｜ NYC</div>
           <p className="text-[#383F4E] text-sm leading-[22px] md:leading-[30px] md:text-[20px] text-center mt-[25px] max-w-[307px] md:max-w-[661px]">
-            For the first time, ten distinguished university blockchain clubs are uniting, supported by extensive alumni
+            For the first time, eleven distinguished university blockchain clubs are uniting, supported by extensive alumni
             networks and in collaboration with leading projects and investors. Together, we aim to cultivate emerging
             talents and foster innovative projects, paving the way for the future leaders of crypto.
             <br></br>
@@ -190,6 +231,13 @@ export default function Home() {
           </p>
           <LogoList />
           <div className="hidden md:flex flex-wrap gap-x-5 md:gap-x-[34px] items-center gap-y-5 md:gap-y-[24px] px-4 md:px-0 mt-4 md:mt-[24px]">
+            <Image
+              src="/banner/initiators/image16.svg"
+              width={80}
+              height={48}
+              alt="icon"
+              className="w-[80px] md:w-[80px]"
+            />
             <Image
               src="/banner/initiators/image6.svg"
               width={136}
@@ -515,8 +563,8 @@ export default function Home() {
               .sort((a, b) => a.id - b.id)
               .map((speaker, i) => (
                 <Col span={12} key={i}>
-                  <div className="border rounded-[5px] border-[#E8E7EE] p-[10px] space-y-1 flex flex-col h-full">
-                    <div className=" relative">
+                  <div className="border rounded-[5px] border-[#E8E7EE] p-[10px] space-y-1 flex flex-col h-full ">
+                    <div className="relative">
                       <img src={speaker.img} alt={speaker.name} className="bg-[#E7D6FF]" />
                       <img
                         src={`/speakers/tag${speaker.icon}.png`}
@@ -524,7 +572,7 @@ export default function Home() {
                       />
                     </div>
                     <span className="text-[#153C3C] text-xs font-medium">{speaker.name}</span>
-                    <span className="text-[#153C3C] text-[8px]">{speaker.company}</span>
+                    <span className="text-[#153C3C] text-[8px] ">{speaker.company}</span>
                   </div>
                 </Col>
               ))}
@@ -553,9 +601,8 @@ export default function Home() {
               .map((speaker) => (
                 <div
                   key={speaker.id}
-                  className={`flex flex-col items-start p-[18px] rounded-md border-2 border-[#E8E7EE] cursor-pointer ${
-                    speaker.id % 4 == 0 ? "" : "mr-[25px]"
-                  } `}
+                  className={`flex flex-col items-start p-[18px] rounded-md border-2 border-[#E8E7EE] cursor-pointer ${speaker.id % 4 == 0 ? "" : "mr-[25px]"
+                    } `}
                 >
                   <div className="relative">
                     <img src={speaker.img} alt={speaker.name} className="w-[238px] h-[238px] bg-[#E7D6FF]" />
@@ -565,7 +612,7 @@ export default function Home() {
                     />
                   </div>
                   <div className="text-lg text-[#153C3C] font-medium mt-[8px]">{speaker.name}</div>
-                  <div className="text-xs text-[#153C3C]">{speaker.company}</div>
+                  <div className="text-xs text-[#153C3C] w-[229px] whitespace-normal break-words">{speaker.company}</div>
                 </div>
               ))}
             <div className="flex flex-col justify-center cursor-pointer  rounded-lg border-gray-200 border-solid border-[1.435px] w-[273px] h-[325px]">
@@ -992,7 +1039,7 @@ export default function Home() {
           srcSet="/support.png"
           className="object-contain mt-10 w-full hidden md:inline-block max-md:max-w-full"
         />
-        <img src="/support-mobile.png" alt="" className="md:hidden" />
+        <img src="/support-mobile1.png" alt="" className="md:hidden" />
       </div>
 
       <section className="flex flex-col py-[34px] md:py-[112px] items-center w-full">
