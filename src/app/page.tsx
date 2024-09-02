@@ -662,7 +662,7 @@ export default function Home() {
 
       <div
         id="partners"
-        className="flex overflow-hidden flex-col justify-center w-full items-center py-4 md:py-10 bg-slate-100"
+        className="flex overflow-hidden flex-col w-full  justify-center items-center py-4 md:py-10 bg-slate-100"
       >
         <div
           className="text-5xl font-semibold leading-none text-neutral-800 max-md:text-4xl"
@@ -670,7 +670,7 @@ export default function Home() {
         >
           Partners
         </div>
-        <div className="flex flex-col mt-6 md:mt-10 w-full max-md:max-w-full">
+        <div className="flex flex-col mt-6 md:mt-10 w-full max-md:max-w-full bg-slate-100">
           <img
             loading="lazy"
             srcSet="/partners.png"
