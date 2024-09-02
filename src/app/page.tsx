@@ -223,7 +223,7 @@ export default function Home() {
                   fill="#CFF285"
                 />
               </svg>
-              <span>Apply to Pitch by September 1</span>
+              <span>Apply to Pitch by September 9</span>
             </div>
           </div>
           <p className="text-[#383F4E] text-xl md:text-[24px] font-semibold mt-[80px] text-center md:text-left w-full">
@@ -997,12 +997,12 @@ export default function Home() {
           </div>
           <div className="flex flex-col w-full mt-6 md:mt-[40px] bg-[#EEF5FC]">
             <div className="px-[14px] py-[18px] md:px-[38px] md:py-[26px] border-b-[1px] border-[#0000001A] flex flex-col md:block">
-              <span className="text-base md:text-[24px] text-[#153C3CAD] font-semibold">August 19 - September 1:</span>
+              <span className="text-base md:text-[24px] text-[#153C3CAD] font-semibold">August 19 - September 9:</span>
               <span className="text-base md:text-[24px] text-[#153C3C] font-extrabold md:ml-2">Application Period</span>
             </div>
             <div className="px-[14px] py-[18px] md:px-[38px] md:py-[26px] border-b-[1px] border-[#0000001A] flex flex-col md:block">
               <span className="text-base md:text-[24px] text-[#153C3CAD] font-semibold">
-                September 2 - September 15:
+                September 10 - September 15:
               </span>
               <span className="text-base md:text-[24px] text-[#153C3C] font-extrabold md:ml-2">Interview Phase</span>
             </div>
