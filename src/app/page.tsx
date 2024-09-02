@@ -233,10 +233,10 @@ export default function Home() {
           <div className="hidden md:flex flex-wrap gap-x-5 md:gap-x-[34px] items-center gap-y-5 md:gap-y-[24px] px-4 md:px-0 mt-4 md:mt-[24px]">
             <Image
               src="/banner/initiators/image16.svg"
-              width={80}
+              width={136}
               height={48}
               alt="icon"
-              className="w-[80px] md:w-[80px]"
+              className="w-[80px] md:w-[80px] ml-[30px] mr-[25px]"
             />
             <Image
               src="/banner/initiators/image6.svg"
