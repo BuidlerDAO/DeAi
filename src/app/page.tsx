@@ -97,7 +97,13 @@ export default function Home() {
   const speakers = [
     { id: 1, name: "Kuleen Nimkar", company: "Growth at Solana Foundation", img: "/speakers/20.png", icon: "11" },
     { id: 2, name: "Muneeb Ali", company: "Co-Founder of Stacks", img: "/speakers/21.png", icon: "21" },
-    { id: 3, name: "Sam Williams", company: "CEO of Forward Research, Founder of Arweave and AO", img: "/speakers/22.png", icon: "22" },
+    {
+      id: 3,
+      name: "Sam Williams",
+      company: "CEO of Forward Research, Founder of Arweave and AO",
+      img: "/speakers/22.png",
+      icon: "22",
+    },
     { id: 4, name: "Anna Bertha", company: "Investor at DCG", img: "/speakers/3.png", icon: "1" },
     { id: 5, name: "Baek Kim", company: "Partner at Hashed", img: "/speakers/16.png", icon: "16" },
     {
@@ -109,7 +115,13 @@ export default function Home() {
     },
     { id: 7, name: "Dmitriy Berenzon", company: "Partner at Archetype", img: "/speakers/18.png", icon: "18" },
     { id: 8, name: "Evan Feng", company: "Partner at CoinFund", img: "/speakers/12.png", icon: "5" },
-    { id: 9, name: "Greg Scanlon", company: "Managing Principal at Franklin Templeton Blockchain Fund", img: "/speakers/23.png", icon: "23" },
+    {
+      id: 9,
+      name: "Greg Scanlon",
+      company: "Managing Principal at Franklin Templeton Blockchain Fund",
+      img: "/speakers/23.png",
+      icon: "23",
+    },
 
     { id: 10, name: "Guy Wuollet", company: "Investment Partner at a16z crypto", img: "/speakers/6.png", icon: "6" },
     { id: 11, name: "Mads Pedersen", company: "Partner at Figment Capital", img: "/speakers/19.png", icon: "19" },
@@ -121,7 +133,7 @@ export default function Home() {
     {
       id: 17,
       name: "Christian Ondaatje",
-      company: "Platform Engineer of Hyperbolicd",
+      company: "Platform Engineer of Hyperbolic",
       img: "/speakers/5.png",
       icon: "4",
     },
@@ -132,7 +144,6 @@ export default function Home() {
     { id: 20, name: "Naveen Durvasula", company: "Core Member of Ritual", img: "/speakers/2.png", icon: "9" },
     { id: 21, name: "Sean Ren", company: "Cofounder of Sahara AI", img: "/speakers/15.png", icon: "15" },
     // { id: 4, name: "Chris Zhu", company: "Co-founder of Sonic / Mirror World", img: "/speakers/9.png", icon: "3" },
-
   ];
 
   // 点击按钮后展示更多数据
@@ -196,9 +207,9 @@ export default function Home() {
           </div>
           <div className="text-[24px] text-[#383F4E] mt-5 md:mt-[26px] font-semibold">October 3rd ｜ NYC</div>
           <p className="text-[#383F4E] text-sm leading-[22px] md:leading-[30px] md:text-[20px] text-center mt-[25px] max-w-[307px] md:max-w-[661px]">
-            For the first time, eleven distinguished university blockchain clubs are uniting, supported by extensive alumni
-            networks and in collaboration with leading projects and investors. Together, we aim to cultivate emerging
-            talents and foster innovative projects, paving the way for the future leaders of crypto.
+            For the first time, eleven distinguished university blockchain clubs are uniting, supported by extensive
+            alumni networks and in collaboration with leading projects and investors. Together, we aim to cultivate
+            emerging talents and foster innovative projects, paving the way for the future leaders of crypto.
             <br></br>
             <br></br>
             We warmly welcome and encourage more universities to join us in building a collaborative blockchain future.
@@ -601,8 +612,9 @@ export default function Home() {
               .map((speaker) => (
                 <div
                   key={speaker.id}
-                  className={`flex flex-col items-start p-[18px] rounded-md border-2 border-[#E8E7EE] cursor-pointer ${speaker.id % 4 == 0 ? "" : "mr-[25px]"
-                    } `}
+                  className={`flex flex-col items-start p-[18px] rounded-md border-2 border-[#E8E7EE] cursor-pointer ${
+                    speaker.id % 4 == 0 ? "" : "mr-[25px]"
+                  } `}
                 >
                   <div className="relative">
                     <img src={speaker.img} alt={speaker.name} className="w-[238px] h-[238px] bg-[#E7D6FF]" />
@@ -612,7 +624,9 @@ export default function Home() {
                     />
                   </div>
                   <div className="text-lg text-[#153C3C] font-medium mt-[8px]">{speaker.name}</div>
-                  <div className="text-xs text-[#153C3C] w-[229px] whitespace-normal break-words">{speaker.company}</div>
+                  <div className="text-xs text-[#153C3C] w-[229px] whitespace-normal break-words">
+                    {speaker.company}
+                  </div>
                 </div>
               ))}
             <div className="flex flex-col justify-center cursor-pointer  rounded-lg border-gray-200 border-solid border-[1.435px] w-[273px] h-[325px]">
