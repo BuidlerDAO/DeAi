@@ -116,21 +116,38 @@ export default function Home() {
     { id: 12, name: "Nihal Maunder", company: "Junior Partner at Pantera", img: "/speakers/14.png", icon: "14" },
     { id: 13, name: "Tom Schmidt", company: "Partner at Dragonfly", img: "/speakers/7.png", icon: "13" },
     { id: 14, name: "Wei Dai", company: "Research Partner at 1kx", img: "/speakers/24.png", icon: "24" },
-    { id: 15, name: "Allan", company: "Partner at Blockchain For Good Alliance", img: "/speakers/17.png", icon: "17" },
-    { id: 16, name: "Ben Fielding", company: "Co-founder of Gensyn", img: "/speakers/4.png", icon: "2" },
     {
-      id: 17,
+      id: 15,
+      name: "Christian Ondaatje",
+      company: "Platform Engineer of Hyperbolicd",
+      img: "/speakers/25.png",
+      icon: "25",
+    },
+    { id: 16, name: "Allan", company: "Partner at Blockchain For Good Alliance", img: "/speakers/17.png", icon: "17" },
+    { id: 17, name: "Ben Fielding", company: "Co-founder of Gensyn", img: "/speakers/4.png", icon: "2" },
+
+   
+    {
+      id: 18,
       name: "Christian Ondaatje",
       company: "Platform Engineer of Hyperbolicd",
       img: "/speakers/5.png",
       icon: "4",
     },
-    { id: 18, name: "Greg Osuri", company: "Founder of Akash", img: "/speakers/1.png", icon: "7" },
+    { id: 19, name: "Greg Osuri", company: "Founder of Akash", img: "/speakers/1.png", icon: "7" },
 
-    { id: 19, name: "Jiahao Sun", company: "Founder and CEO of FLock.io", img: "/speakers/8.png", icon: "8" },
+    { id: 20, name: "Jiahao Sun", company: "Founder and CEO of FLock.io", img: "/speakers/8.png", icon: "8" },
 
-    { id: 20, name: "Naveen Durvasula", company: "Core Member of Ritual", img: "/speakers/2.png", icon: "9" },
-    { id: 21, name: "Sean Ren", company: "Cofounder of Sahara AI", img: "/speakers/15.png", icon: "15" },
+    { id: 21, name: "Naveen Durvasula", company: "Core Member of Ritual", img: "/speakers/2.png", icon: "9" },
+    {
+      id: 22,
+      name: "Christian Ondaatje",
+      company: "Platform Engineer of Hyperbolicd",
+      img: "/speakers/26.png",
+      icon: "26",
+    },
+    { id: 23, name: "Sean Ren", company: "Cofounder of Sahara AI", img: "/speakers/15.png", icon: "15" },
+    
     // { id: 4, name: "Chris Zhu", company: "Co-founder of Sonic / Mirror World", img: "/speakers/9.png", icon: "3" },
 
   ];
@@ -155,7 +172,7 @@ export default function Home() {
           backgroundSize: "contain",
         }}
       >
-        <div className="md:w-[1200px] items-center justify-center flex flex-col">
+        <div className="md:w-[1440px] items-center justify-center flex flex-col">
           <header className="w-full flex py-[21px] md:justify-around fixed top-0 left-0 bg-[#DEE8E8] z-50 justify-between px-2 md:px-0">
             <div className="flex items-center">
               <MobileMenu />
@@ -196,7 +213,7 @@ export default function Home() {
           </div>
           <div className="text-[24px] text-[#383F4E] mt-5 md:mt-[26px] font-semibold">October 3rd ｜ NYC</div>
           <p className="text-[#383F4E] text-sm leading-[22px] md:leading-[30px] md:text-[20px] text-center mt-[25px] max-w-[307px] md:max-w-[661px]">
-            For the first time, eleven distinguished university blockchain clubs are uniting, supported by extensive alumni
+            For the first time, twelve distinguished university blockchain clubs are uniting, supported by extensive alumni
             networks and in collaboration with leading projects and investors. Together, we aim to cultivate emerging
             talents and foster innovative projects, paving the way for the future leaders of crypto.
             <br></br>
@@ -230,13 +247,13 @@ export default function Home() {
             Initiators
           </p>
           <LogoList />
-          <div className="hidden md:flex flex-wrap gap-x-5 md:gap-x-[34px] items-center gap-y-5 md:gap-y-[24px] px-4 md:px-0 mt-4 md:mt-[24px]">
+          <div className=" hidden md:flex flex-wrap gap-x-5 md:gap-x-[34px] gap-y-5 md:gap-y-[24px] px-4 md:px-0 mt-4 md:mt-[24px] pr-[240px]">
             <Image
               src="/banner/initiators/image16.svg"
               width={136}
               height={48}
               alt="icon"
-              className="w-[80px] md:w-[80px] ml-[30px] mr-[25px]"
+              className="w-[80px] md:w-[80px]  mr-[45px]"
             />
             <Image
               src="/banner/initiators/image6.svg"
@@ -282,6 +299,13 @@ export default function Home() {
               alt="icon"
               className="w-[100px] md:w-[116px] h-[48px]"
             />
+            <Image
+              src="/banner/initiators/image17.svg"
+              width={121}
+              height={48}
+              alt="icon"
+              className="w-[100px] md:w-[121px] h-[54px]"
+            />
 
             <Image
               src="/banner/initiators/image12.svg"
@@ -318,7 +342,7 @@ export default function Home() {
             Sponsors
           </p>
           <LogoList1 />
-          <div className="hidden md:flex flex-wrap w-full gap-5 md:gap-x-[34px] md:gap-y-[24px] px-4 md:px-0 mt-[24px]">
+          <div className=" hidden md:flex flex-wrap w-full gap-5 md:gap-x-[34px] md:gap-y-[24px] px-4 md:px-0 mt-[24px]">
             <Image
               src="/banner/sponsors/image3.svg"
               width={136}
@@ -341,20 +365,29 @@ export default function Home() {
               className="w-[100px] md:w-[136px]"
             />
             <Image
-              src="/banner/sponsors/image2.svg"
-              width={136}
-              height={48}
-              alt="icon"
-              className="w-[100px] md:w-[136px]"
-            />
-
-            <Image
               src="/banner/sponsors/image7.svg"
               width={136}
               height={54}
               alt="icon"
               className="w-[100px] md:w-[136px]"
             />
+
+            <Image
+              src="/banner/sponsors/image10.svg"
+              width={136}
+              height={48}
+              alt="icon"
+              className="w-[100px] md:w-[136px]"
+            />
+            <Image
+              src="/banner/sponsors/image11.svg"
+              width={136}
+              height={48}
+              alt="icon"
+              className="w-[100px] md:w-[136px]"
+            />
+
+
             <Image
               src="/banner/sponsors/image8.svg"
               width={136}
