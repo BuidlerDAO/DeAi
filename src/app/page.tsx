@@ -184,7 +184,7 @@ export default function Home() {
           backgroundSize: "contain",
         }}
       >
-        <div className="md:w-[1440px] items-center justify-center flex flex-col">
+        <div className="md:w-[1200px] items-center justify-center flex flex-col">
           <header className="w-full flex py-[21px] md:justify-around fixed top-0 left-0 bg-[#DEE8E8] z-50 justify-between px-2 md:px-0">
             <div className="flex items-center">
               <MobileMenu />
@@ -259,7 +259,7 @@ export default function Home() {
             Initiators
           </p>
           <LogoList />
-          <div className=" hidden md:flex flex-wrap gap-x-5 md:gap-x-[34px] gap-y-5 md:gap-y-[24px] px-4 md:px-0 mt-4 md:mt-[24px] !pr-[240px]">
+          <div className=" hidden md:flex flex-wrap gap-x-5 md:gap-x-[34px] gap-y-5 md:gap-y-[24px] px-4 md:px-0 mt-4 md:mt-[24px]">
             <Image
               src="/banner/initiators/image16.svg"
               width={136}
