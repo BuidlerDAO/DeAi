@@ -248,7 +248,7 @@ export default function Home() {
             Initiators
           </p>
           <LogoList />
-          <div className=" hidden md:flex flex-wrap gap-x-5 md:gap-x-[34px] gap-y-5 md:gap-y-[24px] px-4 md:px-0 mt-4 md:mt-[24px] pr-[240px]">
+          <div className=" hidden md:flex flex-wrap gap-x-5 md:gap-x-[34px] gap-y-5 md:gap-y-[24px] px-4 md:px-0 mt-4 md:mt-[24px] !pr-[240px]">
             <Image
               src="/banner/initiators/image16.svg"
               width={136}
