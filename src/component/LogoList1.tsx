@@ -13,15 +13,17 @@ const LogoList1 = () => {
           className="w-[100px] md:w-[136px]"
         />
       </Col>
+
       <Col span={8}>
         <Image
-          src="/banner/sponsors/image1.png"
+          src="/banner/sponsors/image12.svg"
           width={136}
           height={48}
           alt="icon"
           className="w-[100px] md:w-[136px]"
         />
       </Col>
+
       <Col span={8}>
         <Image
           src="/banner/sponsors/image4.svg"
@@ -31,6 +33,16 @@ const LogoList1 = () => {
           className="w-[100px] md:w-[136px]"
         />
       </Col>
+      <Col span={8}>
+        <Image
+          src="/banner/sponsors/image1.png"
+          width={136}
+          height={48}
+          alt="icon"
+          className="w-[100px] md:w-[136px]"
+        />
+      </Col>
+
 
       <Col span={8}>
         <Image
@@ -60,6 +72,16 @@ const LogoList1 = () => {
           alt="icon"
           className="w-[100px] md:w-[136px]"
         />
+      </Col>
+      <Col span={8}>
+        <Image
+          src="/banner/sponsors/image11.svg"
+          width={136}
+          height={48}
+          alt="icon"
+          className="w-[100px] md:w-[136px]"
+        />
+
       </Col>
       <Col span={8}>
         <Image

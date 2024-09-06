@@ -398,7 +398,7 @@ export default function Home() {
               alt="icon"
               className="w-[100px] md:w-[136px]"
             />
-            
+
             <Image
               src="/banner/sponsors/image8.svg"
               width={136}
@@ -414,10 +414,6 @@ export default function Home() {
               alt="icon"
               className="w-[100px] md:w-[136px]"
             />
-
-
-            
-
             <Image
               src="/banner/sponsors/image9.png"
               width={136}
