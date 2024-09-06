@@ -14,7 +14,6 @@ const LogoList = () => {
         />
       </Col>
 
-
       <Col span={8}>
         <Image
           src="/banner/initiators/image6.svg"
@@ -69,6 +68,16 @@ const LogoList = () => {
           height={48}
           alt="icon"
           className="w-[100px] md:w-[136px] h-[48px]"
+        />
+      </Col>
+
+      <Col span={8}>
+        <Image
+          src="/banner/initiators/image17.svg"
+          width={136}
+          height={48}
+          alt="icon"
+          className="w-[100px] md:w-[136px]"
         />
       </Col>
 
