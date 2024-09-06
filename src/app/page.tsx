@@ -363,6 +363,13 @@ export default function Home() {
               className="w-[100px] md:w-[136px]"
             />
             <Image
+              src="/banner/sponsors/image12.svg"
+              width={136}
+              height={48}
+              alt="icon"
+              className="w-[100px] md:w-[136px]"
+            />
+            <Image
               src="/banner/sponsors/image4.svg"
               width={136}
               height={48}
@@ -391,6 +398,15 @@ export default function Home() {
               alt="icon"
               className="w-[100px] md:w-[136px]"
             />
+            
+            <Image
+              src="/banner/sponsors/image8.svg"
+              width={136}
+              height={54}
+              alt="icon"
+              className="w-[100px] md:w-[136px]"
+            />
+
             <Image
               src="/banner/sponsors/image11.svg"
               width={136}
@@ -400,13 +416,7 @@ export default function Home() {
             />
 
 
-            <Image
-              src="/banner/sponsors/image8.svg"
-              width={136}
-              height={54}
-              alt="icon"
-              className="w-[100px] md:w-[136px]"
-            />
+            
 
             <Image
               src="/banner/sponsors/image9.png"
