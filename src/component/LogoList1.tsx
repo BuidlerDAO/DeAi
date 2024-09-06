@@ -31,22 +31,20 @@ const LogoList1 = () => {
           className="w-[100px] md:w-[136px]"
         />
       </Col>
+
       <Col span={8}>
         <Image
-          src="/banner/sponsors/image2.svg"
+          src="/banner/sponsors/image7.svg"
           width={136}
-          height={48}
+          height={54}
           alt="icon"
           className="w-[100px] md:w-[136px]"
         />
       </Col>
 
-
-
-
       <Col span={8}>
         <Image
-          src="/banner/sponsors/image7.svg"
+          src="/banner/sponsors/image10.svg"
           width={136}
           height={54}
           alt="icon"
