@@ -118,11 +118,12 @@ export default function Home() {
     { id: 14, name: "Wei Dai", company: "Research Partner at 1kx", img: "/speakers/24.png", icon: "24" },
     {
       id: 15,
-      name: "Christian Ondaatje",
-      company: "Platform Engineer of Hyperbolicd",
+      name: "Alexander Lerangis",
+      company: "Head of Business Development at Arkham",
       img: "/speakers/25.png",
       icon: "25",
     },
+    // { id: 15, name: "Allan", company: "Partner at Blockchain For Good Alliance", img: "/speakers/17.png", icon: "17" },
     { id: 16, name: "Allan", company: "Partner at Blockchain For Good Alliance", img: "/speakers/17.png", icon: "17" },
     { id: 17, name: "Ben Fielding", company: "Co-founder of Gensyn", img: "/speakers/4.png", icon: "2" },
 
@@ -141,8 +142,8 @@ export default function Home() {
     { id: 21, name: "Naveen Durvasula", company: "Core Member of Ritual", img: "/speakers/2.png", icon: "9" },
     {
       id: 22,
-      name: "Christian Ondaatje",
-      company: "Platform Engineer of Hyperbolicd",
+      name: "Nick Emmons",
+      company: "Co-founder and CEO of Allora Labs",
       img: "/speakers/26.png",
       icon: "26",
     },
