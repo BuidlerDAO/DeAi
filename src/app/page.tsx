@@ -143,7 +143,7 @@ export default function Home() {
     {
       id: 18,
       name: "Christian Ondaatje",
-      company: "Platform Engineer of Hyperbolic",
+      company: "Founding Platform Engineer of Hyperbolic",
       img: "/speakers/5.png",
       icon: "4",
     },
