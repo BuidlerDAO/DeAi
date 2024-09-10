@@ -75,6 +75,15 @@ const LogoList1 = () => {
       </Col>
       <Col span={8}>
         <Image
+          src="/banner/sponsors/image13.svg"
+          width={136}
+          height={54}
+          alt="icon"
+          className="w-[100px] md:w-[136px]"
+        />
+      </Col>
+      <Col span={8}>
+        <Image
           src="/banner/sponsors/image11.svg"
           width={136}
           height={48}

@@ -11,7 +11,7 @@ import MobileMenu from "@/component/MobileMenu";
 import { useRouter } from "next/navigation";
 
 export default function Home() {
-  const [visibleCount, setVisibleCount] = useState(25);
+  const [visibleCount, setVisibleCount] = useState(100);
   const router = useRouter();
 
   const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -61,107 +61,81 @@ export default function Home() {
     },
   ];
 
-  // 数据数组
-  // const speakers = [
-  //   // { id: 1, name: "Allan", company: "Partner of Blockchain For Good Alliance", img: "/speakers/17.png", icon: "17" },
-  //   { id: 10, name: "Guy Wuollet", company: "Investment Partner at a16z crypto", img: "/speakers/6.png", icon: "6" },
-  //   { id: 1, name: "Anna Bertha", company: "Investor at DCG", img: "/speakers/3.png", icon: "1" },
-  //   { id: 11, name: "Jiahao Sun", company: "Founder and CEO of FLock.io", img: "/speakers/8.png", icon: "8" },
-  //   {
-  //     id: 6,
-  //     name: "David Attermann",
-  //     company: "Head of Web3 Investments at M31 Capital",
-  //     img: "/speakers/13.png",
-  //     icon: "12",
-  //   },
-  //   { id: 4, name: "Chris Zhu", company: "Co-founder of Sonic / Mirror World", img: "/speakers/9.png", icon: "3" },
-  //   {
-  //     id: 5,
-  //     name: "Christian Ondaatje",
-  //     company: "Platform Engineer of Hyperbolicd",
-  //     img: "/speakers/5.png",
-  //     icon: "4",
-  //   },
-  //   { id: 9, name: "Greg Osuri", company: "Founder of Akash", img: "/speakers/1.png", icon: "7" },
-  //   { id: 12, name: "Mads Pedersen", company: "Partner at Figment Capital", img: "/speakers/19.png", icon: "19" },
-  //   { id: 13, name: "Naveen Durvasula", company: "Core Member of Ritual", img: "/speakers/2.png", icon: "9" },
-  //   { id: 3, name: "Ben Fielding", company: "Co-founder of Gensyn", img: "/speakers/4.png", icon: "2" },
-  //   { id: 2, name: "Baek Kim", company: "Partner at Hashed", img: "/speakers/16.png", icon: "16" },
-  //   { id: 7, name: "Dmitriy Berenzon", company: "Partner at Archetype", img: "/speakers/18.png", icon: "18" },
-  //   { id: 8, name: "Evan Feng", company: "Partner at CoinFund", img: "/speakers/12.png", icon: "5" },
-  //   { id: 14, name: "Nihal Maunder", company: "Junior Partner at Pantera", img: "/speakers/14.png", icon: "14" },
-  //   { id: 16, name: "Tom Schmidt", company: "Partner at Dragonfly", img: "/speakers/7.png", icon: "13" },
-  //   { id: 15, name: "Sean Ren", company: "Cofounder of Sahara AI", img: "/speakers/15.png", icon: "15" },
-  // ];
 
   const speakers = [
-    { id: 1, name: "Kuleen Nimkar", company: "Growth at Solana Foundation", img: "/speakers/20.png", icon: "11" },
-    { id: 2, name: "Muneeb Ali", company: "Co-Founder of Stacks", img: "/speakers/21.png", icon: "21" },
+    { id: 1, name: "Jarrod Barnes", company: "Head of Founder Success at NEAR Foundation", img: "/speakers/27.png", icon: "27" },
+    { id: 2, name: "Kuleen Nimkar", company: "Growth at Solana Foundation", img: "/speakers/20.png", icon: "11" },
+    { id: 3, name: "Muneeb Ali", company: "Co-Founder of Stacks", img: "/speakers/21.png", icon: "21" },
     {
-      id: 3,
+      id: 4,
       name: "Sam Williams",
       company: "CEO of Forward Research, Founder of Arweave and AO",
       img: "/speakers/22.png",
       icon: "22",
     },
-    { id: 4, name: "Anna Bertha", company: "Investor at DCG", img: "/speakers/3.png", icon: "1" },
-    { id: 5, name: "Baek Kim", company: "Partner at Hashed", img: "/speakers/16.png", icon: "16" },
+    { id: 5, name: "Anna Bertha", company: "Investor at DCG", img: "/speakers/3.png", icon: "1" },
+    { id: 6, name: "Baek Kim", company: "Partner at Hashed", img: "/speakers/16.png", icon: "16" },
     {
-      id: 6,
+      id: 7,
       name: "David Attermann",
       company: "Head of Web3 Investments at M31 Capital",
       img: "/speakers/13.png",
       icon: "12",
     },
-    { id: 7, name: "Dmitriy Berenzon", company: "Partner at Archetype", img: "/speakers/18.png", icon: "18" },
-    { id: 8, name: "Evan Feng", company: "Partner at CoinFund", img: "/speakers/12.png", icon: "5" },
+    { id: 8, name: "Dmitriy Berenzon", company: "Partner at Archetype", img: "/speakers/18.png", icon: "18" },
+    { id: 9, name: "Evan Feng", company: "Partner at CoinFund", img: "/speakers/12.png", icon: "5" },
     {
-      id: 9,
+      id: 10,
       name: "Greg Scanlon",
       company: "Managing Principal at Franklin Templeton Blockchain Fund",
       img: "/speakers/23.png",
       icon: "23",
     },
 
-    { id: 10, name: "Guy Wuollet", company: "Investment Partner at a16z crypto", img: "/speakers/6.png", icon: "6" },
-    { id: 11, name: "Mads Pedersen", company: "Partner at Figment Capital", img: "/speakers/19.png", icon: "19" },
-    { id: 12, name: "Nihal Maunder", company: "Junior Partner at Pantera", img: "/speakers/14.png", icon: "14" },
-    { id: 13, name: "Tom Schmidt", company: "Partner at Dragonfly", img: "/speakers/7.png", icon: "13" },
-    { id: 14, name: "Wei Dai", company: "Research Partner at 1kx", img: "/speakers/24.png", icon: "24" },
+    { id: 11, name: "Guy Wuollet", company: "Investment Partner at a16z crypto", img: "/speakers/6.png", icon: "6" },
+    { id: 12, name: "Jiani Chen", company: "Partner at Protagonist VC", img: "/speakers/28.png", icon: "28" },
+    
+    { id: 13, name: "Mads Pedersen", company: "Partner at Figment Capital", img: "/speakers/19.png", icon: "19" },
+    
+    { id: 14, name: "Nihal Maunder", company: "Junior Partner at Pantera", img: "/speakers/14.png", icon: "14" },
+    { id: 15, name: "Tom Schmidt", company: "Partner at Dragonfly", img: "/speakers/7.png", icon: "13" },
+    { id: 16, name: "Wei Dai", company: "Research Partner at 1kx", img: "/speakers/24.png", icon: "24" },
     {
-      id: 15,
+      id: 17,
       name: "Alexander Lerangis",
       company: "Head of Business Development at Arkham",
       img: "/speakers/25.png",
       icon: "25",
     },
     // { id: 15, name: "Allan", company: "Partner at Blockchain For Good Alliance", img: "/speakers/17.png", icon: "17" },
-    { id: 16, name: "Allan", company: "Partner at Blockchain For Good Alliance", img: "/speakers/17.png", icon: "17" },
-    { id: 17, name: "Ben Fielding", company: "Co-founder of Gensyn", img: "/speakers/4.png", icon: "2" },
+    { id: 18, name: "Allan", company: "Partner at Blockchain For Good Alliance", img: "/speakers/17.png", icon: "17" },
+    { id: 19, name: "Ben Fielding", company: "Co-founder of Gensyn", img: "/speakers/4.png", icon: "2" },
+    { id: 20, name: "Calanthia Mei", company: "Co-founder of Masa", img: "/speakers/29.png", icon: "29" },
 
    
     {
-      id: 18,
+      id: 21,
       name: "Christian Ondaatje",
       company: "Founding Platform Engineer of Hyperbolic",
       img: "/speakers/5.png",
       icon: "4",
     },
-    { id: 19, name: "Greg Osuri", company: "Founder of Akash", img: "/speakers/1.png", icon: "7" },
+    { id: 22, name: "Greg Osuri", company: "Founder of Akash", img: "/speakers/1.png", icon: "7" },
 
-    { id: 20, name: "Jiahao Sun", company: "Founder and CEO of FLock.io", img: "/speakers/8.png", icon: "8" },
+    { id: 23, name: "Jiahao Sun", company: "Founder and CEO of FLock.io", img: "/speakers/8.png", icon: "8" },
 
-    { id: 21, name: "Naveen Durvasula", company: "Core Member of Ritual", img: "/speakers/2.png", icon: "9" },
+    { id: 24, name: "Naveen Durvasula", company: "Core Member of Ritual", img: "/speakers/2.png", icon: "9" },
     {
-      id: 22,
+      id: 25,
       name: "Nick Emmons",
       company: "Co-founder and CEO of Allora Labs",
       img: "/speakers/26.png",
       icon: "26",
     },
-    { id: 23, name: "Sean Ren", company: "Cofounder of Sahara AI", img: "/speakers/15.png", icon: "15" },
+    { id: 26, name: "Rahul Arulkumaran", company: "AI/ML Engineer Fellow at Foundry", img: "/speakers/30.png", icon: "30" },
     
-    // { id: 4, name: "Chris Zhu", company: "Co-founder of Sonic / Mirror World", img: "/speakers/9.png", icon: "3" },
+    { id: 27, name: "Sean Ren", company: "Co-founder of Sahara AI", img: "/speakers/15.png", icon: "15" },
+    
   ];
 
   // 点击按钮后展示更多数据
@@ -401,6 +375,13 @@ export default function Home() {
 
             <Image
               src="/banner/sponsors/image8.svg"
+              width={136}
+              height={54}
+              alt="icon"
+              className="w-[100px] md:w-[136px]"
+            />
+            <Image
+              src="/banner/sponsors/image13.svg"
               width={136}
               height={54}
               alt="icon"
