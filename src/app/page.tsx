@@ -61,81 +61,203 @@ export default function Home() {
     },
   ];
 
-
   const speakers = [
-    { id: 1, name: "Jarrod Barnes", company: "Head of Founder Success at NEAR Foundation", img: "/speakers/27.png", icon: "27" },
-    { id: 2, name: "Kuleen Nimkar", company: "Growth at Solana Foundation", img: "/speakers/20.png", icon: "11" },
-    { id: 3, name: "Muneeb Ali", company: "Co-Founder of Stacks", img: "/speakers/21.png", icon: "21" },
+    {
+      id: 1,
+      name: "Jarrod Barnes",
+      company: "Head of Founder Success at NEAR Foundation",
+      img: "/speakers/27.png",
+      icon: "27",
+      color: "#D6F3FF",
+    },
+    {
+      id: 2,
+      name: "Kuleen Nimkar",
+      company: "Growth at Solana Foundation",
+      img: "/speakers/20.png",
+      icon: "11",
+      color: "#D6FFEB",
+    },
+    {
+      id: 3,
+      name: "Muneeb Ali",
+      company: "Co-Founder of Stacks",
+      img: "/speakers/21.png",
+      icon: "21",
+      color: "#E4EDD5",
+    },
     {
       id: 4,
       name: "Sam Williams",
       company: "CEO of Forward Research, Founder of Arweave and AO",
       img: "/speakers/22.png",
       icon: "22",
+      color: "#D6E1FF",
     },
-    { id: 5, name: "Anna Bertha", company: "Investor at DCG", img: "/speakers/3.png", icon: "1" },
-    { id: 6, name: "Baek Kim", company: "Partner at Hashed", img: "/speakers/16.png", icon: "16" },
+    { id: 5, name: "Anna Bertha", company: "Investor at DCG", img: "/speakers/3.png", icon: "1", color: "#FFF7D6" },
+    { id: 6, name: "Baek Kim", company: "Partner at Hashed", img: "/speakers/16.png", icon: "16", color: "#D6DAFF" },
     {
       id: 7,
       name: "David Attermann",
       company: "Head of Web3 Investments at M31 Capital",
       img: "/speakers/13.png",
       icon: "12",
+      color: "#E8D6FF",
     },
-    { id: 8, name: "Dmitriy Berenzon", company: "Partner at Archetype", img: "/speakers/18.png", icon: "18" },
-    { id: 9, name: "Evan Feng", company: "Partner at CoinFund", img: "/speakers/12.png", icon: "5" },
+    {
+      id: 8,
+      name: "Dmitriy Berenzon",
+      company: "Partner at Archetype",
+      img: "/speakers/18.png",
+      icon: "18",
+      color: "#D6E4FF",
+    },
+    { id: 9, name: "Evan Feng", company: "Partner at CoinFund", img: "/speakers/12.png", icon: "5", color: "#d6ebff" },
     {
       id: 10,
       name: "Greg Scanlon",
       company: "Managing Principal at Franklin Templeton Blockchain Fund",
       img: "/speakers/23.png",
       icon: "23",
+      color: "#D6E1FF",
     },
 
-    { id: 11, name: "Guy Wuollet", company: "Investment Partner at a16z crypto", img: "/speakers/6.png", icon: "6" },
-    { id: 12, name: "Jiani Chen", company: "Partner at Protagonist VC", img: "/speakers/28.png", icon: "28" },
-    
-    { id: 13, name: "Mads Pedersen", company: "Partner at Figment Capital", img: "/speakers/19.png", icon: "19" },
-    
-    { id: 14, name: "Nihal Maunder", company: "Junior Partner at Pantera", img: "/speakers/14.png", icon: "14" },
-    { id: 15, name: "Tom Schmidt", company: "Partner at Dragonfly", img: "/speakers/7.png", icon: "13" },
-    { id: 16, name: "Wei Dai", company: "Research Partner at 1kx", img: "/speakers/24.png", icon: "24" },
+    {
+      id: 11,
+      name: "Guy Wuollet",
+      company: "Investment Partner at a16z crypto",
+      img: "/speakers/6.png",
+      icon: "6",
+      color: "#FFD6F4",
+    },
+    {
+      id: 12,
+      name: "Jiani Chen",
+      company: "Partner at Protagonist VC",
+      img: "/speakers/28.png",
+      icon: "28",
+      color: "#d7ffd6",
+    },
+
+    {
+      id: 13,
+      name: "Mads Pedersen",
+      company: "Partner at Figment Capital",
+      img: "/speakers/19.png",
+      icon: "19",
+      color: "#ffecd7",
+    },
+
+    {
+      id: 14,
+      name: "Nihal Maunder",
+      company: "Junior Partner at Pantera",
+      img: "/speakers/14.png",
+      icon: "14",
+      color: "#fad7ff",
+    },
+    {
+      id: 15,
+      name: "Tom Schmidt",
+      company: "Partner at Dragonfly",
+      img: "/speakers/7.png",
+      icon: "13",
+      color: "#dcd6ff",
+    },
+    {
+      id: 16,
+      name: "Wei Dai",
+      company: "Research Partner at 1kx",
+      img: "/speakers/24.png",
+      icon: "24",
+      color: "#d6e1ff",
+    },
     {
       id: 17,
       name: "Alexander Lerangis",
       company: "Head of Business Development at Arkham",
       img: "/speakers/25.png",
       icon: "25",
+      color: "#e1d7ff",
     },
     // { id: 15, name: "Allan", company: "Partner at Blockchain For Good Alliance", img: "/speakers/17.png", icon: "17" },
-    { id: 18, name: "Allan", company: "Partner at Blockchain For Good Alliance", img: "/speakers/17.png", icon: "17" },
-    { id: 19, name: "Ben Fielding", company: "Co-founder of Gensyn", img: "/speakers/4.png", icon: "2" },
-    { id: 20, name: "Calanthia Mei", company: "Co-founder of Masa", img: "/speakers/29.png", icon: "29" },
+    {
+      id: 18,
+      name: "Allan",
+      company: "Partner at Blockchain For Good Alliance",
+      img: "/speakers/17.png",
+      icon: "17",
+      color: "#FECBFF",
+    },
+    {
+      id: 19,
+      name: "Ben Fielding",
+      company: "Co-founder of Gensyn",
+      img: "/speakers/4.png",
+      icon: "2",
+      color: "#D6E4FF",
+    },
+    {
+      id: 20,
+      name: "Calanthia Mei",
+      company: "Co-founder of Masa",
+      img: "/speakers/29.png",
+      icon: "29",
+      color: "#e6ffd6",
+    },
 
-   
     {
       id: 21,
       name: "Christian Ondaatje",
       company: "Founding Platform Engineer of Hyperbolic",
       img: "/speakers/5.png",
       icon: "4",
+      color: "#D6E4FF",
     },
-    { id: 22, name: "Greg Osuri", company: "Founder of Akash", img: "/speakers/1.png", icon: "7" },
+    { id: 22, name: "Greg Osuri", company: "Founder of Akash", img: "/speakers/1.png", icon: "7", color: "#e7d6ff" },
 
-    { id: 23, name: "Jiahao Sun", company: "Founder and CEO of FLock.io", img: "/speakers/8.png", icon: "8" },
+    {
+      id: 23,
+      name: "Jiahao Sun",
+      company: "Founder and CEO of FLock.io",
+      img: "/speakers/8.png",
+      icon: "8",
+      color: "#FFD6D6",
+    },
 
-    { id: 24, name: "Naveen Durvasula", company: "Core Member of Ritual", img: "/speakers/2.png", icon: "9" },
+    {
+      id: 24,
+      name: "Naveen Durvasula",
+      company: "Core Member of Ritual",
+      img: "/speakers/2.png",
+      icon: "9",
+      color: "#D6FFD7",
+    },
     {
       id: 25,
       name: "Nick Emmons",
       company: "Co-founder and CEO of Allora Labs",
       img: "/speakers/26.png",
       icon: "26",
+      color: "#B4D2EE",
     },
-    { id: 26, name: "Rahul Arulkumaran", company: "AI/ML Engineer Fellow at Foundry", img: "/speakers/30.png", icon: "30" },
-    
-    { id: 27, name: "Sean Ren", company: "Co-founder of Sahara AI", img: "/speakers/15.png", icon: "15" },
-    
+    {
+      id: 26,
+      name: "Rahul Arulkumaran",
+      company: "AI/ML Engineer Fellow at Foundry",
+      img: "/speakers/30.png",
+      icon: "30",
+      color: "#c7b4ee",
+    },
+
+    {
+      id: 27,
+      name: "Sean Ren",
+      company: "Co-founder of Sahara AI",
+      img: "/speakers/15.png",
+      icon: "15",
+      color: "#D6F0FF",
+    },
   ];
 
   // 点击按钮后展示更多数据
@@ -199,9 +321,9 @@ export default function Home() {
           </div>
           <div className="text-[24px] text-[#383F4E] mt-5 md:mt-[26px] font-semibold">October 3rd ｜ NYC</div>
           <p className="text-[#383F4E] text-sm leading-[22px] md:leading-[30px] md:text-[20px] text-center mt-[25px] max-w-[307px] md:max-w-[661px]">
-            For the first time, twelve distinguished university blockchain clubs are uniting, supported by extensive alumni
-            networks and in collaboration with leading projects and investors. Together, we aim to cultivate emerging
-            talents and foster innovative projects, paving the way for the future leaders of crypto.
+            For the first time, twelve distinguished university blockchain clubs are uniting, supported by extensive
+            alumni networks and in collaboration with leading projects and investors. Together, we aim to cultivate
+            emerging talents and foster innovative projects, paving the way for the future leaders of crypto.
             <br></br>
             <br></br>
             We warmly welcome and encourage more universities to join us in building a collaborative blockchain future.
@@ -597,7 +719,13 @@ export default function Home() {
                 <Col span={12} key={i}>
                   <div className="border rounded-[5px] border-[#E8E7EE] p-[10px] space-y-1 flex flex-col h-full ">
                     <div className="relative">
-                      <img src={speaker.img} alt={speaker.name} className="bg-[#E7D6FF]" />
+                      <img
+                        src={speaker.img}
+                        alt={speaker.name}
+                        style={{
+                          backgroundColor: speaker.color,
+                        }}
+                      />
                       <img
                         src={`/speakers/tag${speaker.icon}.png`}
                         className="w-[60px] h-[22px] absolute left-[12px] bottom-[8px]"
@@ -638,7 +766,12 @@ export default function Home() {
                   } `}
                 >
                   <div className="relative">
-                    <img src={speaker.img} alt={speaker.name} className="w-[238px] h-[238px] bg-[#E7D6FF]" />
+                    <img
+                      src={speaker.img}
+                      alt={speaker.name}
+                      className="w-[238px] h-[238px]"
+                      style={{ backgroundColor: speaker.color }}
+                    />
                     <img
                       src={`/speakers/tag${speaker.icon}.png`}
                       className="w-[105px] h-[38px] absolute left-[22px] bottom-[16px]"
