@@ -732,7 +732,7 @@ export default function Home() {
                       />
                     </div>
                     <span className="text-[#153C3C] text-xs font-medium">{speaker.name}</span>
-                    <span className="text-[#153C3C] text-[8px] ">{speaker.company}</span>
+                    <span className="text-[#153C3C] text-[10px] ">{speaker.company}</span>
                   </div>
                 </Col>
               ))}
