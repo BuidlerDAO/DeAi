@@ -63,6 +63,22 @@ export default function Home() {
 
   const speakers = [
     {
+      id: 0,
+      name: "Anke Liu",
+      company: "Ecosystem Growth Lead at Stellar Development Foundation",
+      img: "/speakers/anke_liu.png",
+      icon: "stellar",
+      color: "#E2FFD6",
+    },
+    {
+      id: 0.5,
+      name: "Dylan Kugler",
+      company: "Ecosystem Lead at Starknet Foundation",
+      img: "/speakers/dylan.png",
+      icon: "starknet",
+      color: "#DDD6FF",
+    },
+    {
       id: 1,
       name: "Jarrod Barnes",
       company: "Head of Founder Success at NEAR Foundation",
@@ -77,6 +93,14 @@ export default function Home() {
       img: "/speakers/20.png",
       icon: "11",
       color: "#D6FFEB",
+    },
+    {
+      id: 2.5,
+      name: "Mike McCoy",
+      company: "Director of Infrastructure Partnerships at Sei Foundation",
+      img: "/speakers/mike.png",
+      icon: "sei",
+      color: "#FFD6D6",
     },
     {
       id: 3,
@@ -214,19 +238,48 @@ export default function Home() {
       icon: "4",
       color: "#D6E4FF",
     },
-    { id: 22, name: "Greg Osuri", company: "Founder of Akash", img: "/speakers/1.png", icon: "7", color: "#e7d6ff" },
-
     {
-      id: 23,
+      id: 21.1,
+      name: "David Cao",
+      company: "Co-founder of Layer N",
+      img: "/speakers/david_gao.png",
+      icon: "n",
+      color: "#D6FFEF",
+    },
+    {
+      id: 21.2,
+      name: "Gracy Chen",
+      company: "CEO of Bitget",
+      img: "/speakers/gracy_chen.png",
+      icon: "bit_get",
+      color: "#ADF4FB",
+    },
+    {
+      id: 21.3,
+      name: "Greg Osuri",
+      company: "Founder of Akash",
+      img: "/speakers/1.png",
+      icon: "7",
+      color: "#e7d6ff",
+    },
+    {
+      id: 23.,
       name: "Jiahao Sun",
       company: "Founder and CEO of FLock.io",
       img: "/speakers/8.png",
       icon: "8",
       color: "#FFD6D6",
     },
-
     {
       id: 24,
+      name: "Keer Lau",
+      company: "CSO at Orbiter Finance",
+      img: "/speakers/keer_lau.png",
+      icon: "orbit_finance",
+      color: "#E3D6FF",
+    },
+    {
+      id: 25,
       name: "Naveen Durvasula",
       company: "Core Member of Ritual",
       img: "/speakers/2.png",
@@ -234,7 +287,7 @@ export default function Home() {
       color: "#D6FFD7",
     },
     {
-      id: 25,
+      id: 26,
       name: "Nick Emmons",
       company: "Co-founder and CEO of Allora Labs",
       img: "/speakers/26.png",
@@ -242,7 +295,7 @@ export default function Home() {
       color: "#B4D2EE",
     },
     {
-      id: 26,
+      id: 27,
       name: "Rahul Arulkumaran",
       company: "AI/ML Engineer Fellow at Foundry",
       img: "/speakers/30.png",
@@ -251,7 +304,7 @@ export default function Home() {
     },
 
     {
-      id: 27,
+      id: 28,
       name: "Sean Ren",
       company: "Co-founder of Sahara AI",
       img: "/speakers/15.png",
@@ -841,8 +894,9 @@ export default function Home() {
         <div className="flex flex-col mt-6 md:mt-10 w-full max-md:max-w-full bg-slate-100">
           <img
             loading="lazy"
+            style={{ width: "90%", margin: "auto" }}
             srcSet="/partners.png"
-            className="hidden md:inline-block object-contain w-full aspect-[4.5] max-md:max-w-full"
+            className="hidden md:inline-block w-full max-md:max-w-full"
           />
           <img loading="lazy" srcSet="/partners-mobile.png" className="md:hidden" />
         </div>
