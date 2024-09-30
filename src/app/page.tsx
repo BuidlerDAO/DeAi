@@ -63,7 +63,7 @@ export default function Home() {
 
   const speakers = [
     {
-      id: 0,
+      id: 1,
       name: "Anke Liu",
       company: "Ecosystem Growth Lead at Stellar Development Foundation",
       img: "/speakers/anke_liu.png",
@@ -71,7 +71,7 @@ export default function Home() {
       color: "#E2FFD6",
     },
     {
-      id: 0.5,
+      id: 2,
       name: "Dylan Kugler",
       company: "Ecosystem Lead at Starknet Foundation",
       img: "/speakers/dylan.png",
@@ -79,7 +79,7 @@ export default function Home() {
       color: "#DDD6FF",
     },
     {
-      id: 1,
+      id: 3,
       name: "Jarrod Barnes",
       company: "Head of Founder Success at NEAR Foundation",
       img: "/speakers/27.png",
@@ -87,7 +87,7 @@ export default function Home() {
       color: "#D6F3FF",
     },
     {
-      id: 2,
+      id: 4,
       name: "Kuleen Nimkar",
       company: "Growth at Solana Foundation",
       img: "/speakers/20.png",
@@ -95,7 +95,7 @@ export default function Home() {
       color: "#D6FFEB",
     },
     {
-      id: 2.5,
+      id: 5,
       name: "Mike McCoy",
       company: "Director of Infrastructure Partnerships at Sei Foundation",
       img: "/speakers/mike.png",
@@ -103,7 +103,7 @@ export default function Home() {
       color: "#FFD6D6",
     },
     {
-      id: 3,
+      id: 6,
       name: "Muneeb Ali",
       company: "Co-Founder of Stacks",
       img: "/speakers/21.png",
@@ -111,17 +111,17 @@ export default function Home() {
       color: "#E4EDD5",
     },
     {
-      id: 4,
+      id: 7,
       name: "Sam Williams",
       company: "CEO of Forward Research, Founder of Arweave and AO",
       img: "/speakers/22.png",
       icon: "22",
       color: "#D6E1FF",
     },
-    { id: 5, name: "Anna Bertha", company: "Investor at DCG", img: "/speakers/3.png", icon: "1", color: "#FFF7D6" },
-    { id: 6, name: "Baek Kim", company: "Partner at Hashed", img: "/speakers/16.png", icon: "16", color: "#D6DAFF" },
+    { id: 8, name: "Anna Bertha", company: "Investor at DCG", img: "/speakers/3.png", icon: "1", color: "#FFF7D6" },
+    { id: 9, name: "Baek Kim", company: "Partner at Hashed", img: "/speakers/16.png", icon: "16", color: "#D6DAFF" },
     {
-      id: 7,
+      id: 10,
       name: "David Attermann",
       company: "Head of Web3 Investments at M31 Capital",
       img: "/speakers/13.png",
@@ -129,25 +129,24 @@ export default function Home() {
       color: "#E8D6FF",
     },
     {
-      id: 8,
+      id: 11,
       name: "Dmitriy Berenzon",
       company: "Partner at Archetype",
       img: "/speakers/18.png",
       icon: "18",
       color: "#D6E4FF",
     },
-    { id: 9, name: "Evan Feng", company: "Partner at CoinFund", img: "/speakers/12.png", icon: "5", color: "#d6ebff" },
+    { id: 12, name: "Evan Feng", company: "Partner at CoinFund", img: "/speakers/12.png", icon: "5", color: "#d6ebff" },
     {
-      id: 10,
+      id: 13,
       name: "Greg Scanlon",
       company: "Managing Principal at Franklin Templeton Blockchain Fund",
       img: "/speakers/23.png",
       icon: "23",
       color: "#D6E1FF",
     },
-
     {
-      id: 11,
+      id: 14,
       name: "Guy Wuollet",
       company: "Investment Partner at a16z crypto",
       img: "/speakers/6.png",
@@ -155,25 +154,23 @@ export default function Home() {
       color: "#FFD6F4",
     },
     {
-      id: 12,
+      id: 15,
       name: "Jiani Chen",
       company: "Partner at Protagonist VC",
       img: "/speakers/28.png",
       icon: "28",
       color: "#d7ffd6",
     },
-
     {
-      id: 13,
+      id: 16,
       name: "Mads Pedersen",
       company: "Partner at Figment Capital",
       img: "/speakers/19.png",
       icon: "19",
       color: "#ffecd7",
     },
-
     {
-      id: 14,
+      id: 17,
       name: "Nihal Maunder",
       company: "Junior Partner at Pantera",
       img: "/speakers/14.png",
@@ -181,7 +178,7 @@ export default function Home() {
       color: "#fad7ff",
     },
     {
-      id: 15,
+      id: 18,
       name: "Tom Schmidt",
       company: "Partner at Dragonfly",
       img: "/speakers/7.png",
@@ -189,7 +186,7 @@ export default function Home() {
       color: "#dcd6ff",
     },
     {
-      id: 16,
+      id: 19,
       name: "Wei Dai",
       company: "Research Partner at 1kx",
       img: "/speakers/24.png",
@@ -197,16 +194,15 @@ export default function Home() {
       color: "#d6e1ff",
     },
     {
-      id: 17,
+      id: 20,
       name: "Alexander Lerangis",
       company: "Head of Business Development at Arkham",
       img: "/speakers/25.png",
       icon: "25",
       color: "#e1d7ff",
     },
-    // { id: 15, name: "Allan", company: "Partner at Blockchain For Good Alliance", img: "/speakers/17.png", icon: "17" },
     {
-      id: 18,
+      id: 21,
       name: "Allan",
       company: "Partner at Blockchain For Good Alliance",
       img: "/speakers/17.png",
@@ -214,7 +210,7 @@ export default function Home() {
       color: "#FECBFF",
     },
     {
-      id: 19,
+      id: 22,
       name: "Ben Fielding",
       company: "Co-founder of Gensyn",
       img: "/speakers/4.png",
@@ -222,16 +218,15 @@ export default function Home() {
       color: "#D6E4FF",
     },
     {
-      id: 20,
+      id: 23,
       name: "Calanthia Mei",
       company: "Co-founder of Masa",
       img: "/speakers/29.png",
       icon: "29",
       color: "#e6ffd6",
     },
-
     {
-      id: 21,
+      id: 24,
       name: "Christian Ondaatje",
       company: "Founding Platform Engineer of Hyperbolic",
       img: "/speakers/5.png",
@@ -239,7 +234,7 @@ export default function Home() {
       color: "#D6E4FF",
     },
     {
-      id: 21.1,
+      id: 25,
       name: "David Cao",
       company: "Co-founder of Layer N",
       img: "/speakers/david_gao.png",
@@ -247,7 +242,7 @@ export default function Home() {
       color: "#D6FFEF",
     },
     {
-      id: 21.2,
+      id: 26,
       name: "Gracy Chen",
       company: "CEO of Bitget",
       img: "/speakers/gracy_chen.png",
@@ -255,7 +250,7 @@ export default function Home() {
       color: "#ADF4FB",
     },
     {
-      id: 21.3,
+      id: 27,
       name: "Greg Osuri",
       company: "Founder of Akash",
       img: "/speakers/1.png",
@@ -263,7 +258,7 @@ export default function Home() {
       color: "#e7d6ff",
     },
     {
-      id: 23.,
+      id: 28,
       name: "Jiahao Sun",
       company: "Founder and CEO of FLock.io",
       img: "/speakers/8.png",
@@ -271,7 +266,7 @@ export default function Home() {
       color: "#FFD6D6",
     },
     {
-      id: 24,
+      id: 29,
       name: "Keer Lau",
       company: "CSO at Orbiter Finance",
       img: "/speakers/keer_lau.png",
@@ -279,7 +274,7 @@ export default function Home() {
       color: "#E3D6FF",
     },
     {
-      id: 25,
+      id: 30,
       name: "Naveen Durvasula",
       company: "Core Member of Ritual",
       img: "/speakers/2.png",
@@ -287,7 +282,7 @@ export default function Home() {
       color: "#D6FFD7",
     },
     {
-      id: 26,
+      id: 31,
       name: "Nick Emmons",
       company: "Co-founder and CEO of Allora Labs",
       img: "/speakers/26.png",
@@ -295,16 +290,15 @@ export default function Home() {
       color: "#B4D2EE",
     },
     {
-      id: 27,
+      id: 32,
       name: "Rahul Arulkumaran",
       company: "AI/ML Engineer Fellow at Foundry",
       img: "/speakers/30.png",
       icon: "30",
       color: "#c7b4ee",
     },
-
     {
-      id: 28,
+      id: 33,
       name: "Sean Ren",
       company: "Co-founder of Sahara AI",
       img: "/speakers/15.png",
