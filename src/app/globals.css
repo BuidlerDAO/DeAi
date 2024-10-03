@@ -55,3 +55,20 @@ body {
     animation: marquee 15s linear infinite;
   }
 }
+
+.container {
+  width: 100%; /* 或设置为其他具体宽度 */
+  position: relative; /* 使子元素绝对定位 */
+}
+
+.responsive-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 233.33%; /* 高度是宽度的1/3 */
+  object-fit: cover; /* 确保图片覆盖整个容器 */
+}
+
